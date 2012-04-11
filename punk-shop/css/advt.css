@@ -16,12 +16,6 @@ body{
 	border-bottom: 1px solid #adb2b5;
 }
 
-
-
-
-#logo{
-
-}
 #logo h1{
 	font-size: 30px;
 	position: relative;
@@ -139,41 +133,40 @@ input{
 	width: 530px;
 	border-right: 1px solid #adb2b5;
 }
-.advt{
+#msg{
 	height: 400px;
 	width: 90%;
 	margin: 20px 0;
 	xborder: 1px solid #adb2b5;
 }
-.advt img{
+#msg_img{
+	position: relative;
 	width: 200px;
 	height: 160px;
-	margin: 10px
+	margin: 10px;
+	float: right;
+	top: -90px;
 }
-.advt_name{
+#msg_name{
 	position: relative;
-	top: -170px;
-	left: 300px;
 	font-size: 22px;
 }
-.advt_description{
+#msg_description {
 	position: relative;
-	top: 0px;
-	left: 120px;
+	top: 100px;
+	width: 300px;
 	font-size: 17px;
 }
-.advt_date{
+#msg_date{
 	position: relative;
-	float: right;
-	right: 10px;
-	top: -90px;
 	font-size: 20px;
 }
-.advt_author{
+#msg_author{
 	position: relative;
-	float: right;
-	right: 90px;
-	top:-90px;
+	font-size: 20px;
+}
+#msg_contact{
+	position: relative;
 	font-size: 20px;
 }
 

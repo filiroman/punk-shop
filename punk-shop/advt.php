@@ -46,13 +46,20 @@
 		</div>
 		
 		<div id="result">
-			<div class="advt">
-				<img src="img/pic.png">
-				<p class="advt_name"><a href="advt.php">advt name</a></p>
-				<p class="advt_description">some describing text</p>
-				<p class="advt_description">some describing text</p>
-				<p class="advt_date">date</p>
-				<p class="advt_author"><a href="user.php">author</a></p>
+			<div id="msg">
+				
+				<p id="msg_name"><a href="advt.php">Холодильник</a></p>
+				<p id="msg_author"><a href="user.php">author</a></p>
+				<p id="msg_contact">contacts</p>
+				<p id="msg_date">date</p>
+				<img id="msg_img" src="img/pic.png">
+				<p id="msg_description">some describing text some describing text 
+				some describing text some describing text some describing text 				
+				some describing text some describing text some describing text 
+				some describing text some describing text some describing text 
+				some describing text some describing text some describing text 
+				some describing text some describing text some describing text </p>
+				
 			</div>
 			
 		</div>

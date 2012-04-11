@@ -1,0 +1,124 @@
+html{
+	width: 100%;
+}
+
+body{
+	height: 100%;
+	width: 800px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+#header{
+
+	height: 100px;
+	background-color: white;
+	border-bottom: 1px solid #adb2b5;
+}
+
+
+#main{
+	height: 500px;
+	margin: 20px 0 0 0;
+	background-color:white;
+}
+
+
+#logo{
+
+}
+#logo h1{
+	font-size: 30px;
+	position: relative;
+	top: -70px;
+	left: 150px;
+}
+#logo_img{
+	height: 70px;
+	width: 100px;
+	margin: 15px 20px;
+}
+
+#authorisation{
+	width: 400px;
+	position: relative;
+	top: -90px;
+	left: 600px;
+}
+
+#email{
+	width: 120px;
+	font-size: 10px;
+	border: 1px solid #adb2b5;
+}
+#password{
+	width: 80px;
+	font-size: 10px;
+	border: 1px solid #adb2b5;
+}
+#checkbox_text{
+	font-size: 10px;
+	color: grey;
+}
+#auth_button{
+	position: relative;
+	width: 80px;
+	margin: 3px;
+	border: 1px solid #adb2b5;
+}
+#reg_button{
+	position: relative;
+	width: 90px;
+	top: -25px;
+	left: 115px;
+	border: 1px solid #adb2b5;
+}
+	
+input{
+	border-radius:4px; 
+}
+
+#categories{
+	position: absolute;
+	height: 300px;
+	width: 250px;
+	left: 820px;	
+	border: 1px solid #adb2b5;
+	background-color: black;
+}
+
+#search{
+	position: relative;
+}
+#search_text{
+	height: 30px;
+	width: 400px;
+	font-size: 15px;
+	padding: 3px 5px;
+	border: 1px solid #adb2b5;
+}
+#search_button{
+	height: 38px;
+	width: 100px;
+	background-color: #e0edef;
+	border: 1px solid #adb2b5;
+}
+#search_button:hover{
+	background-color: #95d7e1;
+}
+
+#result{
+	position: relative;
+	margin: 20px 0;
+	background-color: white;
+	min-height: 400px;
+	width: 530px;
+	border-right: 1px solid #adb2b5;
+}
+
+#footer{
+	position: relative;	
+	height: 50px;
+	background-color:white;
+	border-top: 1px solid #adb2b5;
+}

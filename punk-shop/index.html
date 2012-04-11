@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">
+			<img id="logo_img" src="/"/>
+			<h1>Punk shop</h1>
+		</div>
+		<div id="authorisation">
+			<form method="post" action="login.php">
+				<input id="email" name="email" type="text" placeholder="Email">
+				<input id="password" name="password" type="password" placeholder="Пароль"><br>
+				<span id="checkbox_text"><span><input id="cookie" name="cookie" type="checkbox">
+				<input id="auth_button" type="submit" value="Войти">
+			</form>
+			<form action="reg.php">
+				<input id="reg_button" type="submit" value="Регистрация">
+			</form>
+		</div>
+	</div>
+
+	<div id="main">
+		<div id="categories">
+		
+		</div>
+		
+		<div id="search">
+			<form id="search" method="post" action="search.php">
+				<input id="search_text" name="search_text" type="text">
+				<input id="search_button" type="submit" value="Искать">
+			</form>
+		</div>
+		
+		<div id="result">
+		
+		</div>
+
+
+	</div>
+	
+	<div id="footer">
+	
+	</div>
+
+
+</body>
+
+
+</html>

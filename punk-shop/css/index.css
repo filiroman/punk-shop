@@ -102,12 +102,20 @@ input{
 
 #categories{
 	position: relative;
-	min-height: 300px;
+	min-height: 50px;
 	width: 250px;
 	float: right;
 	top: 40px;
 	border: 1px solid #adb2b5;
 	background-color: white;
+}
+#categories a{
+	line-height: 30px;
+	font-size: 20px;
+	
+}
+#categories li{
+	border: 1px solid #adb2b5;
 }
 
 
@@ -126,7 +134,33 @@ input{
 	margin: 20px 0;
 	border: 1px solid #adb2b5;
 }
-
+.advt img{
+	width: 100px;
+	height: 80px;
+	margin: 10px
+}
+.advt_name{
+	position: relative;
+	top: -90px;
+	left: 120px;
+}
+.advt_description{
+	position: relative;
+	top: -80px;
+	left: 120px;
+}
+.advt_date{
+	position: relative;
+	float: right;
+	right: 80px;
+	top: -80px;
+}
+.advt_author{
+	position: relative;
+	float: right;
+	right: 0px;
+	top:-80px;
+}
 
 #footer{
 	height: 50px;

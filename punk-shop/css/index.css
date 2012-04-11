@@ -58,13 +58,16 @@ body{
 #auth_button{
 	position: relative;
 	width: 80px;
+	height: 20px;
 	margin: 3px;
 	border: 1px solid #adb2b5;
 }
 #reg_button{
 	position: relative;
+	height: 20px;
 	width: 90px;
-	top: -25px;
+	top: -26px;
+	margin: 3px;
 	left: 115px;
 	border: 1px solid #adb2b5;
 }
@@ -106,16 +109,24 @@ input{
 	width: 250px;
 	float: right;
 	top: 40px;
-	border: 1px solid #adb2b5;
+	border-top: 1px solid #adb2b5;
+	border-left: 1px solid #adb2b5;
+	border-right: 1px solid #adb2b5;
 	background-color: white;
 }
 #categories a{
 	line-height: 30px;
 	font-size: 20px;
-	
+	text-decoration: none;
+	color: #d85e5e;
 }
 #categories li{
-	border: 1px solid #adb2b5;
+	padding: 0 0 0 10px;
+	background-color: white;
+	border-bottom: 1px solid #adb2b5;
+}
+#categories li:hover{
+	background-color: #e1e1e1;
 }
 
 

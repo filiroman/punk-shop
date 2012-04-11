@@ -47,13 +47,13 @@
 		
 		<div id="result">
 			<div class="advt">
-			<img src="/">
-			<p class="advt_name"><a href="">advt name</a></p>
-			<p class="advt_description">some describing text</p>
-			<p class="advt_description">some describing text</p>
-			<p class="advt_date">date</p>
-			<p class="advt_author"><a href="">author</a></p>
-		</div>
+				<img src="/">
+				<p class="advt_name"><a href="advt.php">advt name</a></p>
+				<p class="advt_description">some describing text</p>
+				<p class="advt_description">some describing text</p>
+				<p class="advt_date">date</p>
+				<p class="advt_author"><a href="user.php">author</a></p>
+			</div>
 
 			
 		</div>

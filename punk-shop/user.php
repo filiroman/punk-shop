@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/user.css"/>
 </head>
 
 <body>
@@ -34,32 +34,35 @@
 		</div>
 		
 		<div id="categories">
-			<ul>
-				<li><a href="">Бытовая техника</a></li>
-				<li><a href="">Электроника</a></li>
-				<li><a href="">Мебель</a></li>
-				<li><a href="">Книги</a></li>
-				<li><a href="">Услуги</a></li>
-				<li><a href="">Другое</a></li>
-				<li><a href="">Объявления</a></li>
-			</ul>
+		<ul>
+			<li><a href="">Бытовая техника</a></li>
+			<li><a href="">Электроника</a></li>
+			<li><a href="">Мебель</a></li>
+			<li><a href="">Книги</a></li>
+			<li><a href="">Услуги</a></li>
+			<li><a href="">Другое</a></li>
+			<li><a href="">Объявления</a></li>
+		</ul>
 		</div>
 		
-		<div id="result">
-			<div class="advt">
-				<img src="img/pic.png">
-				<p class="advt_name"><a href="advt.php">advt name</a></p>
-				<p class="advt_description">some describing text</p>
-				<p class="advt_description">some describing text</p>
-				<p class="advt_date">date</p>
-				<p class="advt_author"><a href="user.php">author</a></p>
-			</div>
+		<div id="user">
+			<img src="img/pic.png">
+			<p id="user_name">user name</p>
+			<p class="advt_description">some describing text</p>
+			<p class="advt_description">some describing text</p>
+			<p class="advt_date">date</p>
+			<p class="advt_author"><a href="user.php">author</a></p>
 		</div>
+
 
 	</div>
 	
 	<div id="footer">
+	
 	</div>
+
+
 </body>
+
 
 </html>

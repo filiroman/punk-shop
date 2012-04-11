@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/advt.css"/>
 </head>
 
 <body>
@@ -54,12 +54,19 @@
 				<p class="advt_date">date</p>
 				<p class="advt_author"><a href="user.php">author</a></p>
 			</div>
+			
 		</div>
+	
+
 
 	</div>
 	
 	<div id="footer">
+	
 	</div>
+
+
 </body>
+
 
 </html>

@@ -16,9 +16,6 @@ body{
 	border-bottom: 1px solid #adb2b5;
 }
 
-
-
-
 #logo{
 
 }
@@ -148,6 +145,12 @@ input{
 	left: 200px;
 	top: -150px;
 	font-size: 20px;
+}
+#user_contacts{
+	position: relative;
+	font-size: 20px;
+	top: -100px;
+	left: 200px;
 }
 
 #footer{

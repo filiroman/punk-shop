@@ -1,5 +1,6 @@
 html{
 	width: 100%;
+	height: 100%;
 }
 
 body{
@@ -10,18 +11,12 @@ body{
 }
 
 #header{
-
 	height: 100px;
 	background-color: white;
 	border-bottom: 1px solid #adb2b5;
 }
 
 
-#main{
-	height: 500px;
-	margin: 20px 0 0 0;
-	background-color:white;
-}
 
 
 #logo{
@@ -78,17 +73,15 @@ input{
 	border-radius:4px; 
 }
 
-#categories{
-	position: absolute;
-	height: 300px;
-	width: 250px;
-	left: 820px;	
-	border: 1px solid #adb2b5;
-	background-color: black;
+#main{
+	min-height: 100px;
+	margin: 20px 0 0 0;
+	background-color:white;
 }
 
 #search{
 	position: relative;
+	xtop: -30px;
 }
 #search_text{
 	height: 30px;
@@ -107,17 +100,35 @@ input{
 	background-color: #95d7e1;
 }
 
+#categories{
+	position: relative;
+	min-height: 300px;
+	width: 250px;
+	float: right;
+	top: 40px;
+	border: 1px solid #adb2b5;
+	background-color: white;
+}
+
+
 #result{
 	position: relative;
-	margin: 20px 0;
+	margin: 10px 0  0;
+	padding: 10px 0 0 0;
 	background-color: white;
 	min-height: 400px;
 	width: 530px;
 	border-right: 1px solid #adb2b5;
 }
+.advt{
+	height: 100px;
+	width: 90%;
+	margin: 20px 0;
+	border: 1px solid #adb2b5;
+}
+
 
 #footer{
-	position: relative;	
 	height: 50px;
 	background-color:white;
 	border-top: 1px solid #adb2b5;

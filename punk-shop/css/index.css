@@ -2,7 +2,6 @@ html{
 	width: 100%;
 	height: 100%;
 }
-
 body{
 	height: 100%;
 	width: 800px;
@@ -16,12 +15,6 @@ body{
 	border-bottom: 1px solid #adb2b5;
 }
 
-
-
-
-#logo{
-
-}
 #logo h1{
 	font-size: 30px;
 	position: relative;
@@ -40,7 +33,6 @@ body{
 	top: -90px;
 	left: 600px;
 }
-
 #email{
 	width: 120px;
 	font-size: 10px;
@@ -62,6 +54,9 @@ body{
 	margin: 3px;
 	border: 1px solid #adb2b5;
 }
+#auth_button:hover{
+	background-color: #95d7e1;
+}
 #reg_button{
 	position: relative;
 	height: 20px;
@@ -70,6 +65,9 @@ body{
 	margin: 3px;
 	left: 115px;
 	border: 1px solid #adb2b5;
+}
+#reg_button:hover{
+	background-color: #95d7e1;
 }
 	
 input{
@@ -84,7 +82,6 @@ input{
 
 #search{
 	position: relative;
-	xtop: -30px;
 }
 #search_text{
 	height: 30px;
@@ -129,7 +126,6 @@ input{
 	background-color: #e1e1e1;
 }
 
-
 #result{
 	position: relative;
 	margin: 10px 0  0;
@@ -139,34 +135,35 @@ input{
 	width: 530px;
 	border-right: 1px solid #adb2b5;
 }
-.advt{
+.msg{
 	height: 100px;
-	width: 90%;
+	width: 500px;
 	margin: 20px 0;
 	border: 1px solid #adb2b5;
 }
-.advt img{
+
+.msg_img{
 	width: 100px;
 	height: 80px;
 	margin: 10px
 }
-.advt_name{
+.msg_name{
 	position: relative;
 	top: -90px;
 	left: 120px;
 }
-.advt_description{
+.msg_description{
 	position: relative;
 	top: -80px;
 	left: 120px;
 }
-.advt_date{
+.msg_date{
 	position: relative;
 	float: right;
 	right: 80px;
 	top: -80px;
 }
-.advt_author{
+.msg_author{
 	position: relative;
 	float: right;
 	right: 0px;

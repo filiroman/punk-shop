@@ -48,10 +48,8 @@
 		<div id="user">
 			<img src="img/pic.png">
 			<p id="user_name">user name</p>
-			<p class="advt_description">some describing text</p>
-			<p class="advt_description">some describing text</p>
-			<p class="advt_date">date</p>
-			<p class="advt_author"><a href="user.php">author</a></p>
+			<p id="user_contacts">contacts</p>
+			<p id="user_description">some describing text</p>
 		</div>
 
 

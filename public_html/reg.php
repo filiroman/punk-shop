@@ -6,13 +6,9 @@
 </head>
 
 <body>
-	<div id="header">
-		<div id="logo">
-			<a href="index.php"><img id="logo_img" src="img/logo.png"/><a>
-			<h1>Punk shop</h1>
-		</div>
-	
-	</div>
+	<?php 
+	$auth=true;
+	include "/include/header.php" ?>
 
 	<div id="main">
 		<p>Регистрация</p>

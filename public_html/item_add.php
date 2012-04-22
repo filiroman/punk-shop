@@ -9,15 +9,15 @@
 <body>
 	<?php 
 	$auth=true;
-	include "/include/header.php" ?>
+	include "include/index_head.php" ?>
 	
 	<div id="main">
 	
-		<?php include "/include/search+categor.php" ?>
+		<?php include "include/search_categories.php" ?>
 		
 		<div id="good">
 			
-			<form method="post" action="postgood.php">
+			<form method="post" action="item_add_action.php">
 				<input name="title" type="text" placeholder="title"><input name="price" type="text" placeholder="price"><br>
 				<textarea id="description" name="description" type="text" placeholder="description"></textarea><br>
 				<input name="category" type="text" value="category">
@@ -28,7 +28,7 @@
 
 	</div>
 	
-	<?php include "/include/footer.php" ?>
+	<?php include "include/index_foot.php" ?>
 </body>
 
 </html>

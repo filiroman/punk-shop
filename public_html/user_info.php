@@ -9,11 +9,11 @@
 <body>
 	<?php 
 	$auth=false;
-	include "/include/header.php" ?>
+	include "include/index_head.php" ?>
 	
 	<div id="main">
 	
-		<?php include "/include/search+categor.php" ?>
+		<?php include "include/search_categories.php" ?>
 		
 		<div id="user">
 			<img src="img/pic.png">
@@ -25,7 +25,7 @@
 
 	</div>
 	
-	<?php include "/include/footer.php" ?>
+	<?php include "include/index_foot.php" ?>
 
 </body>
 

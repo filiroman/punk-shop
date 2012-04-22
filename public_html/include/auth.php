@@ -5,7 +5,7 @@
 				<input id="cookie" name="cookie" type="checkbox"><span id="checkbox_text">запомнить<span>
 				<input id="primary-btn" type="submit" value="Войти">
 			</form>
-			<form action="reg.php">
+			<form action="user_add.php">
 				<input id="signup-btn" type="submit" value="Регистрация">
 			</form>
 		</div>

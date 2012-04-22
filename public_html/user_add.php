@@ -8,11 +8,11 @@
 <body>
 	<?php 
 	$auth=true;
-	include "/include/header.php" ?>
+	include "include/index_head.php" ?>
 
 	<div id="main">
 		<p>Регистрация</p>
-		<form method="post" action="new_user.php">
+		<form method="post" action="user_add_action.php">
 			<input id="email" name="email" type="text" placeholder="Email"><br>
 			<input id="name" name="name" type="text" placeholder="Name"><br>
 			<input id="telephone" name="telephone" type="text" placeholder="Phone number"><br>
@@ -27,7 +27,7 @@
 	
 	</div>
 
-
+	<?php include "include/index_foot.php" ?>
 </body>
 
 

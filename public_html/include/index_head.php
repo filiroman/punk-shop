@@ -5,7 +5,7 @@
 		</div>
 		<?php 
 			if($auth!=true){
-				include "/include/auth.php";
+				include "auth.php";
 			}
 		?>
 	</div>

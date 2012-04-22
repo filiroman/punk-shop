@@ -1,4 +1,17 @@
-﻿<!DOCTYPE HTML>
+<?php
+
+/**
+ * @author NoName
+ *
+ * Основной исполняемый файл нашего проетка
+ *
+ */
+ini_set('display_errors', 1);
+//это инклуд
+require '../bootstrap.php';
+?>
+
+<!DOCTYPE HTML>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
@@ -6,92 +19,58 @@
 </head>
 
 <body>
-	<div id="header">
-		<div id="logo">
-			<a href="index.php"><img id="logo_img" src="img/logo.png"/><a>
-			<h1>Punk shop</h1>
-		</div>
-		<div id="authorisation">
-			<form method="post" action="login.php">
-				<input id="email" name="email" type="text" placeholder="Email">
-				<input id="password" name="password" type="password" placeholder="Пароль"><br>
-				<span id="checkbox_text"><span><input id="cookie" name="cookie" type="checkbox">
-				<input id="auth_button" type="submit" value="Войти">
-			</form>
-			<form action="reg.php">
-				<input id="reg_button" type="submit" value="Регистрация">
-			</form>
-		</div>
-	</div>
+	<?php
+	$auth=false;
+	include "include/index_head.php" ?>
 
 	<div id="main">
-	
-		<div id="search">
-			<form id="search" method="post" action="search.php">
-				<input id="search_text" name="search_text" type="text">
-				<input id="search_button" type="submit" value="Искать">
-			</form>
-		</div>
-		
-		<div id="categories">
-			<ul>
-				<li><a href="">Бытовая техника</a></li>
-				<li><a href="">Электроника</a></li>
-				<li><a href="">Мебель</a></li>
-				<li><a href="">Книги</a></li>
-				<li><a href="">Услуги</a></li>
-				<li><a href="">Другое</a></li>
-				<li><a href="">Объявления</a></li>
-			</ul>
-		</div>
-		
+
+		<?php include "include/search_categories.php" ?>
+
 		<div id="result">
 
-			<div class="msg">
-				<img class="msg_img" src="img/pic.png">
-				<p class="msg_name"><a href="advt.php">advt name</a></p>
-				<p class="msg_description">some describing text</p>
-				<p class="msg_date">date</p>
-				<p class="msg_author"><a href="user.php">author</a></p>
-			<div>
-			
-			<div class="msg">
-				<img class="msg_img" src="img/pic.png">
-				<p class="msg_name"><a href="advt.php">advt name</a></p>
-				<p class="msg_description">some describing text</p>
-				<p class="msg_date">date</p>
-				<p class="msg_author"><a href="user.php">author</a></p>
-			<div>
-			
-			<div class="msg">
-				<img class="msg_img" src="img/pic.png">
-				<p class="msg_name"><a href="advt.php">advt name</a></p>
-				<p class="msg_description">some describing text</p>
-				<p class="msg_date">date</p>
-				<p class="msg_author"><a href="user.php">author</a></p>
-			<div>
-			
-			<div class="msg">
-				<img class="msg_img" src="img/pic.png">
-				<p class="msg_name"><a href="advt.php">advt name</a></p>
-				<p class="msg_description">some describing text</p>
-				<p class="msg_date">date</p>
-				<p class="msg_author"><a href="user.php">author</a></p>
-			<div>
-			
-			<div class="msg">
-				<img class="msg_img" src="img/pic.png">
-				<p class="msg_name"><a href="advt.php">advt name</a></p>
-				<p class="msg_description">some describing text</p>
-				<p class="msg_date">date</p>
-				<p class="msg_author"><a href="user.php">author</a></p>
-			<div>
+			<div class="item">
+				<img class="item_img" src="img/pic1.jpg">
+				<p class="item_name"><a href="item_info.php">Новый диван</a></p></br>
+				<p class="item_date">20.03.2012</p>
+				<p class="item_author"><a href="user_info.php">Ольга</a></p></br>
+				<p class="item_price">цена: <span style="font-size:15px;font-weight:bold">5000</span>р</p>
+				<p class="item_description">Новый раскладной диван. В отличном состоянии. Самовывоз</p></br>
+			</div>
+
+			<div class="item">
+				<img class="item_img" src="img/pic2.jpg">
+				<p class="item_name"><a href="item_info.php">монитор Acer V193HQVBb</a></p></br>
+				<p class="item_date">15.03.2012</p>
+				<p class="item_author"><a href="user_info.php">Дмитрий</a></p></br>
+				<p class="item_price">цена: <span style="font-size:15px;font-weight:bold">3600</span>р</p>
+				<p class="item_description">монитор Acer V193HQVBb, 1366x768, 10000:1, 200cd/m^2, 5ms, черный</p></br>
+			</div>
+
+			<div class="item">
+				<img class="item_img" src="img/pic3.jpg">
+				<p class="item_name"><a href="item_info.php">Холодильник</a></p></br>
+				<p class="item_date">14.03.2012</p>
+				<p class="item_author"><a href="user_info.php">Василий</a></p></br>
+				<p class="item_price">цена: <span style="font-size:15px;font-weight:bold">2100</span>р</p>
+				<p class="item_description">Холодильник Бирюза в отличном состоянии. Морозилка рабочая</p></br>
+			</div>
+
+			<div class="item">
+				<img class="item_img" src="img/pic4.jpg">
+				<p class="item_name"><a href="item_info.php">Ночь веcелого студента</a></p></br>
+				<p class="item_date">10.03.2012</p>
+				<p class="item_author"><a href="user_info.php">Blackout</a></p></br>
+				<p class="item_price">цена: <span style="font-size:15px;font-weight:bold">100</span>р</p>
+				<p class="item_description">Ночь Веселого Студента 30 марта в Blackout!
+Вас ждет: фри-бар девушкам до часу + умопомрачительный коктейль для всех, выступление DJ KEFIR, DJ COOL, эксклюзивное видео с вечеринки, конкурсы и многое другое!</p></br>
+			</div>
+
 		</div>
 
 	</div>
-	
-	<div id="footer">
-	</div>
+
+	<?php include "include/index_foot.php" ?>
 </body>
 
 </html>

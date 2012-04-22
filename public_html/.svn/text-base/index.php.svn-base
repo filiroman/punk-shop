@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @author Малинин Константин
+ *
+ * Основной исполняемый файл нашего проетка
+ *
+ */
+ini_set('display_errors', 1);
+//это инклуд
+require '../bootstrap.php';
+
+/*
+$b = Factory_Users::getInstance();//->findByID(1);
+$b->Save($a);
+*/
+$c = new Model_Residents(
+        array(
+        'id' => 1,
+        'login' => 'kola',
+        'passport' => '333',
+        'lastName' => 'ssss',
+        'payment' => '100',
+
+        )
+   );
+//var_dump($c->GetFieldsResidentsForDB());
+//echo "<br>";
+//var_dump($c->GetFieldsUsersForDB());
+//
+$a =new Model_Users(
+        array(
+        'id' => 1,
+        'login' => 'kolaZERO',
+        'password' => '333',
+        'firstName'=>'vasilii' ,
+        'gender'=>'male',
+        'userType'=> 'user',   
+        'lastName' => 'petrash'));
+$fa=Factory_Users::getInstance();
+$fa->Save($a);
+var_dump($fa->findByID(1));
+var_dump($fa->findByLogin("kolaZERO"));
+//var_dump($fa->findByLogin("dfe"));
+//$test = new Model_Users();
+//var_dump($test);
+
+//$a2 =new Model_Users(
+//        array(
+//        'id' => 2,
+//        'login' => 'asddf',
+//        'pass' => '333',
+//        'firstName'=>'Picachu' ,
+//        'lastName' => 'sdasd'));
+//$fa->Save($a2);

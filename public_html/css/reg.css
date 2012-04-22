@@ -4,7 +4,7 @@ html{
 }
 
 body{
-	height: 100%;
+	xheight: 100%;
 	width: 800px;
 	margin: 0 auto;
 	background-color: white;
@@ -33,6 +33,7 @@ body{
 
 input{
 	border-radius:4px; 
+	font-size: 14px !important;
 	border: 1px solid #adb2b5;
 }
 
@@ -80,9 +81,3 @@ input{
 	background-color: #95d7e1;
 }
 
-
-#footer{
-	height: 50px;
-	background-color:white;
-	border-top: 1px solid #adb2b5;
-}

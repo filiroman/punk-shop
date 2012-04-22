@@ -1,6 +1,16 @@
 ﻿<div id="search">
 	<form id="search" method="post" action="search.php">
 		<input id="search_text" name="search_text" type="text">
+		<select id="search_category" name="category" size="1">
+			<option selected="selected" value="default">Во всех категориях</option>
+			<option value="">Электроника</option>
+			<option value="">Мебель</option>
+			<option value="">Книги</option>
+			<option value="">Бытовая техника</option>
+			<option value="">Услуги</option>
+			<option value="">Другое</option>
+			<option value="">Объявления</option>
+		</select>
 		<input id="search_button" type="submit" value="Искать">
 	</form>
 </div>

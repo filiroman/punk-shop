@@ -1,13 +1,17 @@
 html{
-	width: 100%;
-	height: 100%;
+	xwidth: 100%;
+	xheight: 100%;
+	background-color: #dedede;
 }
 body{
-	height: 100%;
+	min-height: 400px;
 	width: 800px;
 	margin: 0 auto;
 	background-color: white;
 	font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+	padding: 20px;
+	border-left: 1px solid #c5c5c5;
+	border-right: 1px solid #c5c5c5;
 }
 
 #header{
@@ -77,6 +81,9 @@ body{
 input{
 	border-radius:4px; 
 }
+select{
+	border-radius:4px;
+}
 
 #main{
 	xmin-height: 100px;
@@ -89,21 +96,39 @@ input{
 }
 #search_text{
 	height: 30px;
-	width: 400px;
+	width: 250px;
 	font-size: 15px;
 	padding: 3px 5px;
 	border: 1px solid #adb2b5;
 }
+#search_category{
+	position: relative;
+	top: -1px;
+	height: 38px;
+	border: 1px solid #adb2b5;
+}
+
 #search_button{
+	position: relative;
+	top: -1px;
 	height: 38px;
 	width: 100px;
+
 	background-color: #e0edef;
 	border: 1px solid #adb2b5;
 }
 #search_button:hover{
 	background-color: #95d7e1;
 }
-
+@-moz-document url-prefix() {
+	#search_category{top:-10px;}
+	#search_button{top:0px;}
+	
+}
+@media not screen and (1){
+	#search_category{top: 9px;}
+	#search_button{top:0px;}
+}
 #categories{
 	position: relative;
 	min-height: 50px;
@@ -130,6 +155,8 @@ input{
 	background-color: #e1e1e1;
 }
 
+
+
 #result{
 	position: relative;
 	margin: 30px 0  0;
@@ -142,8 +169,7 @@ input{
 }
 .item{
 	position: relative;
-	xmin-height: 140px;
-	
+	min-height: 100px;	
 	height: 240px;
 	width: 510px;
 	margin: 15px 0;
@@ -205,18 +231,30 @@ input{
 .item a:hover{
 	color: #ac3540;
 }
-
-/*
-{
-	height: 400px;
-	width: 90%;
-	margin: 20px 0;
-	xborder: 1px solid #adb2b5;
+.pages{
+	margin: 10px 0 0 200px;
 }
-*/
+.pages a{
+	text-decoration: none;
+	margin: 0 2px;
+	color: #d0424f;
+}
+.pages a:hover{
+	color:#ac3540;
+}
+.pages p{
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0 5px 0 0;
+}
 
 #footer{
-	height: 50px;
+	height: 20px;
 	background-color:white;
 	border-top: 1px solid #adb2b5;
+	font-size: 10px;
+	color: grey;
+	text-align: center;
+	line-height: 14px;
 }

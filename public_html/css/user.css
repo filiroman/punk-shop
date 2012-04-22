@@ -1,26 +1,48 @@
 
 #user{
 	position: relative;
-	margin: 10px 0  0;
-	padding: 10px 0 0 0;
+	margin: 40px 0  0;
 	background-color: white;
-	min-height: 400px;
+	min-height: 300px;
 	width: 530px;
 	border-right: 1px solid #adb2b5;
+	border: 1px solid #adb2b5;
 }
 #user img{
-	width: 150px;
-	height: 150px;
+	float: left;
+	margin: 10px;
+	max-width: 150px;
+	max-height: 200px;
+	
 }
 #user_name{
-	position: relative;
-	left: 200px;
-	top: -150px;
-	font-size: 20px;
+	margin: 10px 0 10px 0;
+	font-size: 24px;
 }
-#user_contacts{
+#contact{
+	margin: 20px 0 10px 0;
+	font-weight: bold;
+}
+.user_contact{
+	
 	position: relative;
-	font-size: 20px;
-	top: -100px;
-	left: 200px;
+	font-size: 15px;
+
+}
+#info{
+	font-weight: bold;
+	clear: both;
+	margin: 10px;
+}
+.user_description{
+	
+	margin: 10px;
+	font-size: 15px;
+}
+.good_name{
+	margin: 10px;
+}
+a{
+	text-decoration: none;
+	color: #d0424f;
 }

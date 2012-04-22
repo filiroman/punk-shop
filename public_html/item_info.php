@@ -17,8 +17,8 @@
 		
 		<div id="item">
 			
-			<p id="item_name"><a href="item.php">Холодильник</a></p> 			
-			<span style="float:left;margin:0 5px 0 10px;">разместил</span><p id="item_author"><a href="user.php">Василий</a></p><p id="item_date">14.03.2012</p></br>
+			<p id="item_name"><a href="item_info.php">Холодильник</a></p> 			
+			<span style="float:left;margin:0 5px 0 10px;">разместил</span><p id="item_author"><a href="user_info.php">Василий</a></p><p id="item_date">14.03.2012</p></br>
 			<img id="item_img" src="img/pic3.jpg">
 			<img id="item_img_mini" src="img/pic3.jpg">
 			<img id="item_img_mini" src="img/pic3_2.jpg">

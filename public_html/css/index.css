@@ -34,18 +34,20 @@ body{
 }
 
 #authorisation{
-	width: 215px;
+	width: 210px;
 	position: relative;
 	top: -120px;
 	left: 600px;
 }
 #email{
+	float: left;
 	height: 15px;
 	width: 120px;
 	font-size: 10px;
 	border: 1px solid #adb2b5;
 }
 #password{
+	float: right;
 	height: 15px;
 	width: 80px;
 	font-size: 10px;
@@ -57,7 +59,7 @@ body{
 }
 #primary-btn{
 	position: relative;
-	left: 25px;
+	float: right;
 	width: 100px;
 	height: 20px;
 	margin: 5px 0 0 0;
@@ -68,10 +70,10 @@ body{
 }
 #signup-btn{
 	position: relative;
+	float: right;
 	height: 20px;
 	width: 140px;
 	margin: 5px 0 0 0;
-	left: 65px;
 	border: 1px solid #adb2b5;
 }
 #signup-btn:hover{
@@ -123,7 +125,6 @@ select{
 @-moz-document url-prefix() {
 	#search_category{top:-10px;}
 	#search_button{top:0px;}
-	
 }
 @media not screen and (1){
 	#search_category{top: 9px;}

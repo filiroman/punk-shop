@@ -15,23 +15,19 @@
 	
 		<?php include "include/search_categories.php" ?>
 		
-		<div id="msg">
-			<img id="msg_img" src="img/pic.png">
-			<p id="msg_name"><a href="item.php">Холодильник</a></p>
-			<p id="msg_author"><a href="user.php">author</a></p>
-			<p id="msg_contact">contacts</p>
-			<p id="msg_date">date</p>
+		<div id="item">
 			
-			<p id="msg_description">some describing text some describing text g text some describing tex
-			some describing text some describing text some describing text 				
-			some describing text some describing text some describing text 
-			some describing text some describing text some describing text 
-			some describing text some describing text some describing text 
-			some describing text some describing some describing text some describing text some describing text 				
-			some describing text some describing text some describing text 
-			some describing text some describing text some describing text 
-			some describing text some describing text some describing text 
-			some describing text some describing text some describing text </p>
+			<p id="item_name"><a href="item.php">Холодильник</a></p> 			
+			<span style="float:left;margin:0 5px 0 10px;">разместил</span><p id="item_author"><a href="user.php">Василий</a></p><p id="item_date">14.03.2012</p></br>
+			<img id="item_img" src="img/pic3.jpg">
+			<img id="item_img_mini" src="img/pic3.jpg">
+			<img id="item_img_mini" src="img/pic3_2.jpg">
+			<img id="item_img_mini" src="img/pic3_3.jpg">
+			<img id="item_img_mini" src="img/pic3_4.jpg">
+			<p id="item_description">Холодильник Бирюза в отличном состоянии. Рабочая морозилка. Самовывоз. 15ка</p>
+			<p id="item_price">цена: <span style="font-size:15px;font-weight:bold">2100</span>р</p>
+			<p id="item_contact">8-911-1234567</p>
+			<p id="item_contact">email@mail.ru</p>
 			
 		</div>
 

@@ -16,10 +16,19 @@
 		<?php include "include/search_categories.php" ?>
 		
 		<div id="user">
-			<img src="img/pic.png">
-			<p id="user_name">user name</p>
-			<p id="user_contacts">contacts</p>
-			<p id="user_description">some describing text</p>
+			<img src="img/ava.jpg">
+			<p id="user_name">Василий</p>
+			
+			<p id="contact">Контакты:</p>
+			<p class="user_contact">8-911-1234567</p>
+			<p class="user_contact">email@mail.ru</p>
+			
+			<p id="info">Информация:</p>			
+			<p class="user_description">Живу в 15ке.</p>
+			
+			<p style="margin:10px;font-weight:bold;">Текущие продажи:</p>
+			<p class="good_name"><a href="item_info.php">Холодильник</a></p> 			
+				
 		</div>
 
 

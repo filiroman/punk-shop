@@ -54,6 +54,10 @@
 			</div>
 			
 		</div>
+		
+		<div class="pages">
+			<p>Cтраницы: </p><a href="">1</><a href="">2</><a href="">3</><a href="">...</><a href="">20</a>
+		</div>
 
 	</div>
 	

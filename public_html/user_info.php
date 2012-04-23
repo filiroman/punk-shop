@@ -3,12 +3,12 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
-	<link rel="stylesheet" type="text/css" href="css/user.css"/>
+	<link rel="stylesheet" type="text/css" href="css/user_info.css"/>
 </head>
 
 <body>
 	<?php 
-	$auth=false;
+	$auth=true;
 	include "include/index_head.php" ?>
 	
 	<div id="main">
@@ -25,10 +25,11 @@
 			
 			<p id="info">Информация:</p>			
 			<p class="user_description">Живу в 15ке.</p>
-			
+			<a class="hrefs" href="user_edit_info.php">Редактирвоать данные</a></br>
 			<p style="margin:10px;font-weight:bold;">Текущие продажи:</p>
 			<p class="good_name"><a href="item_info.php">Холодильник</a></p> 			
-				
+			
+			
 		</div>
 
 

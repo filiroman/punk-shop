@@ -6,6 +6,8 @@
 		<?php 
 			if($auth!=true){
 				include "auth.php";
+			} else {
+				include "user_bar.php";
 			}
 		?>
 	</div>

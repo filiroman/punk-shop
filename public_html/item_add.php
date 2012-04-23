@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
-	<link rel="stylesheet" type="text/css" href="css/newgood.css"/>
+	<link rel="stylesheet" type="text/css" href="css/item_add.css"/>
 </head>
 
 <body>
@@ -17,10 +17,22 @@
 		
 		<div id="good">
 			
-			<form method="post" action="item_add_action.php">
-				<input name="title" type="text" placeholder="title"><input name="price" type="text" placeholder="price"><br>
-				<textarea id="description" name="description" type="text" placeholder="description"></textarea><br>
-				<input name="category" type="text" value="category">
+			<form id="new_item" method="post" action="item_add_action.php">
+				Название<input name="title" type="text"></br>
+				Описание</br><textarea id="description" name="description" type="text" ></textarea><br>
+				
+				Цена<input id="price" name="price" type="text">
+				<select id="category" name="category" size="1">
+					<option selected="selected" value="default">Категория</option>
+					<option value="">Электроника</option>
+					<option value="">Мебель</option>
+					<option value="">Книги</option>
+					<option value="">Бытовая техника</option>
+					<option value="">Услуги</option>
+					<option value="">Другое</option>
+					<option value="">Объявления</option>
+				</select></br>
+				Изображение<input style="width:250px;" type="file"></input></br>
 				<input id="btn" type="submit">
 			</form>
 		</div>

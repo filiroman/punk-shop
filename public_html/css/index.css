@@ -1,7 +1,6 @@
 html{
-	xwidth: 100%;
-	xheight: 100%;
 	background-color: #dedede;
+	xbackground-color:#fc0;
 }
 body{
 	min-height: 400px;
@@ -9,17 +8,25 @@ body{
 	margin: 0 auto;
 	background-color: white;
 	font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
-	padding: 20px;
+	padding:0;
+	
 	border-left: 1px solid #c5c5c5;
 	border-right: 1px solid #c5c5c5;
+    -moz-box-shadow: 0 10px 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 10px 0 10px rgba(0,0,0,0.5); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
 
 #header{
 	height: 120px;
-	background-color: white;
+	margin: -18px 0 0 0;
+	xbackground-color: grey;
 	border-bottom: 1px solid #adb2b5;
 }
-
+#logo{
+	margin:0;
+	padding:0;
+}
 #logo h1{
 	font-size: 30px;
 	position: relative;
@@ -34,10 +41,26 @@ body{
 }
 
 #authorisation{
+	margin:0;
+	padding: 0;
+	width: 210px;
+	position: relative;
+	top: -120px;
+	left: 580px;
+}
+#user_bar{
 	width: 210px;
 	position: relative;
 	top: -120px;
 	left: 600px;
+	
+}
+#user_bar span{
+	color: black;
+}
+#user_bar a{
+	color: black;
+	text-decoration: none;
 }
 #email{
 	float: left;
@@ -90,6 +113,7 @@ select{
 #main{
 	xmin-height: 100px;
 	margin: 20px 0 0 0;
+	padding: 0 0 0 10px;
 	background-color:white;
 }
 
@@ -131,9 +155,10 @@ select{
 	#search_button{top:0px;}
 }
 #categories{
-	position: relative;
+	xposition: relative;
 	min-height: 50px;
-	width: 250px;
+	margin: 0 20px 0 0;
+	width: 220px;
 	float: right;
 	top: 40px;
 	border-top: 1px solid #adb2b5;
@@ -160,7 +185,7 @@ select{
 
 #result{
 	position: relative;
-	margin: 30px 0  0;
+	margin: 10px 0  0;
 	padding: 10px 0 0 0;
 	background-color: white;
 	min-height: 250px;

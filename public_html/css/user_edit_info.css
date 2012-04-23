@@ -1,0 +1,18 @@
+#user {
+	min-height: 300px;
+	width: 520px;
+	margin: 20px 0 0 0;
+	border: 1px solid #adb2b5;
+	padding: 10px;
+}
+
+#user input {
+	border: 1px solid #adb2b5;
+}
+#user img{
+	width: 150px;
+	height: 200px;
+	float: left;
+	border: 1px solid #adb2b5;
+	margin: 0 10px 0 0;
+}

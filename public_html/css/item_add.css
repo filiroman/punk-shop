@@ -1,8 +1,13 @@
+#categories{
+	top: 40px !important;
+}
+
 #good {
-	width: 530px;
+	width: 500px;
 	min-height: 300px;
 	margin: 40px 0 0 0;
-	border-right: 1px solid #adb2b5;
+	border: 1px solid #adb2b5;
+	padding: 10px;
  }
  
 #new_item input{
@@ -20,7 +25,7 @@ select{
 #description{
 	height:100px;
 	max-height: 250px;
-	width: 500px;
+	width:470px;
 	margin: 0 0 10px 10px;
 	resize: vertical;
 }

@@ -9,7 +9,7 @@
 	<?php
 	$auth=false;
 	include "include/index_head.php" ?>
-	
+
 	<div id="main">
 	
 		<?php include "include/search_categories.php" ?>
@@ -17,7 +17,7 @@
 		<div id="result">
 
 			<div class="item">
-				<img class="item_img" src="img/pic1.jpg">
+				<a href="item_info.php"><img class="item_img" src="img/pic1.jpg"></a>
 				<p class="item_name"><a href="item_info.php">Новый диван</a></p></br>
 				<p class="item_date">20.03.2012</p>
 				<p class="item_author"><a href="user_info.php">Ольга</a></p></br>
@@ -26,7 +26,7 @@
 			</div>
 			
 			<div class="item">
-				<img class="item_img" src="img/pic2.jpg">
+				<a href="item_info.php"><img class="item_img" src="img/pic2.jpg"></a>
 				<p class="item_name"><a href="item_info.php">монитор Acer V193HQVBb</a></p></br>
 				<p class="item_date">15.03.2012</p>
 				<p class="item_author"><a href="user_info.php">Дмитрий</a></p></br>
@@ -35,7 +35,7 @@
 			</div>
 
 			<div class="item">
-				<img class="item_img" src="img/pic3.jpg">
+				<a href="item_info.php"><img class="item_img" src="img/pic3.jpg"></a>
 				<p class="item_name"><a href="item_info.php">Холодильник</a></p></br>
 				<p class="item_date">14.03.2012</p>
 				<p class="item_author"><a href="user_info.php">Василий</a></p></br>
@@ -44,7 +44,7 @@
 			</div>
 			
 			<div class="item">
-				<img class="item_img" src="img/pic4.jpg">
+				<a href="item_info.php"><img class="item_img" src="img/pic4.jpg"></a>
 				<p class="item_name"><a href="item_info.php">Ночь веcелого студента</a></p></br>
 				<p class="item_date">10.03.2012</p>
 				<p class="item_author"><a href="user_info.php">Blackout</a></p></br>

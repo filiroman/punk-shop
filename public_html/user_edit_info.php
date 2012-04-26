@@ -20,7 +20,7 @@
 			Имя <input value="Василий"></br>
 			Email email@mail.ru</br> 
 			Пароль <input></br> Подтвердите пароль<input> </br>
-			Изображение <input type="file" value="img.."></input></br>
+			Изображение <input style="border:none"type="file"></input></br>
 			Контактный email <input value="email@mail.ru"> </br>
 			Телефон <input value="8-911-1234567"></br>
 			Информация <textarea>Живу в 15ке</textarea></br>

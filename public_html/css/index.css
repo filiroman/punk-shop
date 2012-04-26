@@ -102,6 +102,19 @@ body{
 #signup-btn:hover{
 	background-color: #95d7e1;
 }
+
+.btn{
+	height: 20px;
+	margin: 3px;
+	border: 1px solid #adb2b5;
+	border-radius:4px; 
+}
+.btn:hover{
+	background-color: #95d7e1;
+}
+.btn a{
+	margin: 0 2px;
+}
 	
 input{
 	border-radius:4px; 
@@ -155,12 +168,12 @@ select{
 	#search_button{top:0px;}
 }
 #categories{
-	xposition: relative;
+	position: relative;
 	min-height: 50px;
 	margin: 0 20px 0 0;
 	width: 220px;
 	float: right;
-	top: 40px;
+	top: 10px;
 	border-top: 1px solid #adb2b5;
 	border-left: 1px solid #adb2b5;
 	border-right: 1px solid #adb2b5;

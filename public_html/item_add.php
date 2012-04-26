@@ -32,7 +32,7 @@
 					<option value="">Другое</option>
 					<option value="">Объявления</option>
 				</select></br>
-				Изображение<input style="width:250px;" type="file"></input></br>
+				Изображение<input style="width:250px;border:none" type="file"></input></br>
 				<input id="btn" type="submit">
 			</form>
 		</div>

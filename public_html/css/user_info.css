@@ -1,4 +1,6 @@
-
+#categories{
+	top: 40px !important;
+}
 #user{
 	position: relative;
 	margin: 40px 0  0;

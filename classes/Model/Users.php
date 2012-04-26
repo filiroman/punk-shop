@@ -22,9 +22,36 @@ class Model_Users extends Model {
      * Конструктор класса принимает данные для инициализации объектов
      */
     public function __construct(array $args = array()) {
+        $args['pass']=hash('md5',$args['pass']);
         $this->Init($args, self::$grants);
     }
+    /**
+     *Изменение id. Внимание! Неправильное использование может привести к краху...
+     * Преполагается что $newID принимает допустимые значения и !=0
+     * @param type $newID
+     */
 
+    public function ChangeID($newID) {
+           $this->data['id'] = $newID;
+    }
+
+    /**
+     *  Проверка введенного пароля с паролем в экземпляре объекта
+     * @param type $password
+     * @return boolean
+     */
+    public function CheckPassword($password) {
+    //    $passwordDB=$this->db->getResult('SELECT password from Users WHERE login ='."'$login'", "password");
+        $passwordDB=$this->data['password'];
+        $passwordHash= hash('md5', $password); // функция преобразоавания нашего пароля в хеш
+        if($passwordHash==$passwordDB){
+            return TRUE;
+        }
+        else
+        {
+            return FALSE;
+        }
+    }
      /**
      * Получить все данные одним массивом
      * пробегается по grants, находит нужные поля и достает значения по $data

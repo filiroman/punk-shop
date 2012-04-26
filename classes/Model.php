@@ -22,7 +22,7 @@ class Model {
      * @param array $grants масссив прав из дочернего класса, с которым будем сравнивать
      */
     public function Init(array $args = array(), array $grants) {
-        
+
         foreach($grants as $key =>$value){
             if (array_key_exists($key, $args)){
                 $this->data[$key] = $args[$key];
@@ -64,13 +64,16 @@ class Model {
      * @param type $value значение свойства
      */
     public function __set($name, $value) {
-        if($this::$grants[$name]['set']==true){
-            if(array_key_exists($name, $this->data)){
-                $this->data[$name]=$value;
+        if(array_key_exists($name, $this::$grants)){
+            if($this::$grants[$name]['set']==true){
+                if(array_key_exists($name, $this->data)){
+                    $this->data[$name]=$value;
+                }
+                else throw new Exception("Невозможно записать значение");
             }
-            else throw new Exception("Невозможно записать значение");
+            else throw new Exception("Нет прав на запись");
         }
-        else throw new Exception("Нет прав на запись");
+        else throw new Exception("Отсутсвует заданный элемент");
     }
 
     /**

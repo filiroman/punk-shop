@@ -33,15 +33,16 @@ class Factory_Users extends Factory {
      *
      * @param Model_Users $user экземпляр нашего пользователя
      */
-    public function Save(Model_Users $user){
+        public function Save(Model_Users $user){
         $res = $user->GetFieldsUsersForDB();//получаем массив данных для $user
+        if($res['id']===null){
+          if($this->findByLogin($res['login'])!==null)
+              throw new Exception('this login already exist');
+          else {
 
-        $temp=$this->db->getResult("select id from Users where id =".$res['id'],"id"); //переменная для проверки существует ли юзер или нет(по ID)
-        if($temp==null){
-            echo 'dont find <br>';
+            echo 'Creating new user '.$res['login'];
             $key_array="";
             $value_array="";
-
             foreach ($res as $key => $value) {
                 $key_array.="$key".",";
                 if($value==null){
@@ -51,14 +52,30 @@ class Factory_Users extends Factory {
                 $value_array.="'$value'".",";
             }
 
-        $value_array=  trim($value_array, ",");
-        $key_array=  trim($key_array, ",");
-        //вставляем нашего юзера в таблицу
-        $this->db->Query("INSERT into `Users` ($key_array) VALUES($value_array)");
+            $value_array=  trim($value_array, ",");
+            $key_array=  trim($key_array, ",");
+
+            //вставляем нашего юзера в таблицу
+            
+            $this->db->Query("INSERT into `Users` ($key_array) VALUES($value_array)");
+            //не забываем присвоить объекту отсутсвующий id
+            //извлекаем из бд и записываем в объект
+            //
+            //$newID=$this->db->getResult("select id from Users where login =".$res['login'],"id");
+            $newID=mysql_insert_id();
+            echo "<br> newID=$newID";
+            if($newID==0){
+                throw new Exception("autoincriment error: mysql_insert_id()==0");
+            }
+            else{
+                $user->ChangeID($newID);
+            }
+            echo 'Succes! Add new user<br>';
+          }
         }
         else{
-            echo 'find <br>';
-
+            echo '<br>Changing user'.$res['login'];
+            
         $update_array="";
         foreach ($res as $key => $value) {
             if($value==null){
@@ -68,11 +85,12 @@ class Factory_Users extends Factory {
             else
             $update_array.="$key"."="."'$value'".",";
         }
-        $update_array=  trim($update_array, ",");
-        echo "<br>".$update_array;
+        $update_array=  trim($update_array, ","); 
+        echo "<br>";
         //обновляем нашего юзера в таблице
-           $this->db->Query("update `Users` set $update_array where `id`=".$res['id']);
-     }
+           $this->db->Query("update `Users` set $update_array where `id`=".$res['id']);  
+           echo "Update has been successfully";
+        }
     }
 
     /**
@@ -122,7 +140,7 @@ class Factory_Users extends Factory {
             return $user; //или как то так
         }
         else {
-            throw new ExceptionFind("Не удалось найти");
+            return null;
         }
     }
 

@@ -23,9 +23,9 @@
 			Изображение <input style="border:none"type="file"></input></br>
 			Контактный email <input value="email@mail.ru"> </br>
 			Телефон <input value="8-911-1234567"></br>
-			Информация <textarea>Живу в 15ке</textarea></br>
+			Информация </br><textarea style="width:350px;height:100px;resize:none;margin:5px 0 0 0;">Живу в 15ке</textarea></br>
 			
-			<button>сохранить</button>
+			<button style="float:right;">сохранить</button>
 			
 			
 		</div>

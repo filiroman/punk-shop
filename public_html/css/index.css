@@ -28,7 +28,8 @@ body{
 	padding:0;
 }
 #logo h1{
-	font-size: 30px;
+	color:grey;
+	font-size: 25px;
 	position: relative;
 	width: 300px;
 	top: -70px;
@@ -45,13 +46,13 @@ body{
 	padding: 0;
 	width: 210px;
 	position: relative;
-	top: -120px;
+	top: -140px;
 	left: 580px;
 }
 #user_bar{
 	width: 210px;
 	position: relative;
-	top: -120px;
+	top: -140px;
 	left: 600px;
 	
 }

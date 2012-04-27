@@ -45,8 +45,8 @@ class DB{
             //$this->link = mysql_connect(DB_HOST.':'.DB_PORT, PRIVATE_LOGIN, PRIVATE_PASS) or exit("Could not connect");
             $this->link = new mysqli(DB_HOST, PRIVATE_LOGIN, PRIVATE_PASS, DB_USING, DB_PORT);
             $this->link->set_charset(SITE_ENC);
-            if ($this->link->mysqli_connect_errno()) {
-					throw new Exception($this->link->mysqli_connect_errno());
+            if ($this->link->connect_errno) {
+					throw new Exception($this->link->connect_error);
 				}
     }	// Защищаем от создания через new Singleton
     /**
@@ -80,7 +80,7 @@ class DB{
      *
      */
     function Query($query){
-            $this->dataset = mysqli_query($query) or die("Internal Error: ".$this->link->errno);
+            $this->dataset = $this->link->query($query) or die("Internal Error: ".$this->link->error);
             // отправляем запрос в базу и сохраняем результат, иначе вызываем ошибку.
             return $this->dataset; 		//возвращаем результат
     }
@@ -92,7 +92,7 @@ class DB{
      *
      */
     function Next(){
-            if($this->record = mysqli_fetch_assoc($this->dataset)){
+            if($this->record = mysqli_fetch_array($this->dataset)){
                     return TRUE;
             }
             else{
@@ -117,7 +117,7 @@ class DB{
      *
      */
     function getResult($query,$vall){
-            $this->dataset = mysqli_query($query) or die("Internal Error: ".$this->link->errno);
+            $this->dataset = $this->link->query($query) or die("Internal Error: ".$this->link->errno);
             // посылаем запрос в базу
             $this->Next();// переходим на первую запись
             $ret = $this->Vall($vall);//забираем нужную нам величину

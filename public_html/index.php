@@ -1,4 +1,8 @@
 ﻿<!DOCTYPE HTML>
+<?php
+	ini_set('display_errors', 1);
+	require '../bootstrap.php';
+?>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
@@ -8,6 +12,12 @@
 <body>
 	<?php
 	$auth=false;
+
+	/*$db = DB::getInstance();
+	$db->Query("SHOW TABLES FROM `punk_shop`");
+	$db->Next();
+	echo $db->record[0];*/
+	
 	include "include/index_head.php" ?>
 
 	<div id="main">

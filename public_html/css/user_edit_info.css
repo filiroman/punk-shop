@@ -1,9 +1,9 @@
 #categories{
-	top: 20px !important;
+	top: -15px !important;
 }
 
 #user {
-	min-height: 300px;
+	min-height: 360px;
 	width: 520px;
 	margin: 20px 0 0 0;
 	border: 1px solid #adb2b5;
@@ -13,10 +13,23 @@
 #user input {
 	border: 1px solid #adb2b5;
 }
-#user img{
+
+#img{
 	width: 150px;
 	height: 200px;
-	float: left;
 	border: 1px solid #adb2b5;
+	float: left;
 	margin: 0 10px 0 0;
+}
+#user img{	
+	max-width: 150px;
+	max-height: 200px;
+	
+}
+textarea{
+	width:515px;
+	height:100px;
+	resize:none;
+	margin:5px 0 0 0;
+	
 }

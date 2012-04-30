@@ -11,7 +11,7 @@ body{
 }
 
 #header{
-	height: 100px;
+	xheight: 100px;
 	background-color: white;
 	border-bottom: 1px solid #adb2b5;
 }
@@ -20,7 +20,7 @@ body{
 
 }
 #logo h1{
-	font-size: 30px;
+	xfont-size: 30px;
 	position: relative;
 	top: -70px;
 	left: 150px;
@@ -30,18 +30,27 @@ body{
 	width: 100px;
 	margin: 15px 20px;
 }
-
+#main span{
+	position: relative;
+	top: 5px;
+	float: left;
+	line-height: 38px;
+}
 input{
 	border-radius:4px; 
-	xfont-size: 14px !important;
 	border: 1px solid #adb2b5;
+}
+#main input{
+	float: right;
+	
 }
 
 #main{
 	padding: 100px 0 0 0 ;
 	margin: 0 auto;
-	width: 300px;
+	width: 320px;
 	height: 300px;
+	
 }
 #main p{
 	width: 250px;

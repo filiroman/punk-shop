@@ -16,7 +16,7 @@
 		<?php include "include/search_categories.php" ?>
 		
 		<div id="user">
-			<img src="img/ava.jpg">
+			<div id="img"><img src="img/ava.jpg"></div>
 			<p id="user_name">Василий</p>
 			
 			<p id="contact">Контакты:</p>

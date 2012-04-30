@@ -1,5 +1,5 @@
 #categories{
-	top: 40px !important;
+	top: 5px !important;
 }
 #user{
 	position: relative;
@@ -10,13 +10,21 @@
 	border-right: 1px solid #adb2b5;
 	border: 1px solid #adb2b5;
 }
-#user img{
+#img{
+	width: 150px;
+	height: 200px;
+	border: 1px solid #adb2b5;
 	float: left;
 	margin: 10px;
+}
+#user img{
+	xfloat: left;
+	
 	max-width: 150px;
 	max-height: 200px;
 	
 }
+
 #user_name{
 	margin: 10px 0 10px 0;
 	font-size: 24px;

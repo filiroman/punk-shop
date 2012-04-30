@@ -14,11 +14,10 @@
 	<div id="main">
 		<p>Регистрация</p>
 		<form method="post" action="user_add_action.php">
-			<input id="user_email" name="email" type="text" placeholder="Email"><br>
-			<input id="user_name" name="name" type="text" placeholder="Name"><br>
-			<!--<input id="telephone" name="telephone" type="text" placeholder="Phone number"><br>!-->
-			<input id="user_password" name="password" type="password" placeholder="Password"><br>
-			
+			<span>email</span><input id="user_email" name="email" type="text"><br>
+			<span>имя</span><input id="user_name" name="name" type="text"><br>
+			<span>пароль</span><input id="user_password" name="password" type="password"><br>
+			<span>пароль</span><input id="user_password" name="password" type="password"><br>
 			<input id="reg_button" type="submit" value="Зарегистрировать"><br>
 		</form>
 		

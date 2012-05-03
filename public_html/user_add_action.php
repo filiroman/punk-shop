@@ -9,8 +9,8 @@
  
 	$err = array();
 	
-	$user_email = mysql_real_escape_string($_POST['email']);
-	$user_name = mysql_real_escape_string($_POST['name']);
+	$user_email = htmlspecialchars(($_POST['email']));
+	$user_name = htmlspecialchars(($_POST['name']));
 	$user_password = md5(md5($_POST['password']));
 
 	$query = mysql_query("SELECT COUNT(id) FROM users WHERE email='".$user_email."'");

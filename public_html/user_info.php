@@ -25,7 +25,11 @@
 			
 			<p id="info">Информация:</p>			
 			<p class="user_description">Живу в 15ке.</p>
-			<a class="hrefs" href="user_edit_info.php">Редактировать данные</a></br>
+			<?php
+				if ($_SESSION['id']==$_GET['id']){
+					echo "<a class=\"hrefs\" href=\"user_edit_info.php\">Редактировать данные</a></br>";
+				}
+			?>
 			<p style="margin:10px;font-weight:bold;">Текущие продажи:</p>
 			<p class="good_name"><a href="item_info.php">Холодильник</a></p> 			
 			

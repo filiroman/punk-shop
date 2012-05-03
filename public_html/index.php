@@ -25,7 +25,16 @@
 		<?php include "include/search_categories.php" ?>
 		
 		<div id="result">
-
+			
+			<div class="item">
+				<a href="item_info.php"><img class="item_img" src="img/pic3.jpg"></a>
+				<p class="item_name"><a href="item_info.php">Холодильник</a></p></br>
+				<p class="item_date">14.03.2012</p>
+				<p class="item_author"><a href="user_info.php?id=23">Василий</a></p></br>
+				<p class="item_price">цена: <span style="font-size:15px;font-weight:bold">2100</span>р</p>
+				<p class="item_description">Холодильник Бирюза в отличном состоянии. Морозилка рабочая</p></br>
+			</div>
+			
 			<div class="item">
 				<a href="item_info.php"><img class="item_img" src="img/pic1.jpg"></a>
 				<p class="item_name"><a href="item_info.php">Новый диван</a></p></br>
@@ -42,15 +51,6 @@
 				<p class="item_author"><a href="user_info.php">Дмитрий</a></p></br>
 				<p class="item_price">цена: <span style="font-size:15px;font-weight:bold">3600</span>р</p>
 				<p class="item_description">монитор Acer V193HQVBb, 1366x768, 10000:1, 200cd/m^2, 5ms, черный</p></br>
-			</div>
-
-			<div class="item">
-				<a href="item_info.php"><img class="item_img" src="img/pic3.jpg"></a>
-				<p class="item_name"><a href="item_info.php">Холодильник</a></p></br>
-				<p class="item_date">14.03.2012</p>
-				<p class="item_author"><a href="user_info.php">Василий</a></p></br>
-				<p class="item_price">цена: <span style="font-size:15px;font-weight:bold">2100</span>р</p>
-				<p class="item_description">Холодильник Бирюза в отличном состоянии. Морозилка рабочая</p></br>
 			</div>
 			
 			<div class="item">

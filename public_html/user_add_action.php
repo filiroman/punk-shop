@@ -1,10 +1,10 @@
- <?php
+п»ї <?php
 	session_start();
 	$hostname = "localhost";
 	$username = "root";
 	$password = "";
 	$dbName = "punk_shop";
-	mysql_connect($hostname, $username, $password) or die("Не могу создать соединение");
+	mysql_connect($hostname, $username, $password) or die("РќРµ РјРѕРіСѓ СЃРѕР·РґР°С‚СЊ СЃРѕРµРґРёРЅРµРЅРёРµ");
 	mysql_select_db($dbName) or die(mysql_error()); 
  
 	$err = array();
@@ -15,7 +15,7 @@
 
 	$query = mysql_query("SELECT COUNT(id) FROM users WHERE email='".$user_email."'");
     if(mysql_result($query, 0) > 0){
-        $err[] = "Данный email уже занят";
+        $err[] = "Р”Р°РЅРЅС‹Р№ email СѓР¶Рµ Р·Р°РЅСЏС‚";
     }
 	
 	if(count($err) == 0){     
@@ -28,7 +28,7 @@
 		mysql_close();
         header("Location: index.php"); exit();
     } else {
-        print "<b>При регистрации произошли следующие ошибки:</b><br>";
+        print "<b>РџСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїСЂРѕРёР·РѕС€Р»Рё СЃР»РµРґСѓСЋС‰РёРµ РѕС€РёР±РєРё:</b><br>";
         foreach($err AS $error)
         {
             print $error."<br>";

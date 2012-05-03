@@ -7,7 +7,7 @@
 	mysql_connect($hostname, $username) or die("Не могу создать соединение");
 	mysql_select_db($dbName) or die(mysql_error()); 
 	
-	$query = mysql_query("SELECT id, pass FROM users WHERE email='".mysql_real_escape_string($_POST['email'])."' LIMIT 1");
+	$query = mysql_query("SELECT id, password FROM users WHERE email='".mysql_real_escape_string($_POST['email'])."' LIMIT 1");
 	$data = mysql_fetch_assoc($query);
 	mysql_close();
 	if($data['pass'] === md5(md5($_POST['password']))) {

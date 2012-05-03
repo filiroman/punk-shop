@@ -19,7 +19,7 @@
     }
 	
 	if(count($err) == 0){     
-        mysql_query("INSERT INTO users SET email='".$user_email."', name='".$user_name."', pass='".$user_password."'");
+        mysql_query("INSERT INTO users SET email='".$user_email."', name='".$user_name."', password='".$user_password."'");
 		$result = mysql_query("SELECT id FROM users WHERE email='".$user_email."'");
 		$data = mysql_fetch_assoc($result);
 		$id=$data["id"];

@@ -33,66 +33,34 @@ class Factory_Users extends Factory {
      *
      * @param Model_Users $user экземпляр нашего пользователя
      */
-        public function Save(Model_Users $user){
-        $res = $user->GetFieldsUsersForDB();//получаем массив данных для $user
+public function Save(Model_Users $user){
+        $res = $user->GetFieldsUsersForDB();//получаем массив данных для $user  
+//        $test=array('lastName' => 'petrash');
+//        $this->db->Exists("Users", $test);
         if($res['id']===null){
           if($this->findByLogin($res['login'])!==null)
               throw new Exception('this login already exist');
           else {
-
-            echo 'Creating new user '.$res['login'];
-            $key_array="";
-            $value_array="";
-            foreach ($res as $key => $value) {
-                $key_array.="$key".",";
-                if($value==null){
-                    $value_array.="NULL".",";
-                }
-                else
-                $value_array.="'$value'".",";
-            }
-
-            $value_array=  trim($value_array, ",");
-            $key_array=  trim($key_array, ",");
-
-            //вставляем нашего юзера в таблицу
+            echo "<br>Creating new User".$res['firstName']."<br>";
+            //вставляем результат в Users и возвращаем последний id
+            $lastId=$this->db->Insert("Users", $res);
             
-            $this->db->Query("INSERT into `Users` ($key_array) VALUES($value_array)");
             //не забываем присвоить объекту отсутсвующий id
-            //извлекаем из бд и записываем в объект
-            //
-            //$newID=$this->db->getResult("select id from Users where login =".$res['login'],"id");
-            $newID=mysql_insert_id();
-            echo "<br> newID=$newID";
+            echo "<br> newID=$lastId";
             if($newID==0){
                 throw new Exception("autoincriment error: mysql_insert_id()==0");
             }
             else{
-                $user->ChangeID($newID);
+                $user->ChangeID($lastId);
             }
             echo 'Succes! Add new user<br>';
+            return true;//создали
           }
         }
         else{
-            echo '<br>Changing user'.$res['login'];
-            
-        $update_array="";
-        foreach ($res as $key => $value) {
-            if($value==null){
-                $update_array.="$key"."="."NULL".",";//defualt!
-                //проверка на ошибки
-            }
-            else
-            $update_array.="$key"."="."'$value'".",";
-        }
-        $update_array=  trim($update_array, ","); 
-        echo "<br>";
-        //обновляем нашего юзера в таблице
-           $this->db->Query("update `Users` set $update_array where `id`=".$res['id']);  
-           echo "Update has been successfully";
+           $this->db->Update("Users", $res, array("id"=>$res['id'],"login"=>$res['login']));
         }
     }
-
     /**
      * Функция ищет и возвращает наш объект по полю id
      * Если находи вовзращает его

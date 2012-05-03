@@ -30,17 +30,26 @@ body{
 	width: 100px;
 	margin: 15px 20px;
 }
-#main span{
+#main span.leftText{
+	clear: both;
 	position: relative;
-	top: 5px;
+	top: 20px;
+	text-align:right;
 	float: left;
-	line-height: 38px;
+	line-height: 7px;
+	margin: 0 0 10px 0;
+}
+#main span.redStar{
+	color: red;
+	font-size: 10px;
+	margin: 0 3px 0 -7px;
 }
 input{
 	border-radius:4px; 
 	border: 1px solid #adb2b5;
 }
 #main input{
+	
 	float: right;
 	
 }
@@ -48,15 +57,16 @@ input{
 #main{
 	padding: 100px 0 0 0 ;
 	margin: 0 auto;
-	width: 320px;
-	height: 300px;
+	width: 340px;
+	height: 330px;
 	
 }
 #main p{
-	width: 250px;
+	width: 340px;
 	font-family: Helvetica;
 	text-align: center;
 	font-size: 20px;
+	margin: 0 0 0px 0;
 }
 #user_email{
 	height: 25px;

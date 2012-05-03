@@ -17,7 +17,7 @@
 			<span>email</span><input id="user_email" name="email" type="text"><br>
 			<span>имя</span><input id="user_name" name="name" type="text"><br>
 			<span>пароль</span><input id="user_password" name="password" type="password"><br>
-			<span>пароль</span><input id="user_password" name="password" type="password"><br>
+			<span>пароль</span><input id="user_password" type="password"><br>
 			<input id="reg_button" type="submit" value="Зарегистрировать"><br>
 		</form>
 		

@@ -1,0 +1,26 @@
+#good {
+	width: 530px;
+	min-height: 300px;
+	margin: 40px 0 0 0;
+	border-right: 1px solid #adb2b5;
+ }
+ 
+input{
+	border: 1px solid #adb2b5;
+	height: 20px;
+	width: 200px;
+	margin: 0 0 10px 10px;
+ }
+ 
+#description{
+	height:200px;
+	width: 500px;
+	margin: 0 0 10px 10px;
+}
+
+#btn{
+	height: 30px;
+}
+#btn:hover{
+	background-color: #95d7e1;
+}

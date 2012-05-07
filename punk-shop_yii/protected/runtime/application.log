@@ -1,0 +1,56 @@
+2012/05/06 21:07:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('users')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/punk-shop/index-test.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/index-test.php?r=users
+---
+2012/05/06 23:31:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'punk_shop.Models' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Models`.
+in /var/www/punk-shop/index.php (13)
+2012/05/07 23:02:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('test')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('test')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/test')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk-shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop/index.php?r=site/test
+---
+2012/05/07 23:03:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('test')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('test')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/test')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk-shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop/index.php?r=site/test
+---
+2012/05/07 23:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('test')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('test')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/test')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk-shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop/index.php?r=site/test
+---
+2012/05/07 23:09:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/punk-shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/index.php?r=user
+---
+2012/05/07 23:10:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /var/www/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/punk-shop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/index.php?r=user
+---

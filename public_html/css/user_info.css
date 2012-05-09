@@ -1,14 +1,13 @@
 #categories{
-	top: 5px !important;
+	
 }
 #user{
 	position: relative;
-	margin: 40px 0  0;
+	margin: 10px 0  0;
 	background-color: white;
 	min-height: 300px;
-	width: 530px;
+	width: 500px;
 	border-right: 1px solid #adb2b5;
-	border: 1px solid #adb2b5;
 }
 #img{
 	width: 150px;

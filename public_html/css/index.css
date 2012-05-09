@@ -1,6 +1,5 @@
 html{
 	background-color: #dedede;
-	xbackground-color:#fc0;
 }
 body{
 	min-height: 400px;
@@ -18,14 +17,19 @@ body{
 }
 
 #header{
+	position: relative;
 	height: 120px;
-	margin: -18px 0 0 0;
+	margin: -18px 0 10px 0;
 	xbackground-color: grey;
-	border-bottom: 1px solid #adb2b5;
+	xborder-bottom: 1px solid #adb2b5;
+	border: 1px solid #adb2b5;
+	xborder: 1px solid red;
 }
 #logo{
-	margin:0;
+	margin:0 0 0px 0;
 	padding:0;
+	height: 100px;
+	xborder: 2px solid green;
 }
 #logo h1{
 	color:grey;
@@ -42,19 +46,21 @@ body{
 }
 
 #authorisation{
+	position: relative;
+	xborder: 2px solid blue;
 	margin:0;
 	padding: 0;
 	width: 210px;
-	position: relative;
-	top: -140px;
-	left: 580px;
+	top: -100px;
+	left: 570px;
 }
 #user_bar{
-	width: 210px;
 	position: relative;
-	top: -140px;
-	left: 600px;
-	
+	width: 210px;
+	top: -100px;
+	left: 570px;
+	xborder: 2px solid blue;
+	height: 66px;
 }
 #user_bar span{
 	color: black;
@@ -103,22 +109,36 @@ body{
 #signup-btn:hover{
 	background-color: #95d7e1;
 }
-#user_bar{
-	width: 190px;
-	
-}
+
 .btn{
 	height: 20px;
 	margin: 5px 5px 0 0;
 	border: 1px solid #adb2b5;
 	border-radius:4px; 
 	float: right;
+	font-size: 13px;
+	background-color: #f0f0f0;
+	padding: 2px 5px;
+	height: 15px;
 }
 .btn:hover{
 	background-color: #95d7e1;
 }
 .btn a{
 	margin: 0 2px;
+}
+#logout{
+	position: relative;
+	top: -5px;
+}
+#user_info{
+	position: relative;
+	right: 60px;
+	top: 16px;
+}
+#item_add{
+	position: relative;
+	top: -10px;
 }
 	
 input{
@@ -127,18 +147,24 @@ input{
 select{
 	border-radius:4px;
 }
-
 #main{
 	xmin-height: 100px;
-	margin: 20px 0 0 0;
-	padding: 0 0 0 10px;
+	margin: 0 0 0 0;
+	padding: 0px 10px 0 10px;
 	background-color:white;
 }
 
 #search{
 	position: relative;
+	top: -50px;
+	height: 50px;
+	xborder: 1px solid red;
+	margin: -0px 0 0 0;
+	padding: 0;
 }
+
 #search_text{
+	position: relative;
 	height: 30px;
 	width: 250px;
 	font-size: 15px;
@@ -164,6 +190,7 @@ select{
 #search_button:hover{
 	background-color: #95d7e1;
 }
+
 @-moz-document url-prefix() {
 	#search_category{top:-10px;}
 	#search_button{top:0px;}
@@ -172,6 +199,7 @@ select{
 	#search_category{top: 9px;}
 	#search_button{top:0px;}
 }
+
 #categories{
 	position: relative;
 	min-height: 50px;
@@ -198,8 +226,6 @@ select{
 #categories li:hover{
 	background-color: #e1e1e1;
 }
-
-
 
 #result{
 	position: relative;

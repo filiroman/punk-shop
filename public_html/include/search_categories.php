@@ -1,5 +1,5 @@
 ﻿<div id="search">
-	<form id="search" method="post" action="search.php">
+	<form method="post" action="search.php">
 		<input id="search_text" name="search_text" type="text">
 		<select id="search_category" name="category" size="1">
 			<option selected="selected" value="default">Во всех категориях</option>

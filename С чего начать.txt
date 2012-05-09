@@ -1,0 +1,61 @@
+С чего начать:
+http://yiiframework.ru
+в шапке 2 основных заголовка:
+1. Полное руководство - здесь все описано сухо, с небольшими примерами. Ознакомьтесь хотябы с основным разделом. (и по мере необходимости обращайтесь туда за помощью)
+2. Создание блога - практическая часть.
+
+Для работы под NetBeans
+http://yiiframework.ru/doc/cookbook/ru/ide
+
+Расширения:
+http://www.yiiframework.com/extensions/
+Рекомендую поискать нужные нам, чтобы заного не изобретать велосипед. пользуйтесь поиском, а так же смотрите на кол-во скачиваний
+
+Что предлагаю:
+
+1. Для регистрации, авторизации(добавил первый пока что)
+yii-user http://www.yiiframework.com/extension/yii-user/
+или такой http://www.yiiframework.com/extension/yii-user-management/
+
+2. Для работы с почтой
+http://www.yiiframework.com/extension/mailer/
+или 
+http://www.yiiframework.com/extension/mailer/
+
+3. Для заливки файлов на сервер
+xupload http://www.yiiframework.com/extension/xupload/
+или такой eajaxupload (ajax) http://www.yiiframework.com/extension/eajaxupload/
+
+
+Необязательные:
+1. Календарь http://www.yiiframework.com/extensions/?category=5
+2. кнопочки из соц сетей(пока ток гугль)
+http://www.yiiframework.com/extension/yii-google-plusone/
+3. карта :)
+http://www.yiiframework.com/extension/egmap/
+4. CMS
+http://www.yiiframework.com/extension/cms/
+5. какой то популярный bootstrap(13 734 скачиваний)
+http://www.yiiframework.com/extension/bootstrap/
+6. gallerymanager
+http://www.yiiframework.com/extension/gallerymanager/
+fbgallery
+http://www.yiiframework.com/extension/fbgallery/
+7. etc
+http://habrahabr.ru/post/129804/
+http://www.yiiframework.com/extensions/
+http://habrahabr.ru/company/2gis/blog/132029/
+
+
+В конце, чтобы все работало на сервере
+http://yiiframework.ru/doc/cookbook/ru/install.production
+
+Дополнительные интересные возможности:
+HTTPS
+http://yiiframework.ru/doc/cookbook/ru/install.https
+
+
+ps
+ ищите и предлагайте сво
+
+

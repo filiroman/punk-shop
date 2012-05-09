@@ -12,12 +12,10 @@
 <body>
 	<?php
 	$auth=false;
-
 	/*$db = DB::getInstance();
 	$db->Query("SHOW TABLES FROM `punk_shop`");
 	$db->Next();
-	echo $db->record[0];*/
-	
+	echo $db->record[0];*/	
 	include "include/index_head.php" ?>
 
 	<div id="main">

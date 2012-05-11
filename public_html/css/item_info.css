@@ -8,13 +8,13 @@
 	border-right: 1px solid #adb2b5;
 }
 #categories{
-	top: -2px !important;
+	
 }
 #item{
 	min-height: 400px;
 	width: 500px;
-	margin: 40px 0;
-	border: 1px solid #adb2b5;
+	margin: 10px 0;
+	border-right: 1px solid #adb2b5;
 }
 
 #item_img{

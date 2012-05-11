@@ -11,7 +11,12 @@
 				mysql_close();
 			?>
 			<span style="margin: 10px;">Вы зашли как <?php echo $data['name']; ?></span> <!-- временный вывод имени !-->
-			<button class="btn" ><a href="user_logout.php">Выйти</a></button></br>
-			<button class="btn" ><a href="user_info.php?id=<?php echo $_SESSION['id'];?>">Личный кабинет</a></button>
-			<button class="btn" ><a href="item_add.php">Добавить товар</a></button>
-		</div>
+			<!--
+			<button class="btn" ><a href="user_logout.php">Выйти</a></button>
+			<button class="btn" ><a href="user_info.php?id=<?php //echo $_SESSION['id'];?>">Личный кабинет</a></button>
+			<button class="btn" ><a href="item_add.php">Добавить товар</a></button>	
+			!-->
+			<a class="btn" id="logout" href="user_logout.php">Выйти</a>
+			<a class="btn" id="user_info" href="user_info.php?id=<?php echo $_SESSION['id'];?>">Линчый кабинет</a>
+			<a class="btn" id="item_add" href="item_add.php">Добавить товар</a>
+</div>

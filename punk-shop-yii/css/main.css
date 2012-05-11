@@ -20,7 +20,164 @@ body
 	margin: 0;
 	padding: 0;
 	border-top: 3px solid #C9E0ED;
+	height: 100px;
 }
+#header h1{
+	position: relative;
+	color:grey;
+	font-size: 25px;	
+	width: 300px;
+	top: -60px;
+	left: 120px;
+}
+
+#search{
+	position: relative;
+	height: 50px;
+	xborder: 1px solid red;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+#search_text{
+	position: relative;
+	xheight: 20px;
+	width: 250px;
+	xfont-size: 15px;
+	xpadding: 3px 5px;
+	border: 1px solid #adb2b5;
+}
+#search_category{
+	position: relative;
+	xheight: 28px;
+	border: 1px solid #adb2b5;
+}
+#search_button{
+	position: relative;
+	xheight: 28px;
+	width: 100px;
+	background-color: #e0edef;
+	border: 1px solid #adb2b5;
+}
+#search_button:hover{
+	background-color: #95d7e1;
+}
+
+#categories{
+	position: relative;
+	min-height: 50px;
+	margin:0 !important;
+	padding:0 !important;
+	width: 200px;
+	float: right;
+	right: 150px;
+	top: 20px;
+	border-top: 1px solid #adb2b5;
+	border-left: 1px solid #adb2b5;
+	border-right: 1px solid #adb2b5;
+	background-color: white;
+}
+#categories a{
+	line-height: 20px;
+	font-size:21px;
+	font-family: calibri;
+	text-decoration: none;
+	color: #d85e5e;
+	margin:0 !important;
+	padding:0 0 0 0 !important;
+}
+#categories ul{
+	margin:0 !important;
+	padding:0 !important;
+}
+#categories li{
+	height: 20px;
+	list-style: none;
+	padding: 0 0 0 10px;
+	background-color: white;
+	border-bottom: 1px solid #adb2b5;
+	margin:0 !important;
+	padding:3px 0 3px 10px !important;
+}
+#categories li:hover{
+	background-color: #e1e1e1;
+}
+
+
+#result{
+	position: relative;
+	margin: 10px 0  0;
+	padding: 10px 0 0 0;
+	background-color: white;
+	min-height: 250px;
+	width: 520px;
+	border-right: 1px solid #adb2b5;
+	xborder-bottom: 1px solid #adb2b5;
+}
+.item{
+	position: relative;
+	xmin-height: 100px;	
+	height: 240px;
+	width: 510px;
+	margin: 15px 0;
+	border-bottom: 1px solid #adb2b5;
+}
+
+.item_img{
+	max-width: 170px;
+	max-height: 230px;
+	margin: 5px;
+	float: left;
+}
+.item_name{
+	position: relative;
+	width: 330px;
+	font-weight: bold;
+	margin: 3px 0 5px 0;
+	float: right;
+}
+
+.item_description{
+	position: relative;
+	float: right;
+	width: 320px;
+	font-size: 12px;
+	line-height:160%;
+	margin: 5px;
+	
+}
+.item_date{
+	position: relative;
+	float: right;
+	text-align: left;
+	margin: 0 10px 0 0;
+	color: #444;
+	font-size: 13px;
+}
+.item_author{
+	position: relative;
+	float: right;
+	text-align: left;
+	width: 245px;
+	font-size: 15px;
+	margin: 0 10px 0 0;
+}
+.item_price{
+	position: relative;
+	float: right;
+	font-size: 13px;
+	margin: 0 10px 0 0;
+}
+
+.item a{
+	min-height: 100px;
+	color: #d0424f;
+	text-decoration: none;
+}
+.item a:hover{
+	color: #ac3540;
+}
+
+
 
 #content
 {

@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Punk-Shop Test Project',
+	'name'=>'Äîñêà îáúÿâëåíèé ñòóäãîğîäêà',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -32,6 +32,7 @@ return array(
 		),
 
 	),
+
 
 	// application components
 	'components'=>array(
@@ -60,10 +61,10 @@ return array(
 		// uncomment the following to use a MySQL database
 
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=test',
+			'connectionString' => 'mysql:host=localhost;dbname=yii',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '12345',
+			'password' => '',
 			'charset' => 'utf8',
 			 'tablePrefix'=>'tbl_',
 		),

@@ -1,4 +1,7 @@
 <?php
+if(function_exists("date_default_timezone_set") and
+function_exists("date_default_timezone_get"))
+@date_default_timezone_set(@date_default_timezone_get());
 
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../yii/framework/yii.php';

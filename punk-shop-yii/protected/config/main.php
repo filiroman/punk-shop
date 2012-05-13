@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
@@ -16,14 +16,13 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-                'application.modules.user.models.*',
-                'application.modules.user.components.*',
-
+        'application.modules.user.models.*',
+        'application.modules.user.components.*',
 	),
 
 	'modules'=>array(
-		// uncomment the following to enable the Gii tool
 		'user',
+
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'12345',
@@ -33,13 +32,12 @@ return array(
 
 	),
 
-
 	// application components
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
-			'loginUrl' => array('/user/login'),
+                        'loginUrl' => array('/user/login'),
 
 		),
 		// uncomment the following to enable URLs in path-format
@@ -59,16 +57,17 @@ return array(
 		),
 */
 		// uncomment the following to use a MySQL database
-
+		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=yii',
+			'connectionString' => 'mysql:host=localhost;dbname=test',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => '12345',
 			'charset' => 'utf8',
-			 'tablePrefix'=>'tbl_',
+			'tablePrefix' => 'tbl_', 
+			
 		),
-		
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',

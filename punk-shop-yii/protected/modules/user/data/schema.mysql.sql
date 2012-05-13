@@ -23,13 +23,13 @@ CREATE TABLE `tbl_profiles` (
   `user_id` int(11) NOT NULL,
   `lastname` varchar(50) NOT NULL DEFAULT '',
   `firstname` varchar(50) NOT NULL DEFAULT '',
-  `birthday` date NOT NULL DEFAULT '1000-01-01',
+  `birthday` date NOT NULL DEFAULT '0000-00-00',
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
 
 INSERT INTO `tbl_profiles` (`user_id`, `lastname`, `firstname`, `birthday`) VALUES
-(1, 'Admin', 'Administrator', '1000-01-01'),
-(2, 'Demo', 'Demo', '1000-01-01');
+(1, 'Admin', 'Administrator', '0000-00-00'),
+(2, 'Demo', 'Demo', '0000-00-00');
 
 CREATE TABLE `tbl_profiles_fields` (
   `id` int(10) NOT NULL AUTO_INCREMENT,

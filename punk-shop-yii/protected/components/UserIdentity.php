@@ -6,36 +6,28 @@
  * data can identity the user.
  */
 class UserIdentity extends CUserIdentity
-{ 
-
-    private $_id;
-     /**
-    * мы используем класс User для поиска строки в таблице Users,
-    * в которой значение поля name такое же, как полученное имя пользователя 
-    * без учета регистра.
-    * @return type error code
-    */
-    public function authenticate()
-    {
-        //$this->username , password текущие введенные
-        $username=strtolower($this->username);
-        $user=Users::model()->find('LOWER(name)=?',array($username));//?
-        if($user===null)
-            $this->errorCode=self::ERROR_USERNAME_INVALID;
-        else if(!$user->validatePassword($this->password))
-            $this->errorCode=self::ERROR_PASSWORD_INVALID;
-        else
-        {
-            $this->_id=$user->id;
-            $this->username=$user->name;
-            $this->errorCode=self::ERROR_NONE;
-        }
-      
-        return $this->errorCode==self::ERROR_NONE;
-    }
- 
-    public function getId()
-    {
-        return $this->_id;
-    }
+{
+	/**
+	 * Authenticates a user.
+	 * The example implementation makes sure if the username and password
+	 * are both 'demo'.
+	 * In practical applications, this should be changed to authenticate
+	 * against some persistent user identity storage (e.g. database).
+	 * @return boolean whether authentication succeeds.
+	 */
+	public function authenticate()
+	{
+		$users=array(
+			// username => password
+			'demo'=>'demo',
+			'admin'=>'admin',
+		);
+		if(!isset($users[$this->username]))
+			$this->errorCode=self::ERROR_USERNAME_INVALID;
+		else if($users[$this->username]!==$this->password)
+			$this->errorCode=self::ERROR_PASSWORD_INVALID;
+		else
+			$this->errorCode=self::ERROR_NONE;
+		return !$this->errorCode;
+	}
 }

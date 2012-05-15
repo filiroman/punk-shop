@@ -59,10 +59,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=punk_shop',
+			'connectionString' => 'mysql:host=localhost;dbname=%dbname',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '148976Roman',
+			'username' => '%user',
+			'password' => '%pass',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_', 
 			

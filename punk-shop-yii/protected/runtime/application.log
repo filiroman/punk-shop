@@ -304,3 +304,1083 @@ Stack trace:
 REQUEST_URI=/test_shop/index.php?r=site/item
 HTTP_REFERER=http://localhost/test_shop/index.php?r=user/registration
 ---
+2012/05/14 02:36:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /var/www/punk_shop/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/punk_shop/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/punk_shop/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(RegistrationForm))
+#7 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('RegistrationFor...')
+#8 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php(25): CActiveRecord->__construct()
+#10 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#11 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#16 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/registration
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
+---
+2012/05/14 13:15:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /var/www/punk_shop/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/punk_shop/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/punk_shop/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(RegistrationForm))
+#7 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('RegistrationFor...')
+#8 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php(25): CActiveRecord->__construct()
+#10 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#11 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#16 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/registration
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
+---
+2012/05/14 13:15:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/item
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
+---
+2012/05/14 23:11:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/item
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/registration
+---
+2012/05/14 23:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/item
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=site/item
+---
+2012/05/14 23:19:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/item
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=site/item
+---
+2012/05/15 00:48:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'punk_shop.Goods' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Goods`.
+in /var/www/punk_shop/punk-shop-yii/index.php (15)
+2012/05/15 00:48:40 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Goods" for active record class "Goods" cannot be found in the database.' in /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#1 /var/www/punk_shop/yii/framework/gii/generators/crud/CrudCode.php(66): CActiveRecord::model('Goods')
+#2 /var/www/punk_shop/yii/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#3 /var/www/punk_shop/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#4 /var/www/punk_shop/yii/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#5 /var/www/punk_shop/yii/framework/gii/CCodeGenerator.php(158): CModel->validate()
+#6 /var/www/punk_shop/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#7 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#8 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#13 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=gii/crud
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=gii/crud
+---
+2012/05/15 00:49:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'punk_shop.Goods' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Goods`.
+in /var/www/punk_shop/punk-shop-yii/index.php (15)
+2012/05/15 00:49:41 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Goods" for active record class "Goods" cannot be found in the database.' in /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#1 /var/www/punk_shop/yii/framework/gii/generators/crud/CrudCode.php(66): CActiveRecord::model('Goods')
+#2 /var/www/punk_shop/yii/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#3 /var/www/punk_shop/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#4 /var/www/punk_shop/yii/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#5 /var/www/punk_shop/yii/framework/gii/CCodeGenerator.php(158): CModel->validate()
+#6 /var/www/punk_shop/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#7 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#8 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#13 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=gii/crud
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=gii/crud
+---
+2012/05/15 13:05:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/item
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/
+---
+2012/05/15 13:22:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/item
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/profile
+---
+2012/05/15 13:22:19 [error] [exception.CException] exception 'CException' with message 'GoodsController cannot find the requested view "_form".' in /var/www/punk_shop/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#1 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#2 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#3 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#4 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#5 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#6 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#7 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#16 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#17 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 13:36:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/item
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=site/index
+---
+2012/05/15 14:48:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/item
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=categories
+---
+2012/05/15 14:48:57 [error] [exception.CException] exception 'CException' with message 'GoodsController cannot find the requested view "_form".' in /var/www/punk_shop/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#1 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#2 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#3 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#4 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#5 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#6 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#7 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#16 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#17 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 16:18:23 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dateField".' in /var/www/punk_shop/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('dateField', Array)
+#1 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(20): CActiveForm->dateField(Object(Goods), 'date')
+#2 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#3 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#4 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#5 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#11 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#12 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#21 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#22 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods/admin
+---
+2012/05/15 18:11:02 [error] [php] include(Lookup.php): failed to open stream: No such file or directory (/var/www/punk_shop/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): spl_autoload_call()
+#1 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require()
+#2 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): GoodsController->renderInternal()
+#3 /var/www/punk_shop/yii/framework/web/CController.php(870): GoodsController->renderFile()
+#4 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): GoodsController->renderPartial()
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require()
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): GoodsController->renderInternal()
+#7 /var/www/punk_shop/yii/framework/web/CController.php(870): GoodsController->renderFile()
+#8 /var/www/punk_shop/yii/framework/web/CController.php(783): GoodsController->renderPartial()
+#9 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): GoodsController->render()
+#10 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#11 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): GoodsController->runAction()
+#13 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#15 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): GoodsController->filterAccessControl()
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /var/www/punk_shop/yii/framework/web/CController.php(266): GoodsController->runActionWithFilters()
+#19 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): GoodsController->run()
+#20 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#21 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/punk_shop/punk-shop-yii/index.php(15): CWebApplication->run()
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php (31)
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php (15)
+in /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php (78)
+2012/05/15 18:11:18 [error] [php] include(Category.php): failed to open stream: No such file or directory (/var/www/punk_shop/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): spl_autoload_call()
+#1 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require()
+#2 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): GoodsController->renderInternal()
+#3 /var/www/punk_shop/yii/framework/web/CController.php(870): GoodsController->renderFile()
+#4 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): GoodsController->renderPartial()
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require()
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): GoodsController->renderInternal()
+#7 /var/www/punk_shop/yii/framework/web/CController.php(870): GoodsController->renderFile()
+#8 /var/www/punk_shop/yii/framework/web/CController.php(783): GoodsController->renderPartial()
+#9 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): GoodsController->render()
+#10 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#11 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): GoodsController->runAction()
+#13 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#15 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): GoodsController->filterAccessControl()
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /var/www/punk_shop/yii/framework/web/CController.php(266): GoodsController->runActionWithFilters()
+#19 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): GoodsController->run()
+#20 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#21 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/punk_shop/punk-shop-yii/index.php(15): CWebApplication->run()
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php (31)
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php (15)
+in /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php (78)
+2012/05/15 18:11:18 [error] [php] include(Category.php): failed to open stream: No such file or directory (/var/www/punk_shop/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): spl_autoload_call()
+#1 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require()
+#2 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): GoodsController->renderInternal()
+#3 /var/www/punk_shop/yii/framework/web/CController.php(870): GoodsController->renderFile()
+#4 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): GoodsController->renderPartial()
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require()
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): GoodsController->renderInternal()
+#7 /var/www/punk_shop/yii/framework/web/CController.php(870): GoodsController->renderFile()
+#8 /var/www/punk_shop/yii/framework/web/CController.php(783): GoodsController->renderPartial()
+#9 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): GoodsController->render()
+#10 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#11 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): GoodsController->runAction()
+#13 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#15 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): GoodsController->filterAccessControl()
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /var/www/punk_shop/yii/framework/web/CController.php(266): GoodsController->runActionWithFilters()
+#19 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): GoodsController->run()
+#20 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#21 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/punk_shop/punk-shop-yii/index.php(15): CWebApplication->run()
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php (31)
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php (15)
+in /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php (78)
+2012/05/15 18:11:19 [error] [php] include(Category.php): failed to open stream: No such file or directory (/var/www/punk_shop/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): spl_autoload_call()
+#1 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require()
+#2 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): GoodsController->renderInternal()
+#3 /var/www/punk_shop/yii/framework/web/CController.php(870): GoodsController->renderFile()
+#4 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): GoodsController->renderPartial()
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require()
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): GoodsController->renderInternal()
+#7 /var/www/punk_shop/yii/framework/web/CController.php(870): GoodsController->renderFile()
+#8 /var/www/punk_shop/yii/framework/web/CController.php(783): GoodsController->renderPartial()
+#9 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): GoodsController->render()
+#10 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#11 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): GoodsController->runAction()
+#13 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#15 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): GoodsController->filterAccessControl()
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /var/www/punk_shop/yii/framework/web/CController.php(266): GoodsController->runActionWithFilters()
+#19 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): GoodsController->run()
+#20 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#21 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/punk_shop/punk-shop-yii/index.php(15): CWebApplication->run()
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php (31)
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php (15)
+in /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php (78)
+2012/05/15 18:13:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` WHERE type=:type ORDER BY position.
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (38)
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (20)
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php (31)
+2012/05/15 18:13:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` WHERE type=:type ORDER BY position' in /var/www/punk_shop/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(38): CActiveRecord->findAll(Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('CategoriesGoods')
+#5 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('CategoriesGoods')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#10 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#11 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#12 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#14 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#15 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#16 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#26 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#28 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 18:14:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'position' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` ORDER BY position.
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (38)
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (20)
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php (31)
+2012/05/15 18:14:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'position' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` ORDER BY position' in /var/www/punk_shop/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(38): CActiveRecord->findAll(Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('CategoriesGoods')
+#5 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('CategoriesGoods')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#10 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#11 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#12 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#14 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#15 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#16 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#26 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#28 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 18:14:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'position' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` ORDER BY position.
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (38)
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (20)
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php (31)
+2012/05/15 18:14:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'position' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` ORDER BY position' in /var/www/punk_shop/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(38): CActiveRecord->findAll(Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('CategoriesGoods')
+#5 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('CategoriesGoods')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#10 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#11 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#12 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#14 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#15 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#16 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#26 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#28 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 18:14:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'position' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` ORDER BY position.
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (38)
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (20)
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php (31)
+2012/05/15 18:14:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'position' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` ORDER BY position' in /var/www/punk_shop/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(38): CActiveRecord->findAll(Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('CategoriesGoods')
+#5 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('CategoriesGoods')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#10 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#11 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#12 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#14 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#15 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#16 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#26 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#28 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 18:14:53 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('CategoriesGoods')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('CategoriesGoods')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 18:55:01 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('CategoriesGoods')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('CategoriesGoods')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 18:55:02 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('CategoriesGoods')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('CategoriesGoods')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 18:55:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` WHERE type=:type.
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (38)
+in /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php (20)
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php (31)
+2012/05/15 18:55:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `tbl_categories` `t` WHERE type=:type' in /var/www/punk_shop/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(38): CActiveRecord->findAll(Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('CategoriesGoods')
+#5 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('CategoriesGoods')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#10 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#11 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#12 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#14 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#15 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#16 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#26 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#28 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 18:55:21 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('CategoriesGoods')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('CategoriesGoods')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:21 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:22 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:22 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:22 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:22 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:23 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:23 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:23 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:38 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:06:38 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('category_id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('category_id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:08:34 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/15 19:08:35 [error] [exception.CException] exception 'CException' with message 'Property "Categories.code" is not defined.' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('code')
+#1 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(40): CActiveRecord->__get('code')
+#2 /var/www/punk_shop/punk-shop-yii/protected/models/Categories.php(20): Categories::loadItems('id')
+#3 /var/www/punk_shop/punk-shop-yii/protected/views/goods/_form.php(31): Categories::items('id')
+#4 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/goods/create.php(15): CController->renderPartial('_form', Array)
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(78): CController->render('create', Array)
+#13 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionCreate()
+#14 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#23 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/create')
+#24 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---

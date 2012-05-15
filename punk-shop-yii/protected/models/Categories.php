@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This is the model class for table "Categories".
+ * This is the model class for table "{{categories}}".
  *
- * The followings are the available columns in table 'Categories':
+ * The followings are the available columns in table '{{categories}}':
  * @property integer $id
  * @property string $name
  *
@@ -12,6 +12,34 @@
  */
 class Categories extends CActiveRecord
 {
+	private static $_items=array();
+ 
+    public static function items($type)
+    {
+        if(!isset(self::$_items[$type]))
+            self::loadItems($type);
+        return self::$_items[$type];
+    }
+ 
+    public static function item($type,$code)
+    {
+        if(!isset(self::$_items[$type]))
+            self::loadItems($type);
+        return isset(self::$_items[$type][$code]) ? self::$_items[$type][$code] : false;
+    }
+ 
+    private static function loadItems($type)
+    {
+        self::$_items[$type]=array();
+        $models=self::model()->findAll(array(
+            //'condition'=>'type=:type',
+            //'params'=>array(':type'=>$type),
+            //'order'=>'name',
+        ));
+        foreach($models as $model)
+            self::$_items[$type][$model->id]=$model->name;
+    }
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -27,7 +55,7 @@ class Categories extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'Categories';
+		return '{{categories}}';
 	}
 
 	/**
@@ -87,4 +115,5 @@ class Categories extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
 }

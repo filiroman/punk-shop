@@ -1,17 +1,18 @@
 <?php
 
 /**
- * This is the model class for table "Users".
+ * This is the model class for table "{{users}}".
  *
- * The followings are the available columns in table 'Users':
+ * The followings are the available columns in table '{{users}}':
  * @property integer $id
- * @property string $name
- * @property string $pass
+ * @property string $username
+ * @property string $password
  * @property string $email
- * @property integer $phone
- * @property string $user_pic
- * @property string $perm_level
- * @property string $about
+ * @property string $activkey
+ * @property integer $createtime
+ * @property integer $lastvisit
+ * @property integer $superuser
+ * @property integer $status
  *
  * The followings are the available model relations:
  * @property Goods[] $goods
@@ -33,7 +34,7 @@ class Users extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'Users';
+		return '{{users}}';
 	}
 
 	/**
@@ -44,13 +45,13 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, pass, email, phone, perm_level', 'required'),
-			array('phone', 'numerical', 'integerOnly'=>true),
-			array('name, pass, email, user_pic, about', 'length', 'max'=>45),
-			array('perm_level', 'length', 'max'=>9),
+			array('username, password, email', 'required'),
+			array('createtime, lastvisit, superuser, status', 'numerical', 'integerOnly'=>true),
+			array('username', 'length', 'max'=>20),
+			array('password, email, activkey', 'length', 'max'=>128),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, pass, email, phone, user_pic, perm_level, about', 'safe', 'on'=>'search'),
+			array('id, username, password, email, activkey, createtime, lastvisit, superuser, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -73,13 +74,14 @@ class Users extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'pass' => 'Pass',
+			'username' => 'Username',
+			'password' => 'Password',
 			'email' => 'Email',
-			'phone' => 'Phone',
-			'user_pic' => 'User Pic',
-			'perm_level' => 'Perm Level',
-			'about' => 'About',
+			'activkey' => 'Activkey',
+			'createtime' => 'Createtime',
+			'lastvisit' => 'Lastvisit',
+			'superuser' => 'Superuser',
+			'status' => 'Status',
 		);
 	}
 
@@ -95,35 +97,27 @@ class Users extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('pass',$this->pass,true);
+		$criteria->compare('username',$this->username,true);
+		$criteria->compare('password',$this->password,true);
 		$criteria->compare('email',$this->email,true);
-		$criteria->compare('phone',$this->phone);
-		$criteria->compare('user_pic',$this->user_pic,true);
-		$criteria->compare('perm_level',$this->perm_level,true);
-		$criteria->compare('about',$this->about,true);
+		$criteria->compare('activkey',$this->activkey,true);
+		$criteria->compare('createtime',$this->createtime);
+		$criteria->compare('lastvisit',$this->lastvisit);
+		$criteria->compare('superuser',$this->superuser);
+		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
-        /**
-         * Проверка пароля
-         * @param type $password
-         * @return bool true/false
-         */
-    public function validatePassword($password)
-    {
-        return $this->hashPassword($password)===$this->pass;
-    }
-    /**
-     * Создает хэш пароля
-     * @param type $password
-     * @param type $salt
-     * @return string hash
-     */
-    public function hashPassword($password)
-    {
-        return md5($password);
-    }
+	
+	public function validatePassword($password)
+	{
+	  return $this->hashPassword($password,$this->salt)===$this->password;
+	}
+
+	public function hashPassword($password,$salt)
+	{
+	  return md5($salt.$password);
+	}
 }

@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This is the model class for table "Goods".
+ * This is the model class for table "{{goods}}".
  *
- * The followings are the available columns in table 'Goods':
+ * The followings are the available columns in table '{{goods}}':
  * @property integer $id
  * @property integer $owner_id
  * @property string $date
@@ -16,8 +16,8 @@
  * @property integer $views
  *
  * The followings are the available model relations:
- * @property Users $owner
  * @property Categories $category
+ * @property Users $owner
  * @property Images[] $images
  */
 class Goods extends CActiveRecord
@@ -37,7 +37,7 @@ class Goods extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'Goods';
+		return '{{goods}}';
 	}
 
 	/**
@@ -48,14 +48,17 @@ class Goods extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('owner_id, date, actual, category_id, title, description, views', 'required'),
-			array('owner_id, actual, category_id, views', 'numerical', 'integerOnly'=>true),
-			array('title, description', 'length', 'max'=>45),
+			array('category_id, title, type, description', 'required'),
+			array('category_id, price', 'numerical', 'integerOnly'=>true),
+			array('title', 'length', 'max'=>45),
+			//array('active', 'boolean'),
+                        array('title, description' , 'safe'),
+			array('description', 'length', 'max'=>256),			
 			array('price', 'length', 'max'=>10),
 			array('type', 'length', 'max'=>4),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, owner_id, date, actual, category_id, title, description, price, type, views', 'safe', 'on'=>'search'),
+			array('owner_id, date, actual, category_id, title, description, price, type', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,8 +70,8 @@ class Goods extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'owner' => array(self::BELONGS_TO, 'Users', 'owner_id'),
 			'category' => array(self::BELONGS_TO, 'Categories', 'category_id'),
+			'owner' => array(self::BELONGS_TO, 'Users', 'owner_id'),
 			'images' => array(self::HAS_MANY, 'Images', 'good_id'),
 		);
 	}
@@ -118,4 +121,12 @@ class Goods extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	public function getUrl()
+    {
+        return Yii::app()->createUrl('goods/view', array(
+            'id'=>$this->id,
+        ));
+    }
+	
 }

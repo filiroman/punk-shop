@@ -32,7 +32,7 @@ class UserModule extends CWebModule
 	 * @var boolean
 	 * @desc use email for activation user account
 	 */
-	public $sendActivationMail=true;
+	public $sendActivationMail=false;
 	
 	/**
 	 * @var boolean
@@ -44,7 +44,7 @@ class UserModule extends CWebModule
 	 * @var boolean
 	 * @desc activate user on registration (only $sendActivationMail = false)
 	 */
-	public $activeAfterRegister=false;
+	public $activeAfterRegister=true;
 	
 	/**
 	 * @var boolean

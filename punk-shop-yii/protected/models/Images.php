@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This is the model class for table "Images".
+ * This is the model class for table "{{images}}".
  *
- * The followings are the available columns in table 'Images':
+ * The followings are the available columns in table '{{images}}':
  * @property integer $id
  * @property integer $good_id
  * @property string $src
@@ -28,7 +28,7 @@ class Images extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'Images';
+		return '{{images}}';
 	}
 
 	/**

@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Доска объявления стутгородка',
+	'name'=>'Доска объявления студгородка',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -59,10 +59,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=test',
+			'connectionString' => 'mysql:host=localhost;dbname=punk_shop',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '12345',
+			'password' => '148976Roman',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_', 
 			

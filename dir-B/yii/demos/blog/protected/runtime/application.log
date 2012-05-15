@@ -1,0 +1,29 @@
+2012/05/04 12:37:14 [error] [exception.CDbException] could not find driver
+2012/05/04 12:37:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /var/www/yii-1.1.10.r3566/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /var/www/yii-1.1.10.r3566/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii-1.1.10.r3566/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii-1.1.10.r3566/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii-1.1.10.r3566/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/yii-1.1.10.r3566/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /var/www/yii-1.1.10.r3566/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /var/www/yii-1.1.10.r3566/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#7 /var/www/yii-1.1.10.r3566/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#8 /var/www/yii-1.1.10.r3566/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /var/www/yii-1.1.10.r3566/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#10 /var/www/yii-1.1.10.r3566/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii-1.1.10.r3566/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii-1.1.10.r3566/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /var/www/yii-1.1.10.r3566/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /var/www/yii-1.1.10.r3566/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/yii-1.1.10.r3566/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/yii-1.1.10.r3566/framework/web/CController.php(292): CFilterChain->run()
+#17 /var/www/yii-1.1.10.r3566/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/yii-1.1.10.r3566/framework/web/CWebApplication.php(276): CController->run('')
+#19 /var/www/yii-1.1.10.r3566/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#20 /var/www/yii-1.1.10.r3566/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /var/www/yii-1.1.10.r3566/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii-1.1.10.r3566/demos/blog/
+HTTP_REFERER=http://localhost/yii-1.1.10.r3566/demos/
+---

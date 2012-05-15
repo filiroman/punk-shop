@@ -1,0 +1,43 @@
+#categories{
+	top: 40px !important;
+}
+
+#good {
+	width: 500px;
+	min-height: 300px;
+	margin: 40px 0 0 0;
+	border: 1px solid #adb2b5;
+	padding: 10px;
+ }
+ 
+#new_item input{
+	border: 1px solid #adb2b5;
+	height: 20px;
+	width: 200px;
+	margin: 0 0 10px 10px;
+ }
+select{
+	height: 24px;
+	border: 1px solid #adb2b5;
+	margin: 0 0 0 10px;
+	
+}
+#description{
+	height:100px;
+	max-height: 250px;
+	width:470px;
+	margin: 0 0 10px 10px;
+	resize: vertical;
+}
+#price{
+	width: 60px !important;
+}
+
+
+#btn{
+	height: 25px !important;
+	margin: 20px 0 0 0 !important;
+}
+#btn:hover{
+	background-color: #95d7e1;
+}

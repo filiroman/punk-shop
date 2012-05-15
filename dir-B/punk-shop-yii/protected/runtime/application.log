@@ -1,0 +1,306 @@
+2012/05/14 01:07:30 [error] [exception.CException] exception 'CException' with message 'Property "CMenu.0" is not defined.' in /var/www/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('0', Array)
+#1 /var/www/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CMe...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 /var/www/test_shop/protected/views/layouts/main.php(43): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/test_s...')
+#5 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/test_s...', Array, true)
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/test_s...', Array, true)
+#7 /var/www/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/test_shop/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#12 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/test_s...')
+#13 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/test_s...', Array, true)
+#14 /var/www/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/test_s...', Array, true)
+#15 /var/www/test_shop/protected/controllers/SiteController.php(66): CController->render('contact', Array)
+#16 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#17 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('contact')
+#21 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/contact')
+#22 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/test_shop/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/test_shop/index.php?r=site/contact
+---
+2012/05/14 01:09:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'punk_shop_test.{{users}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{users}}`.
+in /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php (25)
+in /var/www/test_shop/index.php (13)
+2012/05/14 01:09:54 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "RegistrationForm" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(RegistrationForm))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('RegistrationFor...')
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php(25): CActiveRecord->__construct()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('')
+#9 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/test_shop/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_shop/index.php?r=user/registration
+HTTP_REFERER=http://localhost/test_shop/index.php?r=user/login
+---
+2012/05/14 01:09:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/test_shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test_shop/index.php?r=site/item
+HTTP_REFERER=http://localhost/test_shop/index.php?r=user/login
+---
+2012/05/14 01:12:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'punk_shop_test.tblusers' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tblusers`.
+in /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php (25)
+in /var/www/test_shop/index.php (13)
+2012/05/14 01:12:05 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "RegistrationForm" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(RegistrationForm))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('RegistrationFor...')
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php(25): CActiveRecord->__construct()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('')
+#9 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/test_shop/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_shop/index.php?r=user/registration
+HTTP_REFERER=http://localhost/test_shop/index.php?r=user/login
+---
+2012/05/14 01:14:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.tblusers' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tblusers`.
+in /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php (25)
+in /var/www/test_shop/index.php (13)
+2012/05/14 01:14:28 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "RegistrationForm" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(RegistrationForm))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('RegistrationFor...')
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php(25): CActiveRecord->__construct()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('')
+#9 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/test_shop/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_shop/index.php?r=user/registration
+---
+2012/05/14 01:14:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.tblusers' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tblusers`.
+in /var/www/test_shop/protected/modules/user/controllers/DefaultController.php (18)
+in /var/www/test_shop/index.php (13)
+2012/05/14 01:14:31 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/yii/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('User')
+#2 /var/www/test_shop/protected/modules/user/controllers/DefaultController.php(18): CActiveDataProvider->__construct('User', Array)
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('')
+#8 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/')
+#9 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/test_shop/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/test_shop/index.php?r=user/
+---
+2012/05/14 01:14:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/test_shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test_shop/index.php?r=site/item
+HTTP_REFERER=http://localhost/test_shop/index.php?r=user/login
+---
+2012/05/14 01:14:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.tblusers' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tblusers`.
+in /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php (25)
+in /var/www/test_shop/index.php (13)
+2012/05/14 01:14:41 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "RegistrationForm" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(RegistrationForm))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('RegistrationFor...')
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php(25): CActiveRecord->__construct()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('')
+#9 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/test_shop/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_shop/index.php?r=user/registration
+HTTP_REFERER=http://localhost/test_shop/index.php?r=site/item
+---
+2012/05/14 01:16:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.tblusers' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tblusers`.
+in /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php (25)
+in /var/www/test_shop/index.php (13)
+2012/05/14 01:16:03 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "RegistrationForm" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(RegistrationForm))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('RegistrationFor...')
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/test_shop/protected/modules/user/controllers/RegistrationController.php(25): CActiveRecord->__construct()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('')
+#9 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/test_shop/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_shop/index.php?r=user/registration
+---
+2012/05/14 01:16:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.tblusers' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tblusers`.
+in /var/www/test_shop/protected/modules/user/models/User.php (28)
+in /var/www/test_shop/protected/modules/user/components/UserIdentity.php (27)
+in /var/www/test_shop/protected/models/LoginForm.php (52)
+2012/05/14 01:16:27 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/test_shop/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/test_shop/protected/modules/user/components/UserIdentity.php(27): User::model()
+#3 /var/www/test_shop/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#4 /var/www/yii/framework/validators/CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 /var/www/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 /var/www/yii/framework/base/CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 /var/www/test_shop/protected/controllers/SiteController.php(88): CModel->validate()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#9 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('login')
+#13 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/test_shop/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_shop/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_shop/index.php?r=site/login
+---
+2012/05/14 01:16:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.tblusers' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tblusers`.
+in /var/www/test_shop/protected/modules/user/models/User.php (28)
+in /var/www/test_shop/protected/modules/user/components/UserIdentity.php (27)
+in /var/www/test_shop/protected/models/LoginForm.php (52)
+2012/05/14 01:16:59 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/test_shop/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/test_shop/protected/modules/user/components/UserIdentity.php(27): User::model()
+#3 /var/www/test_shop/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#4 /var/www/yii/framework/validators/CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 /var/www/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 /var/www/yii/framework/base/CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 /var/www/test_shop/protected/controllers/SiteController.php(88): CModel->validate()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#9 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('login')
+#13 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/test_shop/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_shop/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_shop/index.php?r=site/login
+---
+2012/05/14 01:18:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.{{users}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{users}}`.
+in /var/www/test_shop/protected/modules/user/models/User.php (28)
+in /var/www/test_shop/protected/modules/user/components/UserIdentity.php (27)
+in /var/www/test_shop/protected/models/LoginForm.php (52)
+2012/05/14 01:18:01 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/test_shop/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/test_shop/protected/modules/user/components/UserIdentity.php(27): User::model()
+#3 /var/www/test_shop/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#4 /var/www/yii/framework/validators/CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 /var/www/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 /var/www/yii/framework/base/CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 /var/www/test_shop/protected/controllers/SiteController.php(88): CModel->validate()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#9 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('login')
+#13 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/test_shop/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_shop/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_shop/index.php?r=site/login
+---
+2012/05/14 01:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/test_shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test_shop/index.php?r=site/item
+HTTP_REFERER=http://localhost/test_shop/index.php?r=user/registration
+---
+2012/05/14 01:20:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/test_shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test_shop/index.php?r=site/item
+HTTP_REFERER=http://localhost/test_shop/index.php?r=user/login
+---
+2012/05/14 01:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/test_shop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/test_shop/index.php?r=site/item
+HTTP_REFERER=http://localhost/test_shop/index.php?r=user/login
+---
+2012/05/14 01:22:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/test_shop/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/test_shop/index.php?r=site/item
+HTTP_REFERER=http://localhost/test_shop/index.php?r=user/login
+---
+2012/05/14 01:30:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "item".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('item')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('item')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/item')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/test_shop/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/test_shop/index.php?r=site/item
+HTTP_REFERER=http://localhost/test_shop/index.php?r=user/registration
+---

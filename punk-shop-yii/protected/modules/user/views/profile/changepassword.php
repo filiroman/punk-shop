@@ -1,11 +1,11 @@
-<?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Change Password");
+<?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("зменить пароль");
 $this->breadcrumbs=array(
-	UserModule::t("Profile") => array('/user/profile'),
-	UserModule::t("Change Password"),
+	UserModule::t("Профиль") => array('/user/profile'),
+	UserModule::t("Изменить пароль"),
 );
 ?>
 
-<h2><?php echo UserModule::t("Change password"); ?></h2>
+<h2><?php echo UserModule::t("зменить пароль"); ?></h2>
 <?php echo $this->renderPartial('menu'); ?>
 
 <div class="form">
@@ -14,7 +14,7 @@ $this->breadcrumbs=array(
 	'enableAjaxValidation'=>true,
 )); ?>
 
-	<p class="note"><?php echo UserModule::t('Fields with <span class="required">*</span> are required.'); ?></p>
+	<p class="note"><?php echo UserModule::t('Поля со <span class="required">*</span> обязательны для заполнения.'); ?></p>
 	<?php echo CHtml::errorSummary($model); ?>
 	
 	<div class="row">

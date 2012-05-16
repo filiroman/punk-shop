@@ -1,9 +1,9 @@
-<?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Profile");
+<?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Профиль");
 $this->breadcrumbs=array(
-	UserModule::t("Profile")=>array('profile'),
-	UserModule::t("Edit"),
+	UserModule::t("Профиль")=>array('profile'),
+	UserModule::t("Редактировать"),
 );
-?><h2><?php echo UserModule::t('Edit profile'); ?></h2>
+?><h2><?php echo UserModule::t('Редактировать профиль'); ?></h2>
 <?php echo $this->renderPartial('menu'); ?>
 
 <?php if(Yii::app()->user->hasFlash('profileMessage')): ?>
@@ -18,7 +18,7 @@ $this->breadcrumbs=array(
 	'htmlOptions' => array('enctype'=>'multipart/form-data'),
 )); ?>
 
-	<p class="note"><?php echo UserModule::t('Fields with <span class="required">*</span> are required.'); ?></p>
+	<p class="note"><?php echo UserModule::t('Поля со <span class="required">*</span> обязательны для заполнения.'); ?></p>
 
 	<?php echo $form->errorSummary(array($model,$profile)); ?>
 
@@ -58,7 +58,7 @@ $this->breadcrumbs=array(
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? UserModule::t('Create') : UserModule::t('Save')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? UserModule::t('Создать') : UserModule::t('Save')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

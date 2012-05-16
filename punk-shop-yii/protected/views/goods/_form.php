@@ -10,25 +10,28 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<!--</div class="row">
-		<?php echo $form->labelEx($model,'owner_id'); ?>
-		<?php echo $form->textField($model,'owner_id'); ?>
-		<?php echo $form->error($model,'owner_id'); ?>
+		<?php //echo $form->labelEx($model,'owner_id'); ?>
+		<?php //echo $form->textField($model,'owner_id'); ?>
+		<?php //echo $form->error($model,'owner_id'); ?>
 	</div>-->
 
 	<!--<div class="row">
-		<?php echo $form->labelEx($model,'date'); ?>
-		<?php echo $form->textField($model,'date'); ?>
-		<?php echo $form->error($model,'date'); ?>
+		<?php //echo $form->labelEx($model,'date'); ?>
+		<?php //echo $form->textField($model,'date'); ?>
+		<?php //echo $form->error($model,'date'); ?>
 	</div>-->
 
 	<!--<div class="row">
-		<?php echo $form->labelEx($model,'actual'); ?>
-		<?php echo $form->textField($model,'actual'); ?>
-		<?php echo $form->error($model,'actual'); ?>
+		<?php //echo $form->labelEx($model,'actual'); ?>
+		<?php //echo $form->textField($model,'actual'); ?>
+		<?php //echo $form->error($model,'actual'); ?>
 	</div>-->
         <div class="row">
 		<?php echo $form->labelEx($model,'Тип объявления'); ?>
-		<?php echo $form->dropDownList($model,'type',array('Куплю','Продам')); ?>
+            
+		<?php //Подозреваю что здесь косяк
+                echo $form->dropDownList($model,'type',array('Куплю','Продам')); ?>
+            
 		<?php echo $form->error($model,'type'); ?>
 	</div>
         
@@ -40,7 +43,10 @@
         
 	<div class="row">
                 <?php echo $form->labelEx($model,'Категория'); ?>
-		<?php echo $form->dropDownList($model,'category',  Categories::items('id')); ?>
+            
+		<?php //Подозреваю что здесь косяк
+                echo $form->dropDownList($model,'category',  Categories::items('id')); ?>
+                <?php echo $form->error($model,'category'); ?>
 	</div>
 
 	<div class="row">
@@ -57,9 +63,9 @@
 	</div>
 
 	<!--<div class="row">
-		<?php echo $form->labelEx($model,'views'); ?>
-		<?php echo $form->textField($model,'views'); ?>
-		<?php echo $form->error($model,'views'); ?>
+		<?php //echo $form->labelEx($model,'views'); ?>
+		<?php //echo $form->textField($model,'views'); ?>
+		<?php //echo $form->error($model,'views'); ?>
 	</div>-->
 
 	<div class="row buttons">

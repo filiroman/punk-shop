@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
-	'Categories'=>array('index'),
-	'Manage',
+	'Категории'=>array('index'),
+	'Управление',
 );
 
 $this->menu=array(

@@ -214,7 +214,8 @@ body
 
 #mainmenu
 {
-	background:white url(bg.gif) repeat-x left top;
+	
+	background:white url(bg2.gif) repeat-x left top;
 }
 
 #mainmenu ul
@@ -240,8 +241,8 @@ body
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #6399cd;
-	background-color:#EFF4FA;
+	color: #bf565a;
+	background-color:#fce8e9;
 	text-decoration:none;
 }
 

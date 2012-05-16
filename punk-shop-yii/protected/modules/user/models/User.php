@@ -98,6 +98,8 @@ class User extends CActiveRecord
 			'lastvisit' => UserModule::t("Last visit"),
 			'superuser' => UserModule::t("Superuser"),
 			'status' => UserModule::t("Status"),
+			'phone'=>UserModule::t("phone"),	
+			'avatar'=>UserModule::t("avatar"),	
 		);
 	}
 	

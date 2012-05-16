@@ -28,10 +28,7 @@
 	</div>-->
         <div class="row">
 		<?php echo $form->labelEx($model,'Тип объявления'); ?>
-            
-		<?php //Подозреваю что здесь косяк
-                echo $form->dropDownList($model,'type',array('Куплю','Продам')); ?>
-            
+		<?php echo $form->dropDownList($model,'type', Type::items('id')); ?> 
 		<?php echo $form->error($model,'type'); ?>
 	</div>
         
@@ -42,11 +39,9 @@
 	</div>
         
 	<div class="row">
-                <?php echo $form->labelEx($model,'Категория'); ?>
-            
-		<?php //Подозреваю что здесь косяк
-                echo $form->dropDownList($model,'category',  Categories::items('id')); ?>
-                <?php echo $form->error($model,'category'); ?>
+      <?php echo $form->labelEx($model,'Категория'); ?>
+      <?php echo $form->dropDownList($model,'category_id',  Categories::items('id')); ?>
+      <?php echo $form->error($model,'category'); ?>
 	</div>
 
 	<div class="row">

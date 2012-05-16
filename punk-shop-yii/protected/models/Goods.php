@@ -140,7 +140,7 @@ class Goods extends CActiveRecord
         {   
             if($this->isNewRecord)
             {   $this->actual=true;
-                $this->date=time();
+                $this->date=date("YmdHis");
                 $this->owner_id=Yii::app()->user->id;
             }
             else

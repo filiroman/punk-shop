@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
-	'Categories'=>array('index'),
-	'Create',
+	'Категории'=>array('index'),
+	'Создать',
 );
 
 $this->menu=array(
@@ -10,6 +10,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Categories</h1>
+<h1>Создать категории</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

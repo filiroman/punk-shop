@@ -31,6 +31,7 @@ return array(
 		),
 
 	),
+	'language' => 'ru',
 
 	// application components
 	'components'=>array(

@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="css/user_profile.css" />
+
 <?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Профиль");
 $this->breadcrumbs=array(
 	UserModule::t("Профиль"),
@@ -6,7 +8,7 @@ $this->breadcrumbs=array(
 <?php echo $this->renderPartial('menu'); ?>
 
 
-<img src="/punk-shop/punk-shop-yii/img/ava.jpg" height="220" width="176" />
+<img id="user_img" src="/punk-shop/punk-shop-yii/img/ava.jpg" height="220" width="176" />
 <!-- <img src="<?php //$model->getAttributeLabel('img') ?> height="220" width="176"/> -->
 
 

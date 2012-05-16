@@ -5,6 +5,11 @@ $this->breadcrumbs=array(
 ?><h2><?php echo UserModule::t('Ваш профиль'); ?></h2>
 <?php echo $this->renderPartial('menu'); ?>
 
+
+<img src="/punk-shop/punk-shop-yii/img/ava.jpg" height="220" width="176" />
+<!-- <img src="<?php //$model->getAttributeLabel('img') ?> height="220" width="176"/> -->
+
+
 <?php if(Yii::app()->user->hasFlash('profileMessage')): ?>
 <div class="success">
 <?php echo Yii::app()->user->getFlash('profileMessage'); ?>

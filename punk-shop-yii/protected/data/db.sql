@@ -13,7 +13,7 @@ CREATE  TABLE IF NOT EXISTS `punk_shop_test`.`tbl_categories` (
   `name` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) )
-ENGINE = InnoDB;
+ENGINE=InnoDB;
 
 
 -- -----------------------------------------------------
@@ -28,17 +28,11 @@ CREATE  TABLE IF NOT EXISTS `punk_shop_test`.`tbl_goods` (
   `title` VARCHAR(45) NOT NULL ,
   `description` VARCHAR(45) NOT NULL ,
   `price` INT UNSIGNED NULL ,
-  `type` ENUM('buy','sale') NULL ,
+  `type` INT NOT NULL ,
   `views` INT NOT NULL ,
   PRIMARY KEY (`id`) ,
-  UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
-  INDEX `fk_goods_categories` (`category_id` ASC) ,
-  CONSTRAINT `fk_goods_categories`
-    FOREIGN KEY (`category_id` )
-    REFERENCES `punk_shop`.`tbl_categories` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) )
+ENGINE=InnoDB;
 
 
 -- -----------------------------------------------------
@@ -56,7 +50,7 @@ CREATE  TABLE IF NOT EXISTS `punk_shop_test`.`tbl_images` (
     REFERENCES `punk_shop`.`tbl_goods` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE=InnoDB;
 
 
 -- -----------------------------------------------------
@@ -121,6 +115,13 @@ INSERT INTO `tbl_profiles_fields` (`id`, `varname`, `title`, `field_type`, `fiel
 (2, 'firstname', 'First Name', 'VARCHAR', 50, 3, 1, '', '', 'Incorrect First Name (length between 3 and 50 characters).', '', '', '', '', 0, 3),
 (3, 'birthday', 'Birthday', 'DATE', 0, 0, 2, '', '', '', '', '0000-00-00', 'UWjuidate', '{"ui-theme":"redmond"}', 3, 2);
 
+CREATE TABLE `punk_shop_test`.`tbl_type` (
+  `id` INT  NOT NULL AUTO_INCREMENT,
+  `name` CHAR(6)  NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB
+CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;

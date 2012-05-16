@@ -128,5 +128,26 @@ class Goods extends CActiveRecord
             'id'=>$this->id,
         ));
     }
-	
+    /**
+     * Перерегрузка метода авто сохранения нужной нам информации:
+     * время, кто создал, актуальность
+     * Если запись уже существует, то перезаписывается только время создания записи
+     * @return boolean 
+     */
+	protected function beforeSave()
+    {
+        if(parent::beforeSave())
+        {   
+            if($this->isNewRecord)
+            {   $this->actual=true;
+                $this->date=time();
+                $this->owner_id=Yii::app()->user->id;
+            }
+            else
+                $this->date=time();
+            return true;
+        }
+        else
+            return false;
+    }
 }

@@ -4,12 +4,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Goods', 'url'=>array('create')),
-	array('label'=>'Manage Goods', 'url'=>array('admin')),
+	array('label'=>'Создать товар', 'url'=>array('create')),
+	array('label'=>'Управление товаром', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Goods</h1>
+<h1>Товары</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

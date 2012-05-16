@@ -49,7 +49,7 @@ class GoodsController extends Controller
 	 * @param integer $id the ID of the model to be displayed
 	 */
 	public function actionView($id)
-	{
+	{  
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -127,7 +127,24 @@ class GoodsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Goods');
+		//Сначала мы создаём критерий запроса для получения списка записей.
+                // Критерий включает
+                //  сортировку по времени их обновления в обратном порядке
+                $criteria=new CDbCriteria(array(
+                    'order'=>'date DESC',
+                 ));
+                //Используя критерий мы создаём провайдер данных, нужный для трёх целей. 
+                //Во-первых, он занимается постраничной разбивкой данных. 
+                //Мы задаём количество результатов на страницу равным 5. 
+                //Во-вторых, данные сортируются в соответствии с запросом пользователя. 
+                //И, наконец, провайдер отдаёт разбитые на страницы отсортированные данные
+                // виджетам или отображению.
+		$dataProvider=new CActiveDataProvider('Goods',array(
+                                'pagination'=>array(
+                                'pageSize'=>5,
+                                 ),
+                                'criteria'=>$criteria,
+                ));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

@@ -30,20 +30,24 @@
 		</div>
 	</div><!-- header -->
 
-	<div id="mainmenu">
+<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-			array('label'=>'Главная', 'url'=>array('/site/index')),
-array('url'=>Yii::app()->getModule('user')->loginUrl, 'label'=>Yii::app()->getModule('user')->t("Вход"), 'visible'=>Yii::app()->user->isGuest),
-array('url'=>Yii::app()->getModule('user')->registrationUrl, 'label'=>Yii::app()->getModule('user')->t("Регистрация"), 'visible'=>Yii::app()->user->isGuest),
+
+array('label'=>'Главная', 'url'=>array('/site/index')),
+array('url'=>array('/goods/'),'label'=>'Товары'),
+array('url'=>array('/categories/'),'label'=>'Создать категорию', 'visible'=>Yii::app()->getModule('user')->isAdmin()),
 array('url'=>Yii::app()->getModule('user')->profileUrl, 'label'=>Yii::app()->getModule('user')->t("Профиль"), 'visible'=>!Yii::app()->user->isGuest),
-array('label'=>'Товары', 'url'=>array('/goods/')),
-array('label'=>'Создать категорию', 'url'=>array('/categories/')),
+array('url'=>Yii::app()->getModule('user')->registrationUrl, 'label'=>Yii::app()->getModule('user')->t("Регистрация"), 'visible'=>Yii::app()->user->isGuest),
+array('url'=>Yii::app()->getModule('user')->loginUrl, 'label'=>Yii::app()->getModule('user')->t("Вход"), 'visible'=>Yii::app()->user->isGuest),
 array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getModule('user')->t("Выход").' ('.Yii::app()->user->name.')', 'visible'=>!Yii::app()->user->isGuest),
+
 			),
 
 
-		)); ?>
+		));
+
+ ?>
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(

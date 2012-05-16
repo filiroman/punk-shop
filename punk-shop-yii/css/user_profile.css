@@ -1,0 +1,12 @@
+﻿#user_img{
+	position: absolute;
+	left: 450px;
+	top: 170px;
+}
+
+table{
+	margin: 100px 0 0 0;
+}
+th.label{
+	width: 210px;
+}

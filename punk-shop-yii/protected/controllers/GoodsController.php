@@ -84,8 +84,8 @@ class GoodsController extends Controller
                 // Сохраняем каждое изображение
                 foreach ($images as $image => $pic) {
                     $file = /*Yii::getPathOfAlias('webroot').'/img/Goods/'.*/ $model->id.'_'.$pic->name;
-                    echo $file;
-                    die();
+                    //echo $file;
+                    //die();
                     if ($pic->saveAs($file)) {
                         
                         $img_add = new Images;

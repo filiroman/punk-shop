@@ -24,9 +24,6 @@
 	
 	<p class="item_price">Цена: <span style="font-size:15px;font-weight:bold"><?php echo CHtml::encode($data->price); ?></span> руб.</p>
 	
-	
-	
-	
 
 	
 	<p class="item_description"><?php echo CHtml::encode($data->description); ?></p>

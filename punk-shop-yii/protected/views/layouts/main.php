@@ -13,7 +13,10 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
+	
+	<script type="text/javascript" language="javascript" src="lytebox_v5.5/lytebox.js"></script>
+	<link rel="stylesheet" href="lytebox_v5.5/lytebox.css" type="text/css" media="screen" />
+	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -27,6 +30,22 @@
 				<img src="<?php echo Yii::app()->request->baseUrl; ?>/img/logo.png">
 			</a>			
 			<h1><?php echo CHtml::encode(Yii::app()->name); ?></h1>
+			<div id="search">
+				<form method="post" action="search.php">
+					<input id="search_text" name="search_text" type="text" placeholder="Поиск">
+					<select id="search_category" name="category" size="1">
+						<option selected="selected" value="default">Во всех категориях</option>
+						<option value="">Электроника</option>
+						<option value="">Мебель</option>
+						<option value="">Книги</option>
+						<option value="">Бытовая техника</option>
+						<option value="">Услуги</option>
+						<option value="">Другое</option>
+						<option value="">Объявления</option>
+					</select>
+					<input id="search_button" type="submit" value="Искать">
+				</form>
+			</div>
 		</div>
 	</div><!-- header -->
 

@@ -117,12 +117,11 @@ INSERT INTO `tbl_profiles_fields` (`id`, `varname`, `title`, `field_type`, `fiel
 
 CREATE TABLE `punk_shop_test`.`tbl_type` (
   `id` INT  NOT NULL AUTO_INCREMENT,
-  `name` CHAR(6)  NOT NULL,
+  `name` CHAR(20)  NOT NULL,
   PRIMARY KEY (`id`)
 )
 ENGINE = InnoDB
-CHARACTER SET utf8 COLLATE utf8_general_ci;
-
+DEFAULT CHARSET=utf8;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

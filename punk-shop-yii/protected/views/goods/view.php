@@ -80,6 +80,14 @@ $res = array(
 		$i++;
 	} 
 
-
+	
 $this->widget('zii.widgets.CDetailView', $res);
  ?>
+
+ <script>
+	img = document.getElementsByTagName("img");
+	
+	for (i=1;i<=img.length;i++){
+		img[i].height=150;
+	}
+ </script>

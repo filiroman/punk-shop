@@ -16,9 +16,29 @@ class Categories extends CActiveRecord
  
     public static function items($type)
     {
-        if(!isset(self::$_items[$type]))
+      
+        if(!isset(self::$_items[$type])) {
             self::loadItems($type);
+        }
+        
         return self::$_items[$type];
+    }
+    
+    public static function getIdsWithTitles() {
+        $result = Array();
+        
+        $categories = self::model()->findAll(Array(
+            'order' => 'id'
+        ));
+        
+        foreach($categories as $category) {
+            $result[] = Array(
+                'id' => $category->id,
+                'title' => $category->name
+            );
+        }
+        
+        return $result;
     }
  
     public static function item($type,$code)

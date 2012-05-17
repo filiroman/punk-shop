@@ -758,3 +758,94 @@ REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/index
 in /var/www/punk_shop/punk-shop-yii/protected/views/goods/view.php (9)
 in /var/www/punk_shop/punk-shop-yii/protected/views/site/index.php (20)
 in /var/www/punk_shop/punk-shop-yii/protected/controllers/SiteController.php (56)
+2012/05/18 01:26:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=1
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?category_id=1
+---
+2012/05/18 01:27:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=4
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?query=&category_id=3
+---
+2012/05/18 01:29:53 [error] [exception.CException] exception 'CException' with message 'В классе SiteController и его поведениях не найден метод или замыкание с именем "loadModel".' in /var/www/punk_shop/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('loadModel', Array)
+#1 /var/www/punk_shop/punk-shop-yii/protected/controllers/SiteController.php(25): SiteController->loadModel('1')
+#2 [internal function]: SiteController->actionView('1')
+#3 /var/www/punk_shop/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#9 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#10 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=1
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?category_id=1
+---
+2012/05/18 01:30:39 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "view".' in /var/www/punk_shop/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#1 /var/www/punk_shop/punk-shop-yii/protected/controllers/SiteController.php(39): CController->render('view', Array)
+#2 [internal function]: SiteController->actionView('1')
+#3 /var/www/punk_shop/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#9 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#10 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=1
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?category_id=1
+---
+2012/05/18 01:31:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=1
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?category_id=1
+---
+2012/05/18 01:32:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=6
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=site/index
+---
+2012/05/18 01:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=2
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?query=&category_id=5
+---

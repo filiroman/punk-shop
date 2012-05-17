@@ -125,7 +125,7 @@ body
 	margin: 10px 0  0;
 	padding: 10px 2px 0 0;
 	background-color: white;
-	min-height: 250px;
+	min-height: 350px;
 	width: 520px;
 	border-right: 1px solid #adb2b5;
 	xborder-bottom: 1px solid #adb2b5;
@@ -200,6 +200,7 @@ body
 
 #content
 {	
+	xmin-height: 400px;
     padding: 20px;
 }
 

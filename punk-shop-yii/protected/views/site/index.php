@@ -18,4 +18,10 @@
     )); ?>
 	
 </div>
+<script>
 
+	aa= document.getElementsByTagName('a');
+	for(i=0;i<aa.length;i++){
+		aa[i].href=aa[i].href.replace('index.php?r=site/view&id','index.php?r=goods/view&id');
+	}
+</script>

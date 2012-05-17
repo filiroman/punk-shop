@@ -668,3 +668,93 @@ Stack trace:
 REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/profile
 HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
 ---
+2012/05/18 01:04:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=6
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?query=&category_id=0
+---
+2012/05/18 01:05:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=2
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?query=&category_id=0
+---
+2012/05/18 01:10:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in /var/www/punk_shop/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/view')
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/view&id=6
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=site/index
+---
+2012/05/18 01:11:22 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "../_view".' in /var/www/punk_shop/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/zii/widgets/CListView.php(242): CController->renderPartial('../_view', Array)
+#1 /var/www/punk_shop/yii/framework/zii/widgets/CBaseListView.php(158): CListView->renderItems()
+#2 [internal function]: CBaseListView->renderSection(Array)
+#3 /var/www/punk_shop/yii/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#4 /var/www/punk_shop/yii/framework/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#5 /var/www/punk_shop/yii/framework/web/CBaseController.php(174): CBaseListView->run()
+#6 /var/www/punk_shop/punk-shop-yii/protected/views/site/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#10 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#11 /var/www/punk_shop/punk-shop-yii/protected/controllers/SiteController.php(56): CController->render('index', Array)
+#12 [internal function]: SiteController->actionIndex(NULL, NULL)
+#13 /var/www/punk_shop/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#14 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#15 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#16 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#17 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('index')
+#19 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/index')
+#20 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#22 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/index
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---
+2012/05/18 01:11:32 [error] [php] Undefined variable: model (/var/www/punk_shop/punk-shop-yii/protected/views/goods/view.php:9)
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /var/www/punk_shop/yii/framework/zii/widgets/CListView.php(242): SiteController->renderPartial()
+#2 /var/www/punk_shop/yii/framework/zii/widgets/CBaseListView.php(158): CListView->renderItems()
+#3 unknown(0): CListView->renderSection()
+#4 /var/www/punk_shop/yii/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#5 /var/www/punk_shop/yii/framework/zii/widgets/CBaseListView.php(126): CListView->renderContent()
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(174): CListView->run()
+#7 /var/www/punk_shop/punk-shop-yii/protected/views/site/index.php(20): SiteController->widget()
+#8 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#10 /var/www/punk_shop/yii/framework/web/CController.php(870): SiteController->renderFile()
+#11 /var/www/punk_shop/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#12 /var/www/punk_shop/punk-shop-yii/protected/controllers/SiteController.php(56): SiteController->render()
+#13 unknown(0): SiteController->actionIndex()
+#14 /var/www/punk_shop/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#15 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#16 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(287): SiteController->runAction()
+#18 /var/www/punk_shop/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#19 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#20 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#21 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/punk_shop/punk-shop-yii/index.php(15): CWebApplication->run()
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/index
+in /var/www/punk_shop/punk-shop-yii/protected/views/goods/view.php (9)
+in /var/www/punk_shop/punk-shop-yii/protected/views/site/index.php (20)
+in /var/www/punk_shop/punk-shop-yii/protected/controllers/SiteController.php (56)

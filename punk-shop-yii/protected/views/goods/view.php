@@ -22,7 +22,11 @@ $uss=Yii::app()->getModule('user')->user($model->owner_id);
 
 //строим наш виджет, показывающий товар
 //$model->getAttributeLabel('owner_id') - так обращаемся к соответвию названий мд табличными и заданными (owner_id = Владелец)
-$this->widget('zii.widgets.CDetailView', array(
+$arr = Images::items("$model->id");
+//var_dump($arr);
+//die();
+
+$res = array(
 	'data'=>$model,
 	'attributes'=>array(
 		array(
@@ -56,16 +60,26 @@ $this->widget('zii.widgets.CDetailView', array(
 		array(
 		'label'=>$model->getAttributeLabel('type'),
 		'value'=>Type::item('id',$model->type),
-		),
+		)
 		//array(
 		//'label'=>'Количество просмотров',
 		//'value'=>$model->views,
-		//),
-		array(
-		'label'=>'Фото',
+		//),		
+	)
+	);
+	//var_dump($res);
+	$i = 1;
+	foreach ($arr as $val)
+	{
+		array_push($res['attributes'], array(
+		'label'=>'Фото_'.$i,
 		'type'=>'image',
-		'value'=>Yii::app()->baseUrl."/img/".'pic1.jpg',
-		), 
-	),
-));
+		//'template'=>'lytebox',
+		'value'=>Yii::app()->baseUrl.'/img/Goods/'.$val
+		));
+		$i++;
+	} 
+
+
+$this->widget('zii.widgets.CDetailView', $res);
  ?>

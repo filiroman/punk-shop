@@ -34,7 +34,7 @@ class Categories extends CActiveRecord
         $models=self::model()->findAll(array(
             //'condition'=>'type=:type',
             //'params'=>array(':type'=>$type),
-            //'order'=>'name',
+            'order'=>'id',
         ));
         foreach($models as $model)
             self::$_items[$type][$model->id]=$model->name;

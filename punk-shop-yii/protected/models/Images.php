@@ -13,6 +13,34 @@
  */
 class Images extends CActiveRecord
 {
+	private static $_items=array();
+ 
+    public static function items($type)
+    {
+        if(!isset(self::$_items[$type]))
+            self::loadItems($type);
+        return self::$_items[$type];
+    }
+ 
+    public static function item($type,$code)
+    {
+        if(!isset(self::$_items[$type]))
+            self::loadItems($type);
+        return isset(self::$_items[$type][$code]) ? self::$_items[$type][$code] : false;
+    }
+ 
+    private static function loadItems($type)
+    {
+        self::$_items[$type]=array();
+        $models=self::model()->findAll(array(
+            'condition'=>'good_id='.$type,
+            //'params'=>array(':type'=>$type),
+            'order'=>'id',
+        ));
+        foreach($models as $model)
+            self::$_items[$type][$model->id]=$model->src;
+    }
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.

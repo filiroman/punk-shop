@@ -63,7 +63,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=punk_shop_test',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '12345',
+			'password' => '',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_', 
 			

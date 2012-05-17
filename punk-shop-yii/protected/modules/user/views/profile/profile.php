@@ -5,7 +5,7 @@ $this->breadcrumbs=array(
 	UserModule::t("Профиль"),
 );
 ?><h2><?php echo UserModule::t('Ваш профиль'); ?></h2>
-<?php echo $this->renderPartial('menu'); ?>
+<div style="position:relative;float:right;right:100px;"><?php echo $this->renderPartial('menu'); ?></div>
 
 
 <?php $ava = CHtml::encode($model->avatar);
@@ -20,47 +20,35 @@ echo '<img id="user_img" src='."$ava".'height="220" width="176" />';
 <?php echo Yii::app()->user->getFlash('profileMessage'); ?>
 </div>
 <?php endif; ?>
-<table class="dataGrid">
-<tr>
-	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('username')); ?>
-</th>
-    <td><?php echo CHtml::encode($model->username); ?>
-</td>
-</tr>
+
+<p id="user_name"><?php echo CHtml::encode($model->username); ?></p>
+
+
 <?php 
 		$profileFields=ProfileField::model()->forOwner()->sort()->findAll();
 		if ($profileFields) {
 			foreach($profileFields as $field) {
 				//echo "<pre>"; print_r($profile); die();
 			?>
-<tr>
-	<th class="label"><?php echo CHtml::encode(UserModule::t($field->title)); ?>
-</th>
-    <td><?php echo (($field->widgetView($profile))?$field->widgetView($profile):CHtml::encode((($field->range)?Profile::range($field->range,$profile->getAttribute($field->varname)):$profile->getAttribute($field->varname)))); ?>
-</td>
-</tr>
+
+	
+
+<span><?php echo (($field->widgetView($profile))?$field->widgetView($profile):CHtml::encode((($field->range)?Profile::range($field->range,$profile->getAttribute($field->varname)):$profile->getAttribute($field->varname)))); ?></span></br>
+
+
 			<?php
 			}//$profile->getAttribute($field->varname)
 		}
 ?>
-<tr>
-	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('email')); ?>
-</th>
-    <td><?php echo CHtml::encode($model->email); ?>
-</td>
-</tr>
-<tr>
-	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('createtime')); ?>
-</th>
-    <td><?php echo date("d.m.Y",$model->createtime); ?>
-</td>
-</tr>
-<tr>
-	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('lastvisit')); ?>
-</th>
-    <td><?php echo date("d.m.Y",$model->lastvisit); ?>
-</td>
-</tr>
+<p></p>
+<p id="user_email"><?php echo CHtml::encode($model->email);?></p>
+<p></p>
+
+<span ><?php echo CHtml::encode($model->getAttributeLabel('createtime')); ?></span>
+<p><?php echo date("d.m.Y",$model->createtime); ?></p>
+<span><?php echo CHtml::encode($model->getAttributeLabel('lastvisit')); ?></span>
+<p><?php echo date("d.m.Y",$model->lastvisit); ?></p>
+
 <!--<tr>
 	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('status')); ?>
 </th>
@@ -68,12 +56,10 @@ echo '<img id="user_img" src='."$ava".'height="220" width="176" />';
     ?>
 </td>
 </tr>-->
-<tr>
-	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('about')); ?>
-</th>
-    <td><?php echo CHtml::encode($model->about);
+
+	<p><?php echo CHtml::encode($model->getAttributeLabel('about')); ?></p>
+
+    <?php echo CHtml::encode($model->about);
     //var_dump($model->about);
     ?>
-</td>
-</tr>
-</table>
+

@@ -83,7 +83,7 @@ body
 	width: 220px;
 	float: right;
 	right: 0px;
-	top: 10px;
+	top: 40px;
 	border-top: 1px solid #adb2b5;
 	border-left: 1px solid #adb2b5;
 	border-right: 1px solid #adb2b5;
@@ -94,7 +94,7 @@ body
 	font-size:21px;
 	font-family: calibri;
 	text-decoration: none;
-	color: #234f68;
+	color: #4d9ac6;
 	
 	margin:0 !important;
 	padding:0 0 0 0 !important;

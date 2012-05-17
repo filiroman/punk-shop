@@ -48,6 +48,9 @@ class User extends CActiveRecord
 			#array('username, password, email', 'required'),
 			array('username', 'length', 'max'=>20, 'min' => 3,'message' => UserModule::t("Incorrect username (length between 3 and 20 characters).")),
 			array('password', 'length', 'max'=>128, 'min' => 4,'message' => UserModule::t("Incorrect password (minimal length 4 symbols).")),
+			#	проверяем телефонный номер
+			array('phone','lengt','max'=>11,'message'=>UserModule::t("Incorrect phone number.")),
+			array('phone', 'match', 'pattern' => '/^[0-9]+$/u','message' => UserModule::t("Incorrect phone number: use numbers only.")),
 			array('email', 'email'),
 			array('username', 'unique', 'message' => UserModule::t("This user's name already exists.")),
 			array('email', 'unique', 'message' => UserModule::t("This user's email address already exists.")),
@@ -95,6 +98,8 @@ class User extends CActiveRecord
 			'lastvisit' => UserModule::t("Last visit"),
 			'superuser' => UserModule::t("Superuser"),
 			'status' => UserModule::t("Status"),
+			'phone'=>UserModule::t("phone"),	
+			'avatar'=>UserModule::t("avatar"),	
 		);
 	}
 	

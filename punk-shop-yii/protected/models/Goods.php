@@ -84,15 +84,15 @@ class Goods extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'owner_id' => 'Owner',
-			'date' => 'Date',
-			'actual' => 'Actual',
-			'category_id' => 'Category',
-			'title' => 'Title',
-			'description' => 'Description',
-			'price' => 'Price',
-			'type' => 'Type',
-			'views' => 'Views',
+			'owner_id' => 'Владелец',
+			'date' => 'Создан',
+			'actual' => 'Актуальность',
+			'category_id' => 'Категория',
+			'title' => 'Заголовок',
+			'description' => 'Описание',
+			'price' => 'Цена',
+			'type' => 'Тип',
+			'views' => 'Просмотров',
 		);
 	}
 
@@ -145,7 +145,7 @@ class Goods extends CActiveRecord
                 $this->owner_id=Yii::app()->user->id;
             }
             else
-                $this->date=time();
+                $this->date=date("YmdHis");
             return true;
         }
         else

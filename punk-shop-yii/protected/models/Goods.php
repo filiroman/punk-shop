@@ -56,6 +56,7 @@ class Goods extends CActiveRecord
 			array('description', 'length', 'max'=>256),			
 			array('price', 'length', 'max'=>10),
 			array('type', 'length', 'max'=>4),
+			//array('image', 'file', 'types'=>'jpg, gif, png', 'maxSize' => 1048576),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('owner_id, date, actual, category_id, title, description, price, type', 'safe', 'on'=>'search'),

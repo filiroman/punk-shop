@@ -47,9 +47,9 @@
 	
 	<div class="row">
 		<?php $this->widget('CMultiFileUpload', array(
-            'name' => 'images',
+            'name' => 'Images',
             'accept' => 'jpeg|jpg|gif|png',
-			'max' => 5,
+				'max' => 5,
             'duplicate' => 'Duplicate file', 
             'denied' => 'Invalid file type',
 		)); ?>

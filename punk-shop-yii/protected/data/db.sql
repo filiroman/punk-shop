@@ -41,15 +41,10 @@ ENGINE=InnoDB;
 CREATE  TABLE IF NOT EXISTS `punk_shop_test`.`tbl_images` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `good_id` INT NOT NULL ,
-  `src` VARCHAR(45) NOT NULL ,
+  `src` VARCHAR(256) NOT NULL ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) ,
-  INDEX `fk_images_goods` (`good_id` ASC) ,
-  CONSTRAINT `fk_images_goods`
-    FOREIGN KEY (`good_id` )
-    REFERENCES `punk_shop`.`tbl_goods` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  INDEX `fk_images_goods` (`good_id` ASC) )
 ENGINE=InnoDB;
 
 

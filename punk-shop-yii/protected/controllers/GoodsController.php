@@ -75,33 +75,49 @@ class GoodsController extends Controller
 		if(isset($_POST['Goods']))
 		{
 			$model->attributes=$_POST['Goods'];
-			$images = CUploadedFile::getInstancesByName('images');
+			$images = CUploadedFile::getInstancesByName('Images');
+			
+			$succ = $model->save();
 			
 			if (isset($images) && count($images) > 0) {
 			
                 // Сохраняем каждое изображение
                 foreach ($images as $image => $pic) {
-                    $file = Yii::getPathOfAlias('webroot').'/img/Goods/'.$model->id.'_'.$pic->name;
+                    $file = /*Yii::getPathOfAlias('webroot').'/img/Goods/'.*/ $model->id.'_'.$pic->name;
+                    echo $file;
+                    die();
                     if ($pic->saveAs($file)) {
                         
-                        $img_add = new Images();
+                        $img_add = new Images;
                         $img_add->src = $file;
                         $img_add->good_id = $model->id; 
- 
                         $img_add->save(); // DONE
                     }
                     //else
                         // handle the errors here, if you want
                 }
-			if($model->save())
+         }
+			if($succ)
 				$this->redirect(array('view','id'=>$model->id));
-		    }
 		}
 				
 		$this->render('create',array(
 			'model'=>$model,
 		));
 	}
+	/*public function actionCreate(){
+        $model=new Images;
+        if(isset($_POST['Images'])){
+            $model->attributes=$_POST['Images'];
+            $model->image=CUploadedFile::getInstance($model,'image');
+            if($model->save()){
+                $model->image->saveAs('../');
+                // перенаправляем на страницу, где выводим сообщение об
+                // успешной загрузке
+            }
+        }
+        $this->render('create', array('model'=>$model));
+    }*/
 
 	/**
 	 * Updates a particular model.

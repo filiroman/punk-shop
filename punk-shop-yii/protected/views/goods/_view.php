@@ -41,6 +41,9 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('type')); ?>:</b>
 	<?php echo CHtml::encode(Type::item('id',$data->type)); ?>
 	<br />
+	<img id="user_img" src="/punk-shop/punk-shop-yii/img/ava.jpg" height="220" width="176" />
+<!--<?php echo $data->img; ?>ЗАГЛУШКА-->
+
 <!--
 	<b><?php echo CHtml::encode($data->getAttributeLabel('views')); ?>:</b>
 	<?php echo CHtml::encode($data->views); ?>

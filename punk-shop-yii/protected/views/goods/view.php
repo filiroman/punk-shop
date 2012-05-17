@@ -1,3 +1,8 @@
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
 <?php
 $this->breadcrumbs=array(
 	'Объявления'=>array('index'),
@@ -83,3 +88,15 @@ $res = array(
 
 $this->widget('zii.widgets.CDetailView', $res);
  ?>
+
+ <script>
+	img = document.getElementsByTagName("img");
+	
+	for (i=1;i<=img.length;i++){
+		link = img[i].src;
+		//if(img.length>2){
+			img[i].outerHTML="<a class=\"single_image\" href=\""+link+"\"><img src=\""+link+"\" /></a>";
+		//} 
+		img[i].height=150;
+	}
+ </script>

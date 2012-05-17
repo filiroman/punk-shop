@@ -14,10 +14,24 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 	
-	<script type="text/javascript" language="javascript" src="lytebox_v5.5/lytebox.js"></script>
-	<link rel="stylesheet" href="lytebox_v5.5/lytebox.css" type="text/css" media="screen" />
+
 	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	
+	 <script>
+		$(document).ready(function() {
+		/* This is basic - uses default settings */
+		  $("a.single_image").fancybox();
+		/* Apply fancybox to multiple items */
+		  $("a.group").fancybox({
+			'transitionIn'  :  'elastic',
+			'transitionOut'  :  'elastic',
+			'speedIn'    :  600, 
+			'speedOut'    :  200, 
+			'overlayShow'  :  false
+		  });
+		});
+	</script>
 </head>
 
 <body>
@@ -90,4 +104,5 @@ array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getM
 </div><!-- page -->
 
 </body>
+
 </html>

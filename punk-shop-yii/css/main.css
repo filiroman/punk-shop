@@ -8,7 +8,7 @@ body
 	height: 100%;
 	margin: 0 auto;
 	padding: 0;
-	color: #555;
+	color: #2a2d2f;
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	background: #EFEFEF;
 }
@@ -78,12 +78,12 @@ body
 #categories{
 	position: relative;
 	min-height: 50px;
-	margin:0 !important;
+	margin:5px !important;
 	padding:0 !important;
 	width: 220px;
 	float: right;
-	right: 5px;
-	top: 10px;
+	right: 0px;
+	top: 40px;
 	border-top: 1px solid #adb2b5;
 	border-left: 1px solid #adb2b5;
 	border-right: 1px solid #adb2b5;
@@ -94,7 +94,8 @@ body
 	font-size:21px;
 	font-family: calibri;
 	text-decoration: none;
-	color: #d85e5e;
+	color: #4d9ac6;
+	
 	margin:0 !important;
 	padding:0 0 0 0 !important;
 }
@@ -122,7 +123,7 @@ body
 #result{
 	position: relative;
 	margin: 10px 0  0;
-	padding: 10px 0 0 0;
+	padding: 10px 2px 0 0;
 	background-color: white;
 	min-height: 250px;
 	width: 520px;
@@ -133,8 +134,8 @@ body
 	position: relative;
 	min-height: 100px;	
 	height: 240px;
-	width: 510px;
-	margin: 15px 0;
+	width: 5120px;
+	margin: 15px 5px;
 	border-bottom: 1px solid #adb2b5;
 }
 
@@ -261,9 +262,14 @@ body
 }
 
 #user_img{
-	position: absolute;
-	left: 530px;
-	top: 170px;
+	float: left;
+	max-width: 150px;
+	max-height: 200px;
+	margin: 0 10px 10px 0;
+}
+#user_name{
+	margin: 10px 0 10px 0;
+	font-size: 24px;
 }
 
 table{
@@ -324,7 +330,7 @@ div.form .rememberMe label
 div.view
 {
 	padding: 10px;
-	margin: 10px 0;
+	margin: 10px 5px;
 	border: 1px solid #C9E0ED;
 }
 

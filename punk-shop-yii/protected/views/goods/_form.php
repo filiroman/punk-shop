@@ -3,6 +3,7 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'goods-form',
 	'enableAjaxValidation'=>false,
+	'htmlOptions' => array('enctype' => 'multipart/form-data'),
 )); ?>
 
 	<p class="note">Поля, отмеченные <span class="required">*</span>, являются обязательными.</p>
@@ -42,6 +43,16 @@
       <?php echo $form->labelEx($model,'Категория'); ?>
       <?php echo $form->dropDownList($model,'category_id',  Categories::items('id')); ?>
       <?php echo $form->error($model,'category'); ?>
+	</div>
+	
+	<div class="row">
+		<?php $this->widget('CMultiFileUpload', array(
+            'name' => 'images',
+            'accept' => 'jpeg|jpg|gif|png',
+			'max' => 5,
+            'duplicate' => 'Duplicate file', 
+            'denied' => 'Invalid file type',
+		)); ?>
 	</div>
 
 	<div class="row">

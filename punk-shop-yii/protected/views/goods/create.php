@@ -13,3 +13,8 @@ $this->menu=array(
 <h1>Create Goods</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+
+<script>
+	input = document.getElementsByTagName('input');
+	input[4].size=45;
+</script>

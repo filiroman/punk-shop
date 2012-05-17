@@ -13,6 +13,8 @@ class RegistrationForm extends User {
 			array('username, password, verifyPassword, email', 'required'),
 			array('username', 'length', 'max'=>20, 'min' => 3,'message' => UserModule::t("Incorrect username (length between 3 and 20 characters).")),
 			array('password', 'length', 'max'=>128, 'min' => 4,'message' => UserModule::t("Incorrect password (minimal length 4 symbols).")),
+			array('phone','length','max'=>11,'message'=>UserModule::t("Incorrect phone number.")),
+			array('phone', 'match', 'pattern' => '/^[0-9]+$/u','message' => UserModule::t("Incorrect phone number: use numbers only.")),
 			array('email', 'email'),
 			array('username', 'unique', 'message' => UserModule::t("This user's name already exists.")),
 			array('email', 'unique', 'message' => UserModule::t("This user's email address already exists.")),
@@ -26,4 +28,4 @@ class RegistrationForm extends User {
 		return $rules;
 	}
 	
-}
+}	

@@ -17,6 +17,8 @@ class User extends CActiveRecord
 	 * @var integer $lastvisit
 	 * @var integer $superuser
 	 * @var integer $status
+	 * @var integer $phone
+	 * @var string avatar
 	 */
 
 	/**
@@ -48,8 +50,9 @@ class User extends CActiveRecord
 			#array('username, password, email', 'required'),
 			array('username', 'length', 'max'=>20, 'min' => 3,'message' => UserModule::t("Incorrect username (length between 3 and 20 characters).")),
 			array('password', 'length', 'max'=>128, 'min' => 4,'message' => UserModule::t("Incorrect password (minimal length 4 symbols).")),
-			#	��������� ���������� ����� ???
+			#	ïðîâåðÿåì òåëåôîííûé íîìåð ???
 			array('phone','length','max'=>11,'message'=>UserModule::t("Incorrect phone number.")),
+			array('about','length','max'=>256,'message'=>UserModule::t("Превышена максимальная допустимая длинна.")),
 			array('phone', 'match', 'pattern' => '/^[0-9]+$/u','message' => UserModule::t("Incorrect phone number: use numbers only.")),
 			array('email', 'email'),
 			array('username', 'unique', 'message' => UserModule::t("This user's name already exists.")),
@@ -87,8 +90,8 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'username'=>UserModule::t("username"),
-			'password'=>UserModule::t("password"),
+			'username'=>UserModule::t("Username"),
+			'password'=>UserModule::t("Password"),
 			'verifyPassword'=>UserModule::t("Retype Password"),
 			'email'=>UserModule::t("E-mail"),
 			'verifyCode'=>UserModule::t("Verification Code"),
@@ -98,8 +101,8 @@ class User extends CActiveRecord
 			'lastvisit' => UserModule::t("Last visit"),
 			'superuser' => UserModule::t("Superuser"),
 			'status' => UserModule::t("Status"),
-			'phone'=>UserModule::t("phone"),	
-			'avatar'=>UserModule::t("avatar"),	
+			'phone'=>UserModule::t("Номер телефона"),	
+			'avatar'=>UserModule::t("Изображение"),	
 		);
 	}
 	

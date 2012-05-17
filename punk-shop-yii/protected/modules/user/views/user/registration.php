@@ -75,6 +75,15 @@ $this->breadcrumbs=array(
 			}
 		}
 ?>
+		<div class="row">
+	<?php echo $form->labelEx($model,'phone'); ?>
+	<?php echo $form->textField($model,'phone'); ?>
+	<?php echo $form->error($model,'phone'); ?>
+	<p class="hint">
+	<?php echo UserModule::t("Номер телефона 11 цифр без пробелов и тире."); ?>
+	</p>
+	</div>
+	
 	<?php if (UserModule::doCaptcha('registration')): ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'verifyCode'); ?>

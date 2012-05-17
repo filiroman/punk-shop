@@ -1384,3 +1384,202 @@ Stack trace:
 REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/create
 HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
 ---
+2012/05/17 12:51:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось открыть соединение с базой данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /var/www/punk_shop/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/punk_shop/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/punk_shop/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/punk_shop/yii/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 /var/www/punk_shop/yii/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(197): CActiveDataProvider->__construct('Goods', Array)
+#9 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): GoodsController->actionIndex()
+#10 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#19 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods')
+#20 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#22 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/
+---
+2012/05/17 12:52:32 [error] [php] include(lengt.php): failed to open stream: No such file or directory (/var/www/punk_shop/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/validators/CValidator.php(171): import()
+#1 /var/www/punk_shop/yii/framework/base/CModel.php(285): createValidator()
+#2 /var/www/punk_shop/yii/framework/base/CModel.php(259): User->createValidators()
+#3 /var/www/punk_shop/yii/framework/base/CModel.php(157): User->getValidators()
+#4 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(786): User->validate()
+#5 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/LoginController.php(36): User->save()
+#6 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/LoginController.php(20): LoginController->lastViset()
+#7 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#8 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#9 /var/www/punk_shop/yii/framework/web/CController.php(287): LoginController->runAction()
+#10 /var/www/punk_shop/yii/framework/web/CController.php(266): LoginController->runActionWithFilters()
+#11 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): LoginController->run()
+#12 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#13 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/punk_shop/punk-shop-yii/index.php(15): CWebApplication->run()
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/login
+in /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/LoginController.php (36)
+in /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/LoginController.php (20)
+in /var/www/punk_shop/punk-shop-yii/index.php (15)
+2012/05/17 13:36:48 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "RegistrationForm.phone".' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('phone')
+#1 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('phone')
+#2 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(RegistrationForm), 'phone')
+#3 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(RegistrationForm), 'phone', Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/modules/user/components/UActiveForm.php(419): CHtml::activeTextField(Object(RegistrationForm), 'phone', Array)
+#5 /var/www/punk_shop/punk-shop-yii/protected/modules/user/views/user/registration.php(80): UActiveForm->textField(Object(RegistrationForm), 'phone')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('/user/registrat...', Array, true)
+#10 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php(81): CController->render('/user/registrat...', Array)
+#11 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#12 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#16 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#17 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/registration
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
+---
+2012/05/17 13:38:18 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "RegistrationForm.phone".' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('phone')
+#1 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('phone')
+#2 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(RegistrationForm), 'phone')
+#3 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(RegistrationForm), 'phone', Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/modules/user/components/UActiveForm.php(419): CHtml::activeTextField(Object(RegistrationForm), 'phone', Array)
+#5 /var/www/punk_shop/punk-shop-yii/protected/modules/user/views/user/registration.php(80): UActiveForm->textField(Object(RegistrationForm), 'phone')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('/user/registrat...', Array, true)
+#10 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php(81): CController->render('/user/registrat...', Array)
+#11 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#12 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#16 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#17 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/registration
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
+---
+2012/05/17 13:47:45 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "RegistrationForm.phone".' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('phone')
+#1 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('phone')
+#2 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(RegistrationForm), 'phone')
+#3 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(RegistrationForm), 'phone', Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/modules/user/components/UActiveForm.php(419): CHtml::activeTextField(Object(RegistrationForm), 'phone', Array)
+#5 /var/www/punk_shop/punk-shop-yii/protected/modules/user/views/user/registration.php(80): UActiveForm->textField(Object(RegistrationForm), 'phone')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('/user/registrat...', Array, true)
+#10 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php(81): CController->render('/user/registrat...', Array)
+#11 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#12 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#16 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#17 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/registration
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
+---
+2012/05/17 13:51:24 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "RegistrationForm.phone".' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('phone')
+#1 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('phone')
+#2 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(RegistrationForm), 'phone')
+#3 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(RegistrationForm), 'phone', Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/modules/user/components/UActiveForm.php(419): CHtml::activeTextField(Object(RegistrationForm), 'phone', Array)
+#5 /var/www/punk_shop/punk-shop-yii/protected/modules/user/views/user/registration.php(80): UActiveForm->textField(Object(RegistrationForm), 'phone')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('/user/registrat...', Array, true)
+#10 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php(81): CController->render('/user/registrat...', Array)
+#11 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#12 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#16 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#17 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/registration
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
+---
+2012/05/17 13:51:25 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "RegistrationForm.phone".' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('phone')
+#1 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('phone')
+#2 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(RegistrationForm), 'phone')
+#3 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(RegistrationForm), 'phone', Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/modules/user/components/UActiveForm.php(419): CHtml::activeTextField(Object(RegistrationForm), 'phone', Array)
+#5 /var/www/punk_shop/punk-shop-yii/protected/modules/user/views/user/registration.php(80): UActiveForm->textField(Object(RegistrationForm), 'phone')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('/user/registrat...', Array, true)
+#10 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php(81): CController->render('/user/registrat...', Array)
+#11 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#12 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#16 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#17 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/registration
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
+---
+2012/05/17 13:51:25 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "RegistrationForm.phone".' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('phone')
+#1 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('phone')
+#2 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1774): CHtml::resolveValue(Object(RegistrationForm), 'phone')
+#3 /var/www/punk_shop/yii/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(RegistrationForm), 'phone', Array)
+#4 /var/www/punk_shop/punk-shop-yii/protected/modules/user/components/UActiveForm.php(419): CHtml::activeTextField(Object(RegistrationForm), 'phone', Array)
+#5 /var/www/punk_shop/punk-shop-yii/protected/modules/user/views/user/registration.php(80): UActiveForm->textField(Object(RegistrationForm), 'phone')
+#6 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#7 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#8 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('/user/registrat...', Array, true)
+#10 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php(81): CController->render('/user/registrat...', Array)
+#11 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): RegistrationController->actionRegistration()
+#12 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#16 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#17 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/registration
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
+---

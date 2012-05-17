@@ -8,7 +8,10 @@ $this->breadcrumbs=array(
 <?php echo $this->renderPartial('menu'); ?>
 
 
-<img id="user_img" src="/punk-shop/punk-shop-yii/img/ava.jpg" height="220" width="176" />
+<?php $ava = CHtml::encode($model->avatar);
+//var_dump($ava);
+echo '<img id="user_img" src='."$ava".'height="220" width="176" />';
+?>
 <!-- <img src="<?php //$model->getAttributeLabel('img') ?> height="220" width="176"/> -->
 
 
@@ -49,19 +52,27 @@ $this->breadcrumbs=array(
 <tr>
 	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('createtime')); ?>
 </th>
-    <td><?php echo date("d.m.Y H:i:s",$model->createtime); ?>
+    <td><?php echo date("d.m.Y",$model->createtime); ?>
 </td>
 </tr>
 <tr>
 	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('lastvisit')); ?>
 </th>
-    <td><?php echo date("d.m.Y H:i:s",$model->lastvisit); ?>
+    <td><?php echo date("d.m.Y",$model->lastvisit); ?>
 </td>
 </tr>
-<tr>
+<!--<tr>
 	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('status')); ?>
 </th>
     <td><?php echo CHtml::encode(User::itemAlias("UserStatus",$model->status));
+    ?>
+</td>
+</tr>-->
+<tr>
+	<th class="label"><?php echo CHtml::encode($model->getAttributeLabel('about')); ?>
+</th>
+    <td><?php echo CHtml::encode($model->about);
+    //var_dump($model->about);
     ?>
 </td>
 </tr>

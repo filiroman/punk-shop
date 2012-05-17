@@ -3,7 +3,15 @@
 	<!--<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>-->
 	<!--<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>-->
 	
-	<a href=""><img class="item_img" src=""></a>
+	<?php
+		$arr = CHtml::encode(Images::item("$data->id",0));
+		$src = Yii::app()->baseUrl.'/img/Goods/'.$arr;
+		//$src = Yii::getPathOfAlias('webroot').'/img/Goods/'.$arr;
+		//var_dump($src);
+		if (!$arr)
+			$src = Yii::app()->baseUrl.'/img/Goods/'.'nofile.png';
+		echo ('<a href=""><img class="item_img" src='."$src".'></a>');
+	?>
 	<p class="item_category"><?php echo CHtml::encode(Categories::item('id',$data->category_id)); ?></p>
 	
 	<p class="item_name"><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?></p>

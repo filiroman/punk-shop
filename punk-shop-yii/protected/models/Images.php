@@ -37,8 +37,11 @@ class Images extends CActiveRecord
             //'params'=>array(':type'=>$type),
             'order'=>'id',
         ));
-        foreach($models as $model)
-            self::$_items[$type][$model->id]=$model->src;
+        $i = 0;
+        foreach($models as $model){
+            self::$_items[$type][$i]=$model->src;
+            $i++;
+        }
     }
 
 	/**

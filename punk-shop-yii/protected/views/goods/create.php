@@ -1,12 +1,12 @@
 <?php
 $this->breadcrumbs=array(
-	'Goods'=>array('index'),
-	'Create',
+	'Объявления'=>array('index'),
+	'Создать',
 );
 
 $this->menu=array(
-	array('label'=>'List Goods', 'url'=>array('index')),
-	array('label'=>'Manage Goods', 'url'=>array('admin')),
+	array('label'=>'Списко объявлений', 'url'=>array('index')),
+	array('label'=>'Управление объявлениями', 'url'=>array('admin')),
 );
 ?>
 

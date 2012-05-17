@@ -1,23 +1,5 @@
 <?php $this->pageTitle=Yii::app()->name; ?>
 
-
-<div id="search">
-	<form method="post" action="search.php">
-		<input id="search_text" name="search_text" type="text">
-		<select id="search_category" name="category" size="1">
-			<option selected="selected" value="default">Во всех категориях</option>
-			<option value="">Электроника</option>
-			<option value="">Мебель</option>
-			<option value="">Книги</option>
-			<option value="">Бытовая техника</option>
-			<option value="">Услуги</option>
-			<option value="">Другое</option>
-			<option value="">Объявления</option>
-		</select>
-		<input id="search_button" type="submit" value="Искать">
-	</form>
-</div>
-
 <div id="categories">
 	<ul>
 		<li><a href="">Бытовая техника</a></li>
@@ -34,7 +16,8 @@
 <div id="result">
 	
 	<div class="item">
-		<a href="item_info.php"><img class="item_img" src="img/pic3.jpg"></a>
+		
+		<a href="img/pic3.jpg" class="lytebox" data-title="My Title"><img class="item_img" src="img/pic3.jpg"></a>
 		<p class="item_name"><a href="item_info.php">Холодильник</a></p></br>
 		<p class="item_date">14.03.2012</p>
 		<p class="item_author"><a href="user_info.php?id=23">Василий</a></p></br>
@@ -43,7 +26,7 @@
 	</div>
 	
 	<div class="item">
-		<a href="item_info.php"><img class="item_img" src="img/pic1.jpg"></a>
+		<a href="img/pic1.jpg" class="lytebox" data-title="My Title"><img class="item_img" src="img/pic1.jpg"></a>
 		<p class="item_name"><a href="item_info.php">Новый диван</a></p></br>
 		<p class="item_date">20.03.2012</p>
 		<p class="item_author"><a href="user_info.php">Ольга</a></p></br>
@@ -52,7 +35,7 @@
 	</div>
 	
 	<div class="item">
-		<a href="item_info.php"><img class="item_img" src="img/pic2.jpg"></a>
+		<a href="img/pic2.jpg" class="lytebox" data-title="My Title"><img class="item_img" src="img/pic2.jpg"></a>
 		<p class="item_name"><a href="item_info.php">монитор Acer V193HQVBb</a></p></br>
 		<p class="item_date">15.03.2012</p>
 		<p class="item_author"><a href="user_info.php">Дмитрий</a></p></br>
@@ -61,7 +44,7 @@
 	</div>
 	
 	<div class="item">
-		<a href="item_info.php"><img class="item_img" src="img/pic4.jpg"></a>
+		<a href="img/pic4.jpg" class="lytebox" data-title="My Title"><img class="item_img" src="img/pic4.jpg"></a>
 		<p class="item_name"><a href="item_info.php">Ночь веcелого студента</a></p></br>
 		<p class="item_date">10.03.2012</p>
 		<p class="item_author"><a href="user_info.php">Blackout</a></p></br>

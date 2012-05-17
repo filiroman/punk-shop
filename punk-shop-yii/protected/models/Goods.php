@@ -56,6 +56,7 @@ class Goods extends CActiveRecord
 			array('description', 'length', 'max'=>256),			
 			array('price', 'length', 'max'=>10),
 			array('type', 'length', 'max'=>4),
+			//array('image', 'file', 'types'=>'jpg, gif, png', 'maxSize' => 1048576),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('owner_id, date, actual, category_id, title, description, price, type', 'safe', 'on'=>'search'),
@@ -83,15 +84,15 @@ class Goods extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'owner_id' => 'Owner',
-			'date' => 'Date',
-			'actual' => 'Actual',
-			'category_id' => 'Category',
-			'title' => 'Title',
-			'description' => 'Description',
-			'price' => 'Price',
-			'type' => 'Type',
-			'views' => 'Views',
+			'owner_id' => 'Владелец',
+			'date' => 'Создан',
+			'actual' => 'Актуальность',
+			'category_id' => 'Категория',
+			'title' => 'Заголовок',
+			'description' => 'Описание',
+			'price' => 'Цена',
+			'type' => 'Тип',
+			'views' => 'Просмотров',
 		);
 	}
 
@@ -144,7 +145,7 @@ class Goods extends CActiveRecord
                 $this->owner_id=Yii::app()->user->id;
             }
             else
-                $this->date=time();
+                $this->date=date("YmdHis");
             return true;
         }
         else

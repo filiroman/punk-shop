@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="css/user_profile.css" />
+
 
 <?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Профиль");
 $this->breadcrumbs=array(

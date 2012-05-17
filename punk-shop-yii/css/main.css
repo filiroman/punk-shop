@@ -15,6 +15,8 @@ body
 
 #page
 {
+	
+	
 	xmargin-top: 5px;
 	margin-bottom: 5px;
 	background: white;
@@ -41,7 +43,10 @@ body
 
 #search{
 	position: relative;
-	height: 50px;
+	top: -80px;
+	left: 370px;
+	width: 400px;
+	xheight: 50px;
 	xborder: 1px solid red;
 	margin: 0 0 0 0;
 	padding: 0;
@@ -49,7 +54,7 @@ body
 #search_text{
 	position: relative;
 	xheight: 20px;
-	width: 250px;
+	width: 130px;
 	xfont-size: 15px;
 	xpadding: 3px 5px;
 	border: 1px solid #adb2b5;
@@ -62,7 +67,7 @@ body
 #search_button{
 	position: relative;
 	xheight: 28px;
-	width: 100px;
+	width: 80px;
 	background-color: #e0edef;
 	border: 1px solid #adb2b5;
 }
@@ -123,7 +128,7 @@ body
 }
 .item{
 	position: relative;
-	xmin-height: 100px;	
+	min-height: 100px;	
 	height: 240px;
 	width: 510px;
 	margin: 15px 0;
@@ -198,9 +203,13 @@ body
 }
 
 #footer
-{
+{	
+	xposition: absolute;
+	xbottom:0;
+	xwidth: 740px;
 	padding: 10px;
 	margin: 10px 20px;
+	
 	font-size: 0.8em;
 	text-align: center;
 	border-top: 1px solid #C9E0ED;
@@ -244,6 +253,19 @@ body
 	color: #bf565a;
 	background-color:#fce8e9;
 	text-decoration:none;
+}
+
+#user_img{
+	position: absolute;
+	left: 530px;
+	top: 170px;
+}
+
+table{
+	margin: 100px 0 0 0;
+}
+th.label{
+	width: 210px;
 }
 
 div.flash-error, div.flash-notice, div.flash-success

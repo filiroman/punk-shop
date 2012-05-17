@@ -39,9 +39,9 @@ class Images extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('good_id, src', 'required'),
-			array('good_id', 'numerical', 'integerOnly'=>true),
-			array('src', 'length', 'max'=>45),
+			array('src', 'required'),
+			//array('good_id', 'numerical', 'integerOnly'=>true),
+			array('src', 'length', 'max'=>256),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, good_id, src', 'safe', 'on'=>'search'),

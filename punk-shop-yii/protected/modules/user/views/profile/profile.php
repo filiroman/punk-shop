@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 
 <?php $ava = CHtml::encode($model->avatar);
 //var_dump($ava);
-echo '<img id="user_img" src='."$ava".'height="220" width="176" />';
+echo '<img id="user_img" src="img/ava.jpg" height="220" width="176" />';
 ?>
 <!-- <img src="<?php //$model->getAttributeLabel('img') ?> height="220" width="176"/> -->
 

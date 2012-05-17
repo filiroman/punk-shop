@@ -57,7 +57,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Описание'); ?>
-		<?php echo $form->textField($model,'description',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'description',array('size'=>1000,'maxlength'=>1000)); ?>
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 

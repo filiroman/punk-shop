@@ -12,7 +12,7 @@
 
 <div id="result">
 	
-	<div class="item">
+	<!--<div class="item">
 		
 		<a href="img/pic3.jpg" class="lytebox" data-title="My Title"><img class="item_img" src="img/pic3.jpg"></a>
 		<p class="item_name"><a href="item_info.php">Холодильник</a></p></br>
@@ -48,7 +48,11 @@
 		<p class="item_price">цена: <span style="font-size:15px;font-weight:bold">100</span>р</p>
 		<p class="item_description">Ночь Веселого Студента 30 марта в Blackout!
 Вас ждет: фри-бар девушкам до часу + умопомрачительный коктейль для всех, выступление DJ KEFIR, DJ COOL, эксклюзивное видео с вечеринки, конкурсы и многое другое!</p></br>
-	</div>
+	</div>-->
+	<?php /*$this->widget('zii.widgets.CListView', array(
+	'dataProvider'=>$dataProvider,
+	'itemView'=>'_view',
+)); */?>
 	
 </div>
 

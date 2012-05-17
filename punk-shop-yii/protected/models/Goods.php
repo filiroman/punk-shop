@@ -53,7 +53,7 @@ class Goods extends CActiveRecord
 			array('title', 'length', 'max'=>45),
 			//array('active', 'boolean'),
                         array('title, description' , 'safe'),
-			array('description', 'length', 'max'=>256),			
+			array('description', 'length', 'max'=>1000),			
 			array('price', 'length', 'max'=>10),
 			array('type', 'length', 'max'=>4),
 			//array('image', 'file', 'types'=>'jpg, gif, png', 'maxSize' => 1048576),

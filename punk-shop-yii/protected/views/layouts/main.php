@@ -27,19 +27,18 @@
 	<div id="header">
 		<div id="logo">
 			<a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=site/index">
-				<img src="<?php echo Yii::app()->request->baseUrl; ?>/img/logo.png">
+				<img src="<?php echo Yii::app()->request->baseUrl; ?>/img/logo.png" />
 			</a>			
 			<h1><?php echo CHtml::encode(Yii::app()->name); ?></h1>
 			<div id="search">
-				<form method="post" action="search.php">
-					<input id="search_text" name="search_text" type="text" placeholder="Поиск">
-					<?php
-						$arr = Categories::items('id');
-						//var_dump($arr);
-						echo "<select id='search_category' name='category' size='1'>
-								<option selected='selected' value='default'>Во всех категориях</option>";
-						foreach ($arr as $value){
-							echo "<option value='$value'>$value</option>";
+				<form method="get" action="index.php">
+
+					<input id="search_text" value="<?php echo @$_GET['query']; ?>" name="query" type="text" placeholder="Поиск">
+					<?php                                        
+						echo "<select id='category_id' name='category_id' size='1'>
+								<option selected='selected' value='0'>Во всех категориях</option>";
+						foreach (Categories::getIdsWithTitles() as $category){
+							echo "<option value='{$category['id']}' " . (@$_GET['category_id'] == $category['id'] ? 'selected' : '') . ">{$category['title']}</option>";
 							
 						//Категории  в списке поиска
 						

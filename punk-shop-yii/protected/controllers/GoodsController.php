@@ -65,14 +65,39 @@ class GoodsController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+		
+		// Создает директорию для изображений
+		if(!is_dir(Yii::getPathOfAlias('webroot').'/img/Goods')) 
+		{
+			mkdir(Yii::getPathOfAlias('webroot').'/img/Goods', 0755);
+		}
 
 		if(isset($_POST['Goods']))
 		{
 			$model->attributes=$_POST['Goods'];
+			$images = CUploadedFile::getInstancesByName('images');
+			
+			if (isset($images) && count($images) > 0) {
+			
+                // Сохраняем каждое изображение
+                foreach ($images as $image => $pic) {
+                    $file = Yii::getPathOfAlias('webroot').'/img/Goods/'.$model->id.'_'.$pic->name;
+                    if ($pic->saveAs($file)) {
+                        
+                        $img_add = new Images();
+                        $img_add->src = $file;
+                        $img_add->good_id = $model->id; 
+ 
+                        $img_add->save(); // DONE
+                    }
+                    //else
+                        // handle the errors here, if you want
+                }
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
+		    }
 		}
-
+				
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -89,12 +114,37 @@ class GoodsController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+		
+		// Создает директорию для изображений
+		if(!is_dir(Yii::getPathOfAlias('webroot').'/img/Goods')) 
+		{
+			mkdir(Yii::getPathOfAlias('webroot').'/img/Goods', 0755);
+		}
 
 		if(isset($_POST['Goods']))
 		{
 			$model->attributes=$_POST['Goods'];
+			$images = CUploadedFile::getInstancesByName('images');
+			
+			if (isset($images) && count($images) > 0) {
+			
+                // Сохраняем каждое изображение
+                foreach ($images as $image => $pic) {
+                    $file = Yii::getPathOfAlias('webroot').'/img/Goods/'.$model->id.'_'.$pic->name;
+                    if ($pic->saveAs($file)) {
+                        
+                        $img_add = new Images();
+                        $img_add->src = $file;
+                        $img_add->good_id = $model->id; 
+ 
+                        $img_add->save(); // DONE
+                    }
+                    //else
+                        // handle the errors here, if you want
+                }
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
+		    }
 		}
 
 		$this->render('update',array(

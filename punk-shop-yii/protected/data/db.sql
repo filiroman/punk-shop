@@ -14,7 +14,14 @@ CREATE  TABLE IF NOT EXISTS `punk_shop_test`.`tbl_categories` (
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) )
 ENGINE=InnoDB;
-
+INSERT INTO `tbl_categories` (`id`, `name`) VALUES
+(1, 'Мебель'),
+(2, 'Электроника'),
+(3, 'Продукты питания'),
+(4, 'Сигареты'),
+(5, 'Расходные материалы'),
+(6, 'Техника'),
+(7, 'Прочее');
 
 -- -----------------------------------------------------
 -- Table `punk_shop`.`tbl_goods`
@@ -33,7 +40,14 @@ CREATE  TABLE IF NOT EXISTS `punk_shop_test`.`tbl_goods` (
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) )
 ENGINE=InnoDB;
-
+INSERT INTO `tbl_goods` (`id`, `owner_id`,`date`,`actual`,`category_id`,`title`,`description`,`price`,`type`,`views`) VALUES
+(1, 2,'2012-05-17 18:29:37' ,1,2,'эктрогитара','обычная',4999,1,1),
+(2, 2,'2012-05-17 18:29:37' ,1,2,'фен','обычная',4999,1,1),
+(3, 2,'2012-05-17 18:29:37' ,1,2,'ыв','обычная',4999,1,1),
+(4, 2,'2012-05-17 18:29:37' ,1,2,'эыв','обычная',4999,1,1),
+(5, 2,'2012-05-17 18:29:37' ,1,2,'экывтара','обычная',4999,1,1),
+(6, 2,'2012-05-17 18:29:37' ,1,2,'эктывффогитара','обычная',4999,1,1),
+(7, 2,'2012-05-17 18:29:37' ,1,2,'экфывффвара','обычная',4999,1,1);
 
 -- -----------------------------------------------------
 -- Table `punk_shop`.`tbl_images`
@@ -120,6 +134,13 @@ CREATE TABLE `punk_shop_test`.`tbl_type` (
 )
 ENGINE = InnoDB
 DEFAULT CHARSET=utf8;
+
+INSERT INTO `tbl_type` (`id`, `name`) VALUES
+(1, 'Купить'),
+(2, 'Продать'),
+(3, 'Отдать'),
+(4, 'Взять'),
+(5, 'Арендовать');
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

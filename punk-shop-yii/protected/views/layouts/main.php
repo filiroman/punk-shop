@@ -33,16 +33,19 @@
 			<div id="search">
 				<form method="post" action="search.php">
 					<input id="search_text" name="search_text" type="text" placeholder="Поиск">
-					<select id="search_category" name="category" size="1">
-						<option selected="selected" value="default">Во всех категориях</option>
-						<option value="">Электроника</option>
-						<option value="">Мебель</option>
-						<option value="">Книги</option>
-						<option value="">Бытовая техника</option>
-						<option value="">Услуги</option>
-						<option value="">Другое</option>
-						<option value="">Объявления</option>
-					</select>
+					<?php
+						$arr = Categories::items('id');
+						//var_dump($arr);
+						echo "<select id='search_category' name='category' size='1'>
+								<option selected='selected' value='default'>Во всех категориях</option>";
+						foreach ($arr as $value){
+							echo "<option value='$value'>$value</option>";
+							
+						//Категории  в списке поиска
+						
+						}
+						echo" </select>";
+					?>
 					<input id="search_button" type="submit" value="Искать">
 				</form>
 			</div>
@@ -79,9 +82,9 @@ array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getM
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by Punk-shop Company.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> webspsu.<br/>
 		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		<?php //echo Yii::powered(); ?>
 	</div><!-- footer -->
 
 </div><!-- page -->

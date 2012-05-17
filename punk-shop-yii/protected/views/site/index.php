@@ -2,14 +2,19 @@
 
 <div id="categories">
 	<ul>
-		<li><a href="">Бытовая техника</a></li>
+	<?php
+		$arr = Categories::items('id');
+		foreach ($arr as $value)
+			echo "<li><a href='$value'>$value</a></li>";
+		/*<li><a href="">Бытовая техника</a></li>
 		<li><a href="">Электроника</a></li>
 		<li><a href="">Мебель</a></li>
 		<li><a href="">Книги</a></li>
 		<li><a href="">Услуги</a></li>
 		<li><a href="">Другое</a></li>
 		<li><a href="">Объявления</a></li>
-		<li><a href="">Конспекты</a></li>
+		<li><a href="">Конспекты</a></li>*/
+	?>
 	</ul>
 </div>
 

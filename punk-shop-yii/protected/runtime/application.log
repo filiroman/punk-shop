@@ -1583,3 +1583,29 @@ Stack trace:
 REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/registration
 HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=user/login
 ---
+2012/05/17 14:43:48 [warning] [application] Не удалось присвоить небезопасный атрибут "about" класса "RegistrationForm".
+in /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php (40)
+in /var/www/punk_shop/punk-shop-yii/index.php (15)
+2012/05/17 14:49:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in /var/www/punk_shop/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/admin')
+#9 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/admin
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods/index
+---
+2012/05/17 15:23:32 [warning] [application] Не удалось присвоить небезопасный атрибут "about" класса "RegistrationForm".
+in /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php (40)
+in /var/www/punk_shop/punk-shop-yii/index.php (15)
+2012/05/17 15:24:03 [warning] [application] Не удалось присвоить небезопасный атрибут "about" класса "RegistrationForm".
+in /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/RegistrationController.php (40)
+in /var/www/punk_shop/punk-shop-yii/index.php (15)

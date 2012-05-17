@@ -20,6 +20,8 @@ class RegistrationForm extends User {
 			array('email', 'unique', 'message' => UserModule::t("This user's email address already exists.")),
 			array('verifyPassword', 'compare', 'compareAttribute'=>'password', 'message' => UserModule::t("Retype Password is incorrect.")),
 			array('username', 'match', 'pattern' => '/^[A-Za-z0-9_]+$/u','message' => UserModule::t("Incorrect symbols (A-z0-9).")),
+			array('about','length','max'=>256,'message'=>UserModule::t("Превышена максимальная допустимая длинна.")),
+			array('avatar','length','max'=>256,'message'=>UserModule::t("Превышена максимальная допустимая длинна.")),
 		);
 		if (isset($_POST['ajax']) && $_POST['ajax']==='registration-form') 
 			return $rules;

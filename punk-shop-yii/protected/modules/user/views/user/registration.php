@@ -84,6 +84,24 @@ $this->breadcrumbs=array(
 	</p>
 	</div>
 	
+	<div class="row">
+		<?php echo $form->labelEx($model,'avatar'); ?>
+		<?php $this->widget('CMultiFileUpload', array(
+            'name' => 'images',
+            'accept' => 'jpeg|jpg|gif|png',
+			'max' => 5,
+            'duplicate' => 'Duplicate file', 
+            'denied' => 'Invalid file type',
+		)); ?>
+		<?php echo $form->error($model,'avatar'); ?>
+	</div>
+	
+	<div class="row">
+	<?php echo $form->labelEx($model,'about'); ?>
+	<?php echo $form->textField($model,'about'); ?>
+	<?php echo $form->error($model,'about'); ?>
+	</div>
+	
 	<?php if (UserModule::doCaptcha('registration')): ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'verifyCode'); ?>

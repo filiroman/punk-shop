@@ -17,8 +17,9 @@ class User extends CActiveRecord
 	 * @var integer $lastvisit
 	 * @var integer $superuser
 	 * @var integer $status
-	 * @var integer $phone
-	 * @var string avatar
+	 * @var string $phone
+	 * @var string $avatar
+	 * @var string $about
 	 */
 
 	/**
@@ -62,12 +63,15 @@ class User extends CActiveRecord
 			array('superuser', 'in', 'range'=>array(0,1)),
 			array('username, email, createtime, lastvisit, superuser, status', 'required'),
 			array('createtime, lastvisit, superuser, status', 'numerical', 'integerOnly'=>true),
+			array('avatar','length','max'=>256,'message'=>UserModule::t("Превышена максимальная допустимая длинна.")),
 		):((Yii::app()->user->id==$this->id)?array(
 			array('username, email', 'required'),
 			array('username', 'length', 'max'=>20, 'min' => 3,'message' => UserModule::t("Incorrect username (length between 3 and 20 characters).")),
 			array('email', 'email'),
+			array('about','length','max'=>256,'message'=>UserModule::t("Превышена максимальная допустимая длинна.")),
 			array('username', 'unique', 'message' => UserModule::t("This user's name already exists.")),
 			array('username', 'match', 'pattern' => '/^[A-Za-z0-9_]+$/u','message' => UserModule::t("Incorrect symbols (A-z0-9).")),
+			array('avatar','length','max'=>256,'message'=>UserModule::t("Превышена максимальная допустимая длинна.")),
 			array('email', 'unique', 'message' => UserModule::t("This user's email address already exists.")),
 		):array()));
 	}
@@ -103,6 +107,7 @@ class User extends CActiveRecord
 			'status' => UserModule::t("Status"),
 			'phone'=>UserModule::t("Номер телефона"),	
 			'avatar'=>UserModule::t("Изображение"),	
+			'about'=>UserModule::t("О себе")
 		);
 	}
 	

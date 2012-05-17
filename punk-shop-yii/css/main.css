@@ -153,7 +153,7 @@ body
 
 .item_description{
 	position: relative;
-	float: left;
+	float: right;
 	width: 320px;
 	font-size: 12px;
 	line-height:160%;

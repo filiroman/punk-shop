@@ -630,3 +630,41 @@ REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods
 in /var/www/punk_shop/punk-shop-yii/protected/views/goods/_view.php (8)
 in /var/www/punk_shop/punk-shop-yii/protected/views/goods/index.php (17)
 in /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php (219)
+2012/05/17 23:43:22 [error] [php] Undefined variable: dataProvider (/var/www/punk_shop/punk-shop-yii/protected/views/site/index.php:54)
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /var/www/punk_shop/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /var/www/punk_shop/punk-shop-yii/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/punk_shop/yii/framework/web/CController.php(287): SiteController->runAction()
+#6 /var/www/punk_shop/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#8 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/punk_shop/punk-shop-yii/index.php(15): CWebApplication->run()
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=site/index
+in /var/www/punk_shop/punk-shop-yii/protected/views/site/index.php (54)
+in /var/www/punk_shop/punk-shop-yii/protected/controllers/SiteController.php (32)
+in /var/www/punk_shop/punk-shop-yii/index.php (15)
+2012/05/18 00:16:50 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.lastname".' in /var/www/punk_shop/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('lastname')
+#1 /var/www/punk_shop/punk-shop-yii/protected/modules/user/views/profile/profile.php(11): CActiveRecord->__get('lastname')
+#2 /var/www/punk_shop/yii/framework/web/CBaseController.php(127): require('/var/www/punk_s...')
+#3 /var/www/punk_shop/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/punk_s...', Array, true)
+#4 /var/www/punk_shop/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/punk_s...', Array, true)
+#5 /var/www/punk_shop/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#6 /var/www/punk_shop/punk-shop-yii/protected/modules/user/controllers/ProfileController.php(20): CController->render('profile', Array)
+#7 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionProfile()
+#8 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/punk_shop/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/profile')
+#13 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=user/profile
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods
+---

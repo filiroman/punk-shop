@@ -8,7 +8,7 @@ CREATE TABLE `tbl_users` (
   `lastvisit` int(10) NOT NULL DEFAULT '0',
   `superuser` int(1) NOT NULL DEFAULT '0',
   `status` int(1) NOT NULL DEFAULT '0',
-  `phone` int(11) NOT NULL DEFAULT '0',
+  `phone` varchar(20) NOT NULL DEFAULT '0',
   `avatar` varchar(128) DEFAULT '',
   `about` varchar(256) NOT NULL DEFAULT NULL,
   PRIMARY KEY (`id`),

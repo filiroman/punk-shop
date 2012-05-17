@@ -68,7 +68,7 @@ CREATE TABLE `tbl_users` (
   `status` int(1) NOT NULL DEFAULT '0',
   `phone` int(11) NOT NULL DEFAULT '0',
   `avatar` varchar(128) DEFAULT NULL,
-  `about` varchar(256) NOT NULL DEFAULT NULL,
+  `about` varchar(256) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `email` (`email`),

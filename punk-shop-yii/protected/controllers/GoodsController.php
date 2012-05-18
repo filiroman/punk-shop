@@ -143,30 +143,36 @@ class GoodsController extends Controller
 		if(isset($_POST['Goods']))
 		{
 			$model->attributes=$_POST['Goods'];
-			$images = CUploadedFile::getInstancesByName('images');
+			$images = CUploadedFile::getInstancesByName('Images');
+			
+			$succ = $model->save();
 			
 			if (isset($images) && count($images) > 0) {
 			
                 // Сохраняем каждое изображение
                 foreach ($images as $image => $pic) {
-                    $file = Yii::getPathOfAlias('webroot').'/img/Goods/'.$model->id.'_'.$pic->name;
-                    if ($pic->saveAs($file)) {
+                	  $file = $model->id.'_'.$pic->name;
+                    $savefile = Yii::getPathOfAlias('webroot').'/img/Goods/'. $file;
+                 
+                    //echo $file;
+                    //die();
+                    
+                    if ($pic->saveAs($savefile)) {
                         
-                        $img_add = new Images();
+                        $img_add = new Images;
                         $img_add->src = $file;
                         $img_add->good_id = $model->id; 
- 
                         $img_add->save(); // DONE
                     }
                     //else
                         // handle the errors here, if you want
                 }
-			if($model->save())
+         }
+			if($succ)
 				$this->redirect(array('view','id'=>$model->id));
-		    }
 		}
-
-		$this->render('update',array(
+				
+		$this->render('create',array(
 			'model'=>$model,
 		));
 	}
@@ -178,7 +184,7 @@ class GoodsController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		if(Yii::app()->request->isPostRequest)
+		if(true/*Yii::app()->request->isPostRequest*/)
 		{
 			// we only allow deletion via POST request
 			$this->loadModel($id)->delete();

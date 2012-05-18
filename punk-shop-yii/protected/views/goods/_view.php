@@ -10,7 +10,7 @@
 		//var_dump($src);
 		if (!$arr)
 			$src = Yii::app()->baseUrl.'/img/Goods/'.'nofile.png';
-		echo ('<a href=""><img class="item_img" src='."$src".'></a>');
+		echo ('<a href="index.php?r=goods/view&id='.$data->id.'"><img class="item_img" src='."$src".'></a>');
 	?>
 	<p class="item_category"><?php echo CHtml::encode(Categories::item('id',$data->category_id)); ?></p>
 	

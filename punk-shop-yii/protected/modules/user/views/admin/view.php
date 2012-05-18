@@ -23,6 +23,8 @@ $this->breadcrumbs=array(
 	$profileFields=ProfileField::model()->forOwner()->sort()->findAll();
 	if ($profileFields) {
 		foreach($profileFields as $field) {
+			//var_dump($field->varname);
+			//if ($field->title != 'Password')
 			array_push($attributes,array(
 					'label' => UserModule::t($field->title),
 					'name' => $field->varname,

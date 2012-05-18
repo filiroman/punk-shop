@@ -35,9 +35,9 @@ $this->breadcrumbs=array(
 	}
 	
 	array_push($attributes,
-		'password',
+		//'password',
 		'email',
-		'activkey',
+		//'activkey',
 		array(
 			'name' => 'createtime',
 			'value' => date("d.m.Y H:i:s",$model->createtime),

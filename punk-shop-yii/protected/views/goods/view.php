@@ -13,7 +13,7 @@ $this->menu=array(
 	array('label'=>'Список объявлений', 'url'=>array('index')),
 	array('label'=>'Создать объявление', 'url'=>array('create')),
 	array('label'=>'Обновить объявление', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Удалить объявление', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Вы уверены, что хотите удалить это объявление?')),
+	array('label'=>'Удалить объявление', 'url'=>array('delete', 'id'=>$model->id), 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Вы уверены, что хотите удалить это объявление?')),
 	array('label'=>'Управление объявлениями', 'url'=>array('admin')),
 );
 ?>

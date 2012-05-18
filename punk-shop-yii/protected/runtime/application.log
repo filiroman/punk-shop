@@ -1019,3 +1019,42 @@ Stack trace:
 REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/delete&id=7
 HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods/admin
 ---
+2012/05/18 12:39:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in /var/www/punk_shop/yii/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /var/www/punk_shop/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /var/www/punk_shop/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): CController->run('delete')
+#9 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('goods/delete')
+#10 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/punk_shop/punk-shop-yii/index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/delete
+HTTP_REFERER=http://127.0.0.1/punk_shop/punk-shop-yii/index.php?r=goods/view&id=6
+---
+2012/05/18 12:39:23 [error] [php] Undefined variable: mode (/var/www/punk_shop/punk-shop-yii/protected/views/goods/view.php:16)
+Stack trace:
+#0 /var/www/punk_shop/yii/framework/web/CController.php(870): GoodsController->renderFile()
+#1 /var/www/punk_shop/yii/framework/web/CController.php(783): GoodsController->renderPartial()
+#2 /var/www/punk_shop/punk-shop-yii/protected/controllers/GoodsController.php(55): GoodsController->render()
+#3 unknown(0): GoodsController->actionView()
+#4 /var/www/punk_shop/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /var/www/punk_shop/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /var/www/punk_shop/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(134): GoodsController->runAction()
+#8 /var/www/punk_shop/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /var/www/punk_shop/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /var/www/punk_shop/yii/framework/web/filters/CInlineFilter.php(59): GoodsController->filterAccessControl()
+#11 /var/www/punk_shop/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /var/www/punk_shop/yii/framework/web/CController.php(292): CFilterChain->run()
+#13 /var/www/punk_shop/yii/framework/web/CController.php(266): GoodsController->runActionWithFilters()
+#14 /var/www/punk_shop/yii/framework/web/CWebApplication.php(276): GoodsController->run()
+#15 /var/www/punk_shop/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#16 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/punk_shop/punk-shop-yii/index.php(15): CWebApplication->run()
+REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/view&id=6

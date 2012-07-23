@@ -1375,3 +1375,76 @@ Stack trace:
 REQUEST_URI=/punk-shop/punk-shop-yii/
 ---
 2012/07/23 13:12:25 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 14:47:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\punk-shop\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('goods/admin')
+#9 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=goods/admin
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods/view&id=7
+---
+2012/07/23 14:48:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\punk-shop\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('goods/admin')
+#9 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=goods/admin
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods/view&id=7
+---
+2012/07/23 14:49:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\punk-shop\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('goods/admin')
+#9 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=goods/admin
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods/view&id=7
+---
+2012/07/23 14:50:23 [error] [php] imagettfbbox(): Problem loading glyph (C:\wamp\www\punk-shop\yii\framework\web\widgets\captcha\CCaptchaAction.php:246)
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(75): CCaptchaAction->run()
+#1 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CCaptchaAction->runWithParams()
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): RegistrationController->runAction()
+#3 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): RegistrationController->runActionWithFilters()
+#4 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): RegistrationController->run()
+#5 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#6 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=user/registration/captcha&v=500d64af82897
+2012/07/23 14:54:26 [error] [php] imagettfbbox(): Problem loading glyph (C:\wamp\www\punk-shop\yii\framework\web\widgets\captcha\CCaptchaAction.php:246)
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(75): CCaptchaAction->run()
+#1 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CCaptchaAction->runWithParams()
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): RegistrationController->runAction()
+#3 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): RegistrationController->runActionWithFilters()
+#4 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): RegistrationController->run()
+#5 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#6 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=user/registration/captcha&v=500d65a267b9a

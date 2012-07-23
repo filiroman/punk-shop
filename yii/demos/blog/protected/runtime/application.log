@@ -27,3 +27,56 @@ Stack trace:
 REQUEST_URI=/yii-1.1.10.r3566/demos/blog/
 HTTP_REFERER=http://localhost/yii-1.1.10.r3566/demos/
 ---
+2012/07/23 13:12:38 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\wamp\www\punk-shop\yii\demos\blog\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\wamp\www\punk-shop\yii\framework\web\CAssetManager.php:116
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('C:\wamp\www\pun...')
+#1 C:\wamp\www\punk-shop\yii\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CListView.php(179): CAssetManager->publish('C:\wamp\www\pun...')
+#3 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(148): CListView->init()
+#4 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 C:\wamp\www\punk-shop\yii\demos\blog\protected\views\post\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\pun...')
+#7 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pun...', Array, true)
+#8 C:\wamp\www\punk-shop\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pun...', Array, true)
+#9 C:\wamp\www\punk-shop\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#10 C:\wamp\www\punk-shop\yii\demos\blog\protected\controllers\PostController.php(136): CController->render('index', Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\wamp\www\punk-shop\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\punk-shop\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\punk-shop\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('')
+#21 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#22 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\punk-shop\yii\demos\blog\index.php(11): CApplication->run()
+#24 {main}
+REQUEST_URI=/punk-shop/yii/demos/blog/
+HTTP_REFERER=http://localhost/punk-shop/yii/demos/
+---
+2012/07/23 13:12:40 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\wamp\www\punk-shop\yii\demos\blog\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\wamp\www\punk-shop\yii\framework\web\CAssetManager.php:116
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('C:\wamp\www\pun...')
+#1 C:\wamp\www\punk-shop\yii\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 C:\wamp\www\punk-shop\yii\framework\web\CClientScript.php(449): CAssetManager->publish('C:\wamp\www\pun...')
+#3 C:\wamp\www\punk-shop\yii\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 C:\wamp\www\punk-shop\yii\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 C:\wamp\www\punk-shop\yii\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 C:\wamp\www\punk-shop\yii\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 C:\wamp\www\punk-shop\yii\demos\blog\protected\controllers\SiteController.php(57): CController->render('contact', Array)
+#9 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\punk-shop\yii\demos\blog\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/punk-shop/yii/demos/blog/index.php/site/contact
+HTTP_REFERER=http://localhost/punk-shop/yii/demos/blog/index.php/site/page?view=about
+---

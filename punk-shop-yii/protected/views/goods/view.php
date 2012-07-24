@@ -95,7 +95,7 @@ $this->widget('zii.widgets.CDetailView', $res);
 	for (i=1;i<=img.length;i++){
 		link = img[i].src;
 		//if(img.length>2){
-			img[i].outerHTML="<a class=\"single_image\" href=\""+link+"\"><img src=\""+link+"\" /></a>";
+			img[i].outerHTML="<a class=\"single_image\" href=\""+link+"\" target=\"_blank\" ><img src=\""+link+"\" /></a>";
 		//} 
 		img[i].height=150;
 	}

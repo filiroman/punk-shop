@@ -10,7 +10,7 @@ body
 	padding: 0;
 	color: #2a2d2f;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+	background: #2F4F4F;
 }
 
 #page
@@ -34,16 +34,17 @@ body
 }
 #header h1{
 	position: relative;
-	color:grey;
+	color:black;
 	font-size: 25px;	
 	width: 300px;
 	top: -60px;
 	left: 120px;
+	font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
 #search{
 	position: relative;
-	top: -80px;
+	top: -100px;
 	left: 370px;
 	width: 400px;
 	xheight: 50px;
@@ -53,6 +54,8 @@ body
 }
 #search_text{
 	position: relative;
+	top: -30px;
+	left: 142px;
 	xheight: 20px;
 	width: 130px;
 	xfont-size: 15px;

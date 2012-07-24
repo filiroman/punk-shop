@@ -1,11 +1,11 @@
-<?php
+﻿<?php
 $this->pageTitle=Yii::app()->name . ' - Contact Us';
 $this->breadcrumbs=array(
-	'Contact',
+	'Обратная связь',
 );
 ?>
 
-<h1>Contact Us</h1>
+<h1>Обратная связь</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -16,7 +16,7 @@ $this->breadcrumbs=array(
 <?php else: ?>
 
 <p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+Если у вас есть какие-либо вопросы, предложения и пожелания - будьте добры, заполните и оправьте форму ниже. Спасибо!
 </p>
 
 <div class="form">
@@ -64,8 +64,8 @@ If you have business inquiries or other questions, please fill out the following
 		<?php $this->widget('CCaptcha'); ?>
 		<?php echo $form->textField($model,'verifyCode'); ?>
 		</div>
-		<div class="hint">Please enter the letters as they are shown in the image above.
-		<br/>Letters are not case-sensitive.</div>
+		<div class="hint">Пожалуйста, введите код проверки.
+		<br/>Ввод не чуствителен к регистру</div>
 		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
 	<?php endif; ?>

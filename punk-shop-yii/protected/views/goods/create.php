@@ -10,7 +10,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Goods</h1>
+<h1>Создать объявление</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
 

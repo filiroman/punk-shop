@@ -25,7 +25,13 @@ class RegistrationController extends Controller
             $model = new RegistrationForm;
             $profile=new Profile;
             $profile->regMode = true;
-            
+            //!!!!!!!!!!!!
+					if(!is_dir(Yii::getPathOfAlias('webroot').'/img/Users')) 
+		{
+			mkdir(Yii::getPathOfAlias('webroot').'/img/Users', 0755);
+		}
+			//;!!!!!!!!!!!!
+			
 			// ajax validator
 			if(isset($_POST['ajax']) && $_POST['ajax']==='registration-form')
 			{
@@ -39,6 +45,22 @@ class RegistrationController extends Controller
 		    	if(isset($_POST['RegistrationForm'])) {
 					$model->attributes=$_POST['RegistrationForm'];
 					$profile->attributes=((isset($_POST['Profile'])?$_POST['Profile']:array()));
+					//!!!!!!!!!!!!
+					$images = CUploadedFile::getInstancesByName('Images');
+					
+					    foreach ($images as $image => $pic) {
+							$file = $model->id.'_'.$pic->name;
+							$savefile = Yii::getPathOfAlias('webroot').'/img/Users/'. $file;
+
+							if ($pic->saveAs($savefile)) {
+                        
+							$img_add = new Images;
+							$img_add->src = $file;
+							$img_add->good_id = $model->id; 
+							$img_add->save(); // DONE
+							}
+						}
+					//;!!!!!!!!!!!!
 					if($model->validate()&&$profile->validate())
 					{
 						$soucePassword = $model->password;

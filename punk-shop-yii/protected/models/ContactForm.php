@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
  * ContactForm class.
@@ -36,7 +36,7 @@ class ContactForm extends CFormModel
 	public function attributeLabels()
 	{
 		return array(
-			'verifyCode'=>'Verification Code',
+			'verifyCode'=>'Код проверки',
 		);
 	}
 }

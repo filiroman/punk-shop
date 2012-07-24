@@ -1058,3 +1058,696 @@ Stack trace:
 #16 /var/www/punk_shop/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
 #17 /var/www/punk_shop/punk-shop-yii/index.php(15): CWebApplication->run()
 REQUEST_URI=/punk_shop/punk-shop-yii/index.php?r=goods/view&id=6
+2012/07/23 12:54:37 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 12:54:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/
+HTTP_REFERER=http://localhost/punk-shop/
+---
+2012/07/23 12:54:37 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:08:53 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:08:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/
+HTTP_REFERER=http://localhost/punk-shop/
+---
+2012/07/23 13:08:53 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:08:55 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:08:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/
+---
+2012/07/23 13:08:55 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:09:33 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:09:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/
+---
+2012/07/23 13:09:34 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:03 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/
+---
+2012/07/23 13:10:03 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:33 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/
+---
+2012/07/23 13:10:33 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:38 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/
+---
+2012/07/23 13:10:38 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:38 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=site/index
+---
+2012/07/23 13:10:38 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:40 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:10:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=site/index
+---
+2012/07/23 13:10:40 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:11:59 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:11:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+---
+2012/07/23 13:11:59 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:12:22 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:12:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+---
+2012/07/23 13:12:22 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:12:25 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 13:12:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\punk-shop\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\punk-shop\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('')
+#16 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#17 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/
+---
+2012/07/23 13:12:25 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2012/07/23 14:47:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\punk-shop\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('goods/admin')
+#9 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=goods/admin
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods/view&id=7
+---
+2012/07/23 14:48:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\punk-shop\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('goods/admin')
+#9 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=goods/admin
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods/view&id=7
+---
+2012/07/23 14:49:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\punk-shop\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('goods/admin')
+#9 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=goods/admin
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods/view&id=7
+---
+2012/07/23 14:50:23 [error] [php] imagettfbbox(): Problem loading glyph (C:\wamp\www\punk-shop\yii\framework\web\widgets\captcha\CCaptchaAction.php:246)
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(75): CCaptchaAction->run()
+#1 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CCaptchaAction->runWithParams()
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): RegistrationController->runAction()
+#3 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): RegistrationController->runActionWithFilters()
+#4 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): RegistrationController->run()
+#5 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#6 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=user/registration/captcha&v=500d64af82897
+2012/07/23 14:54:26 [error] [php] imagettfbbox(): Problem loading glyph (C:\wamp\www\punk-shop\yii\framework\web\widgets\captcha\CCaptchaAction.php:246)
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(75): CCaptchaAction->run()
+#1 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CCaptchaAction->runWithParams()
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): RegistrationController->runAction()
+#3 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): RegistrationController->runActionWithFilters()
+#4 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): RegistrationController->run()
+#5 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#6 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=user/registration/captcha&v=500d65a267b9a
+2012/07/24 11:07:37 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Goods.ids".' in C:\wamp\www\punk-shop\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('ids')
+#1 C:\wamp\www\punk-shop\punk-shop-yii\protected\views\goods\_view.php(13): CActiveRecord->__get('ids')
+#2 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\pun...')
+#3 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pun...', Array, true)
+#4 C:\wamp\www\punk-shop\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pun...', Array, true)
+#5 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CListView.php(242): CController->renderPartial('_view', Array)
+#6 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#10 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(174): CBaseListView->run()
+#11 C:\wamp\www\punk-shop\punk-shop-yii\protected\views\goods\index.php(17): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\pun...')
+#13 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pun...', Array, true)
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pun...', Array, true)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#16 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\GoodsController.php(225): CController->render('index', Array)
+#17 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(50): GoodsController->actionIndex()
+#18 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#19 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#21 C:\wamp\www\punk-shop\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\punk-shop\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 C:\wamp\www\punk-shop\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 C:\wamp\www\punk-shop\yii\framework\web\CController.php(292): CFilterChain->run()
+#25 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#27 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('goods/index')
+#28 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#29 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#30 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=goods/index
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods/view&id=6
+---
+2012/07/24 11:07:38 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Goods.ids".' in C:\wamp\www\punk-shop\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('ids')
+#1 C:\wamp\www\punk-shop\punk-shop-yii\protected\views\goods\_view.php(13): CActiveRecord->__get('ids')
+#2 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\pun...')
+#3 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pun...', Array, true)
+#4 C:\wamp\www\punk-shop\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pun...', Array, true)
+#5 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CListView.php(242): CController->renderPartial('../goods/_view', Array)
+#6 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#10 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(174): CBaseListView->run()
+#11 C:\wamp\www\punk-shop\punk-shop-yii\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\pun...')
+#13 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pun...', Array, true)
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pun...', Array, true)
+#15 C:\wamp\www\punk-shop\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#16 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(55): CController->render('index', Array)
+#17 [internal function]: SiteController->actionIndex(NULL, NULL)
+#18 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#19 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#20 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#21 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#22 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('')
+#24 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#25 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#27 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods/index
+---
+2012/07/24 11:30:39 [error] [php] include(C:\wamp\www\punk-shop\punk-shop-yii\protected\models\Images.php): failed to open stream: No such file or directory (C:\wamp\www\punk-shop\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\punk-shop\punk-shop-yii\protected\views\goods\_view.php(7): spl_autoload_call()
+#1 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(127): require()
+#2 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 C:\wamp\www\punk-shop\yii\framework\web\CController.php(870): SiteController->renderFile()
+#4 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CListView.php(242): SiteController->renderPartial()
+#5 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#6 unknown(0): CListView->renderSection()
+#7 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback()
+#8 C:\wamp\www\punk-shop\yii\framework\zii\widgets\CBaseListView.php(126): CListView->renderContent()
+#9 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(174): CListView->run()
+#10 C:\wamp\www\punk-shop\punk-shop-yii\protected\views\site\index.php(35): SiteController->widget()
+#11 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(127): require()
+#12 C:\wamp\www\punk-shop\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#13 C:\wamp\www\punk-shop\yii\framework\web\CController.php(870): SiteController->renderFile()
+#14 C:\wamp\www\punk-shop\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#15 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(55): SiteController->render()
+#16 unknown(0): SiteController->actionIndex()
+#17 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#18 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#19 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#20 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): SiteController->runAction()
+#21 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#22 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#23 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#24 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+2012/07/24 11:36:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "contactform".' in C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('contactform')
+#1 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=contactform
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods
+---
+2012/07/24 11:37:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "contactform".' in C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('contactform')
+#1 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=contactform
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods
+---
+2012/07/24 11:37:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ContactForm".' in C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('ContactForm')
+#1 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=ContactForm
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=contactform
+---
+2012/07/24 11:39:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ContactForm".' in C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('ContactForm')
+#1 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=ContactForm
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=contactform
+---
+2012/07/24 11:39:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in C:\wamp\www\punk-shop\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('index')
+#1 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/page
+---
+2012/07/24 11:41:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "pages".' in C:\wamp\www\punk-shop\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CController.php(271): CController->missingAction('pages')
+#1 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('pages')
+#2 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/pages')
+#3 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/pages
+---
+2012/07/24 11:41:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in C:\wamp\www\punk-shop\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('index')
+#1 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/page
+---
+2012/07/24 11:41:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/contact".' in C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/conta...')
+#1 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=user/site/contact
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 11:41:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/contact".' in C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/conta...')
+#1 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=user/site/contact
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 11:42:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/contact".' in C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/conta...')
+#1 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=user/site/contact
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=user/registration
+---
+2012/07/24 12:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "test" не найден.' in C:\wamp\www\punk-shop\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('test')
+#1 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/page&view=test
+---
+2012/07/24 12:09:18 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "index".' in C:\wamp\www\punk-shop\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(55): CController->render('index', Array)
+#2 [internal function]: SiteController->actionIndex(NULL, NULL)
+#3 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=site/page&view=egg
+---
+2012/07/24 12:09:19 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "index".' in C:\wamp\www\punk-shop\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(55): CController->render('index', Array)
+#2 [internal function]: SiteController->actionIndex(NULL, NULL)
+#3 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=site/index
+---
+2012/07/24 12:09:26 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "index".' in C:\wamp\www\punk-shop\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(55): CController->render('index', Array)
+#2 [internal function]: SiteController->actionIndex(NULL, NULL)
+#3 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods
+---
+2012/07/24 12:09:40 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "index".' in C:\wamp\www\punk-shop\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(55): CController->render('index', Array)
+#2 [internal function]: SiteController->actionIndex(NULL, NULL)
+#3 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods
+---
+2012/07/24 12:09:46 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "index".' in C:\wamp\www\punk-shop\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\punk-shop\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\punk-shop\punk-shop-yii\protected\controllers\SiteController.php(55): CController->render('index', Array)
+#2 [internal function]: SiteController->actionIndex(NULL, NULL)
+#3 C:\wamp\www\punk-shop\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#4 C:\wamp\www\punk-shop\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#5 C:\wamp\www\punk-shop\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\punk-shop\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\punk-shop\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\punk-shop\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#10 C:\wamp\www\punk-shop\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\punk-shop\punk-shop-yii\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
+HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods
+---

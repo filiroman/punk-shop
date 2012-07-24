@@ -1,0 +1,15 @@
+–асширени€:
+http://www.yiiframework.com/extensions/
+–екомендую поискать нужные нам, чтобы заного не изобретать велосипед. пользуйтесь поиском, а так же смотрите на кол-во скачиваний
+
+„то предлагаю:
+
+1. ƒл€ регистрации, авторизации(добавил первый пока что)
+yii-user http://www.yiiframework.com/extension/yii-user/
+или такой http://www.yiiframework.com/extension/yii-user-management/
+
+2. јвторизаци€ с попул€рных сервисов
+http://habrahabr.ru/post/129804/
+
+¬ конце, чтобы все работало на сервере
+http://yiiframework.ru/doc/cookbook/ru/install.production

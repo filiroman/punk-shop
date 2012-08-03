@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 class User extends CActiveRecord
 {
@@ -107,7 +107,9 @@ class User extends CActiveRecord
 			'status' => UserModule::t("Status"),
 			'phone'=>UserModule::t("Номер телефона"),	
 			'avatar'=>UserModule::t("Изображение"),	
-			'about'=>UserModule::t("О себе")
+			'about'=>UserModule::t("О себе"),
+//			'service'=>UserModule::t("oauth service"),
+//			'identity'=>UserModule::t("oauth identity")
 		);
 	}
 	

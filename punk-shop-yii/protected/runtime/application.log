@@ -1751,3 +1751,1166 @@ Stack trace:
 REQUEST_URI=/punk-shop/punk-shop-yii/index.php?r=site/index
 HTTP_REFERER=http://localhost/punk-shop/punk-shop-yii/index.php?r=goods
 ---
+2012/07/24 14:31:45 [error] [php] include(EOAuthUserIdentity.php): failed to open stream: No such file or directory (C:\wamp\www\punk-shop2\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EOAuthService.php(57): spl_autoload_call()
+#1 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(94): TwitterOAuthService->init()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(37): EAuth->getIdentity()
+#3 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuthWidget.php(51): EAuth->getServices()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(123): EAuthWidget->init()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\views\user\login.php(81): EAuth->renderWidget()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\www\punk-shop2\yii\framework\web\CBaseController.php(96): LoginController->renderInternal()
+#8 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(870): LoginController->renderFile()
+#9 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(783): LoginController->renderPartial()
+#10 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(55): LoginController->render()
+#11 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#12 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#14 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#15 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#16 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#17 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/24 14:36:38 [error] [php] include(EOAuthUserIdentity.php): failed to open stream: No such file or directory (C:\wamp\www\punk-shop2\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EOAuthService.php(57): spl_autoload_call()
+#1 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(94): TwitterOAuthService->init()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(37): EAuth->getIdentity()
+#3 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuthWidget.php(51): EAuth->getServices()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(123): EAuthWidget->init()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\views\user\login.php(81): EAuth->renderWidget()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\www\punk-shop2\yii\framework\web\CBaseController.php(96): LoginController->renderInternal()
+#8 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(870): LoginController->renderFile()
+#9 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(783): LoginController->renderPartial()
+#10 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(55): LoginController->render()
+#11 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#12 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#14 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#15 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#16 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#17 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/24 14:37:58 [error] [php] include(EOAuthUserIdentity.php): failed to open stream: No such file or directory (C:\wamp\www\punk-shop2\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EOAuthService.php(57): spl_autoload_call()
+#1 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(94): TwitterOAuthService->init()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(37): EAuth->getIdentity()
+#3 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuthWidget.php(51): EAuth->getServices()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(123): EAuthWidget->init()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\views\user\login.php(81): EAuth->renderWidget()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\www\punk-shop2\yii\framework\web\CBaseController.php(96): LoginController->renderInternal()
+#8 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(870): LoginController->renderFile()
+#9 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(783): LoginController->renderPartial()
+#10 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(55): LoginController->render()
+#11 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#12 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#14 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#15 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#16 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#17 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/24 14:39:38 [error] [php] include(LiveOAuthService.php): failed to open stream: No such file or directory (C:\wamp\www\punk-shop2\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(93): spl_autoload_call()
+#1 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(37): EAuth->getIdentity()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuthWidget.php(51): EAuth->getServices()
+#3 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EAuth.php(123): EAuthWidget->init()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\views\user\login.php(81): EAuth->renderWidget()
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CBaseController.php(127): require()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CBaseController.php(96): LoginController->renderInternal()
+#7 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(870): LoginController->renderFile()
+#8 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(783): LoginController->renderPartial()
+#9 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(55): LoginController->render()
+#10 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#11 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#13 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#14 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#15 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/24 14:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=vkontakte
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:44:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:45:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=yandex
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:48:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:48:08 [error] [php] get_headers(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? (C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php:236)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php(349): LightOpenID->request()
+#1 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php(590): LightOpenID->discover()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EOpenIDService.php(99): LightOpenID->authUrl()
+#3 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(19): GoogleOpenIDService->authenticate()
+#4 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#7 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#8 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#9 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=/user/login&service=google
+2012/07/24 14:48:23 [error] [php] get_headers(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? (C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php:236)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php(349): LightOpenID->request()
+#1 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php(590): LightOpenID->discover()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EOpenIDService.php(99): LightOpenID->authUrl()
+#3 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(19): GoogleOpenIDService->authenticate()
+#4 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#7 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#8 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#9 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login&service=google
+2012/07/24 14:54:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:56:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:57:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:58:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:58:08 [error] [php] get_headers(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? (C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php:236)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php(349): LightOpenID->request()
+#1 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php(590): LightOpenID->discover()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EOpenIDService.php(99): LightOpenID->authUrl()
+#3 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(19): GoogleOpenIDService->authenticate()
+#4 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#7 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#8 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#9 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login&service=google
+2012/07/24 14:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 14:58:53 [error] [php] get_headers(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? (C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php:236)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php(349): LightOpenID->request()
+#1 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\lightopenid\LightOpenID.php(590): LightOpenID->discover()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EOpenIDService.php(99): LightOpenID->authUrl()
+#3 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(19): GoogleOpenIDService->authenticate()
+#4 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#7 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#8 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#9 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=/user/login&service=google
+2012/07/24 15:02:28 [error] [php] include(ServiceUserIdentity.php): failed to open stream: No such file or directory (C:\wamp\www\punk-shop2\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(20): spl_autoload_call()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#4 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login&service=google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2012-07-24T14%3A08%3A27Zw2fSjJUF8MGvJA&openid.return_to=http%3A%2F%2Flocalhost%2Fpunk-shop2%2Fpunk-shop-yii%2Findex.php%3Fr%3Duser%2Flogin%26service%3Dgoogle&openid.assoc_handle=AMlYA9Vm9gwcS6m8N-IXQ3Evabivy-3vtrfYwUv6COxozyN6MQbWIiOo&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname&openid.sig=t6Ka8ITykmTR%2F2keK6YmqVo0Iv0%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawnKccfMZfOKJPcPdXDs2wVxhamDe2mpTzY&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawnKccfMZfOKJPcPdXDs2wVxhamDe2mpTzY&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9
+2012/07/24 15:07:10 [error] [exception.EAuthException] exception 'EAuthException' with message 'Unable to complete the authentication because the required data was not received.' in C:\wamp\www\punk-shop2\punk-shop-yii\protected\extensions\eauth\EOpenIDService.php:77
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(19): EOpenIDService->authenticate()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('')
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/login')
+#7 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login&service=google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2012-07-24T14%3A08%3A27Zw2fSjJUF8MGvJA&openid.return_to=http%3A%2F%2Flocalhost%2Fpunk-shop2%2Fpunk-shop-yii%2Findex.php%3Fr%3Duser%2Flogin%26service%3Dgoogle&openid.assoc_handle=AMlYA9Vm9gwcS6m8N-IXQ3Evabivy-3vtrfYwUv6COxozyN6MQbWIiOo&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname&openid.sig=t6Ka8ITykmTR%2F2keK6YmqVo0Iv0%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawnKccfMZfOKJPcPdXDs2wVxhamDe2mpTzY&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawnKccfMZfOKJPcPdXDs2wVxhamDe2mpTzY&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9
+---
+2012/07/24 15:07:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 15:24:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 15:24:35 [error] [php] strpos() expects parameter 1 to be string, array given (C:\wamp\www\punk-shop2\yii\framework\web\CController.php:964)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(17): LoginController->createAbsoluteUrl()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#4 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login&service=google
+2012/07/24 15:24:38 [error] [php] strpos() expects parameter 1 to be string, array given (C:\wamp\www\punk-shop2\yii\framework\web\CController.php:964)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(17): LoginController->createAbsoluteUrl()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#4 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login&service=google
+2012/07/24 15:24:42 [error] [php] strpos() expects parameter 1 to be string, array given (C:\wamp\www\punk-shop2\yii\framework\web\CController.php:964)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(17): LoginController->createAbsoluteUrl()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#4 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#5 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#6 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=/user/login&service=google
+2012/07/24 15:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 15:36:45 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 15:38:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 15:39:21 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:39:23 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:39:25 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:39:30 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 15:39:38 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:39:49 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:40:59 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:41:00 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:41:13 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:41:14 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:41:18 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:41:43 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:41:44 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:41:45 [error] [php] Trying to get property of non-object (C:\wamp\www\punk-shop2\punk-shop-yii\protected\modules\user\controllers\ProfileController.php:19)
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(287): ProfileController->runAction()
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): ProfileController->run()
+#3 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/profile
+2012/07/24 15:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/registration
+---
+2012/07/24 15:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\wamp\www\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/24 15:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 C:\wamp\www\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/25 11:39:34 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'punk_shop_test'
+2012/07/25 11:39:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection не удалось установить соединение с БД.' in W:\domains\localhost\punk-shop2\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 W:\domains\localhost\punk-shop2\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 W:\domains\localhost\punk-shop2\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 W:\domains\localhost\punk-shop2\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 W:\domains\localhost\punk-shop2\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 W:\domains\localhost\punk-shop2\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Goods))
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Goods')
+#8 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\controllers\SiteController.php(51): CActiveDataProvider->__construct('Goods', Array)
+#9 [internal function]: SiteController->actionIndex(NULL, NULL)
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#12 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('')
+#16 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#17 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/
+HTTP_REFERER=http://localhost/punk-shop2/
+---
+2012/07/25 11:39:34 [error] [exception.CDbException] SQLSTATE[HY000] [1049] Unknown database 'punk_shop_test'
+2012/07/25 11:53:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/25 11:53:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/registration
+---
+2012/07/25 12:33:46 [error] [exception.CException] exception 'CException' with message 'Путь CAssetManager.basePath "W:\domains\localhost\punk-shop2\punk-shop-yii\assets" задан неверно. Удостоверьтесь, что директория существует и доступна для записи пользователю, под которым запущен веб-сервер.' in W:\domains\localhost\punk-shop2\yii\framework\web\CAssetManager.php:116
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('W:\domains\loca...')
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 W:\domains\localhost\punk-shop2\yii\framework\zii\widgets\CDetailView.php(152): CAssetManager->publish('W:\domains\loca...')
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(148): CDetailView->init()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\views\goods\view.php(89): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(127): require('W:\domains\loca...')
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('W:\domains\loca...', Array, true)
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): CBaseController->renderFile('W:\domains\loca...', Array, true)
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\controllers\GoodsController.php(55): CController->render('view', Array)
+#11 [internal function]: GoodsController->actionView('6')
+#12 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GoodsController), Array)
+#13 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GoodsController), Object(ReflectionMethod), Array)
+#14 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 W:\domains\localhost\punk-shop2\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 W:\domains\localhost\punk-shop2\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 W:\domains\localhost\punk-shop2\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 W:\domains\localhost\punk-shop2\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#23 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('goods/view')
+#24 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#26 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=goods/view&id=6
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=goods
+---
+2012/07/25 12:33:55 [error] [exception.CException] exception 'CException' with message 'Путь CAssetManager.basePath "W:\domains\localhost\punk-shop2\punk-shop-yii\assets" задан неверно. Удостоверьтесь, что директория существует и доступна для записи пользователю, под которым запущен веб-сервер.' in W:\domains\localhost\punk-shop2\yii\framework\web\CAssetManager.php:116
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('W:\domains\loca...')
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 W:\domains\localhost\punk-shop2\yii\framework\zii\widgets\CListView.php(179): CAssetManager->publish('W:\domains\loca...')
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(148): CListView->init()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\views\goods\index.php(17): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(127): require('W:\domains\loca...')
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('W:\domains\loca...', Array, true)
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): CBaseController->renderFile('W:\domains\loca...', Array, true)
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\controllers\GoodsController.php(225): CController->render('index', Array)
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): GoodsController->actionIndex()
+#12 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 W:\domains\localhost\punk-shop2\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 W:\domains\localhost\punk-shop2\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 W:\domains\localhost\punk-shop2\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 W:\domains\localhost\punk-shop2\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('')
+#21 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('goods')
+#22 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=goods
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=goods/view&id=6
+---
+2012/07/25 12:33:56 [error] [exception.CException] exception 'CException' with message 'Путь CAssetManager.basePath "W:\domains\localhost\punk-shop2\punk-shop-yii\assets" задан неверно. Удостоверьтесь, что директория существует и доступна для записи пользователю, под которым запущен веб-сервер.' in W:\domains\localhost\punk-shop2\yii\framework\web\CAssetManager.php:116
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('W:\domains\loca...')
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\components\UWjuidate.php(65): CAssetManager->publish('W:\domains\loca...')
+#3 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\ProfileField.php(169): UWjuidate->editAttribute(Object(Profile), Object(ProfileField), Array)
+#4 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\views\user\registration.php(62): ProfileField->widgetEdit(Object(Profile))
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(127): require('W:\domains\loca...')
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('W:\domains\loca...', Array, true)
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): CBaseController->renderFile('W:\domains\loca...', Array, true)
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): CController->renderPartial('/user/registrat...', Array, true)
+#9 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\RegistrationController.php(103): CController->render('/user/registrat...', Array)
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('')
+#15 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/registrati...')
+#16 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/registration
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=goods
+---
+2012/07/25 12:35:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost/punk-shop2/punk-shop-yii/index.php?r=user/registration
+---
+2012/07/28 15:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in W:\domains\localhost\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 15:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/registration
+---
+2012/07/28 15:51:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in W:\domains\localhost\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 15:52:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in W:\domains\localhost\punk-shop2\yii\framework\web\CController.php:484
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/user/login&service=google
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 16:05:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 16:12:02 [error] [php] Object of class CWebUser could not be converted to string (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\views\site\pages\about.php:16)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CViewAction.php(141): SiteController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CViewAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=site/page&view=about
+2012/07/28 16:12:05 [error] [php] Object of class CWebUser could not be converted to string (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\views\site\pages\about.php:16)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CViewAction.php(141): SiteController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CViewAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=site/page&view=about
+2012/07/28 16:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 16:16:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 16:23:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 16:23:19 [error] [php] Object of class CHttpRequest could not be converted to string (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\views\site\pages\about.php:16)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CViewAction.php(141): SiteController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CViewAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=site/page&view=about
+2012/07/28 16:23:20 [error] [php] Object of class CHttpRequest could not be converted to string (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\views\site\pages\about.php:16)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CViewAction.php(141): SiteController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CViewAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=site/page&view=about
+2012/07/28 16:28:44 [error] [php] Invalid argument supplied for foreach() (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\views\site\pages\about.php:17)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CViewAction.php(141): SiteController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CViewAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=site/page&view=about
+2012/07/28 16:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 16:29:03 [error] [php] Invalid argument supplied for foreach() (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\views\site\pages\about.php:17)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CViewAction.php(141): SiteController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CViewAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=site/page&view=about
+2012/07/28 16:29:04 [error] [php] Invalid argument supplied for foreach() (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\views\site\pages\about.php:17)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CViewAction.php(141): SiteController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CViewAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=site/page&view=about
+2012/07/28 16:29:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 16:29:36 [error] [php] Invalid argument supplied for foreach() (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\views\user\login.php:82)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): LoginController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): LoginController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(55): LoginController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 16:29:38 [error] [php] Invalid argument supplied for foreach() (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\views\user\login.php:82)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): LoginController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): LoginController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(55): LoginController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 16:29:39 [error] [php] Invalid argument supplied for foreach() (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\views\user\login.php:82)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): LoginController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): LoginController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(55): LoginController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 16:29:40 [error] [php] Invalid argument supplied for foreach() (W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\views\user\login.php:82)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(870): LoginController->renderFile()
+#1 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(783): LoginController->renderPartial()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(55): LoginController->render()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:21:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/site/page".' in W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/site/page')
+#1 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/site/page&view=about
+HTTP_REFERER=http://localhost:81/punk-shop2/punk-shop-yii/index.php?r=user/login
+---
+2012/07/28 18:22:27 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\RegistrationController.php(86): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#3 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): RegistrationController->runAction()
+#5 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): RegistrationController->runActionWithFilters()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): RegistrationController->run()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/registration
+2012/07/28 18:22:44 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:22:51 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:23:10 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:23:18 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:23:55 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:24:22 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:24:52 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:25:00 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:26:12 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:26:20 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:27:04 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login
+2012/07/28 18:27:42 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (W:\domains\localhost\punk-shop2\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 W:\domains\localhost\punk-shop2\yii\framework\web\auth\CWebUser.php(228): CWebUser->changeIdentity()
+#1 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\models\UserLogin.php(57): CWebUser->login()
+#2 W:\domains\localhost\punk-shop2\yii\framework\validators\CInlineValidator.php(43): UserLogin->authenticate()
+#3 W:\domains\localhost\punk-shop2\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 W:\domains\localhost\punk-shop2\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 W:\domains\localhost\punk-shop2\punk-shop-yii\protected\modules\user\controllers\LoginController.php(46): UserLogin->validate()
+#6 W:\domains\localhost\punk-shop2\yii\framework\web\actions\CInlineAction.php(50): LoginController->actionLogin()
+#7 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(287): LoginController->runAction()
+#9 W:\domains\localhost\punk-shop2\yii\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#10 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(276): LoginController->run()
+#11 W:\domains\localhost\punk-shop2\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 W:\domains\localhost\punk-shop2\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 W:\domains\localhost\punk-shop2\punk-shop-yii\index.php(15): CWebApplication->run()
+REQUEST_URI=/punk-shop2/punk-shop-yii/index.php?r=user/login

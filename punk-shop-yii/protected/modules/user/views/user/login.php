@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Login");
 $this->breadcrumbs=array(
 	UserModule::t("Login"),
@@ -77,3 +77,5 @@ $form = new CForm(array(
     ),
 ), $model);
 ?>
+<h3>У вас уже есть аккаунт в одной из этих сетей? Вы можете войти с помощью них, кликните по иконке</h3>
+<?php Yii::app()->eauth->renderWidget(); ?>

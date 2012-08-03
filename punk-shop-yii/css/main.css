@@ -8,7 +8,7 @@ body
 	height: 100%;
 	margin: 0 auto;
 	padding: 0;
-	color: #2a2d2f;
+	color: #143D29;
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	background: #2F4F4F;
 }
@@ -35,7 +35,7 @@ body
 #header h1{
 	position: relative;
 	color:black;
-	font-size: 25px;	
+	font-size: 1em;	
 	width: 300px;
 	top: -60px;
 	left: 120px;
@@ -97,7 +97,7 @@ body
 	font-size:21px;
 	font-family: calibri;
 	text-decoration: none;
-	color: #4d9ac6;
+	color: #4dc69a;
 	
 	margin:0 !important;
 	padding:0 0 0 0 !important;
@@ -260,8 +260,8 @@ body
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #4c99c5;
-	background-color:#e4f1f9;
+	color: #4da499;
+	background-color:#B9EFDC;
 	text-decoration:none;
 }
 
@@ -364,8 +364,8 @@ div.search-form
 .portlet-decoration
 {
 	padding: 3px 8px;
-	background: #B7D6E7;
-	border-left: 5px solid #6FACCF;
+	background: #B7E7d6;
+	border-left: 5px solid #6Fcfac;
 }
 
 .portlet-title
@@ -374,7 +374,7 @@ div.search-form
 	font-weight: bold;
 	padding: 0;
 	margin: 0;
-	color: #298dcd;
+	color: #29cd8d;
 }
 
 .portlet-content
@@ -382,7 +382,7 @@ div.search-form
 	font-size:0.9em;
 	margin: 0 0 15px 0;
 	padding: 5px 8px;
-	background:#EFFDFF;
+	background:#EFFFFD;
 }
 
 .portlet-content ul
@@ -404,6 +404,7 @@ div.search-form
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	color:#2C5345;
 }
 
 .operations li
@@ -414,19 +415,18 @@ div.search-form
 .operations li a
 {
 	font: bold 12px Arial;
-	color: #0066A4;
+	color: #00A466;
 	display: block;
 	padding: 2px 0 2px 8px;
 	line-height: 15px;
 	text-decoration: none;
 }
 
-.operations li a:visited
-{
-	color: #0066A4;
-}
 
 .operations li a:hover
 {
-	background: #80CFFF;
+	background: #99D6D6;
+}
+table.detail-view tr.odd td,tr.odd th{ 
+background: #D6F4E1;
 }

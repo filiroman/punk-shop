@@ -145,6 +145,8 @@ CREATE TABLE  `punk_shop_test`.`tbl_users` (
   `phone` int(11) NOT NULL DEFAULT '0',
   `avatar` varchar(128) DEFAULT '',
   `about` varchar(256) NOT NULL DEFAULT '',
+  `service` varchar(128) DEFAULT '',
+  `identity` varchar(128) DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `email` (`email`),

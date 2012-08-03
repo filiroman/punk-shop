@@ -1,0 +1,432 @@
+html{
+	height: 100%;
+	padding: 0 !important;
+}
+body
+{
+	display: inline;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	color: #2a2d2f;
+	font: normal 10pt Arial,Helvetica,sans-serif;
+	background: #2F4F4F;
+}
+
+#page
+{
+	
+	
+	xmargin-top: 5px;
+	margin-bottom: 5px;
+	background: white;
+	xborder: 1px solid #C9E0ED;
+	-moz-box-shadow: 0 10px 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 10px 0 10px rgba(0,0,0,0.5); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#header
+{
+	margin: 0;
+	padding: 0;
+	height: 100px;
+}
+#header h1{
+	position: relative;
+	color:black;
+	font-size: 25px;	
+	width: 300px;
+	top: -60px;
+	left: 120px;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+#search{
+	position: relative;
+	top: -100px;
+	left: 370px;
+	width: 400px;
+	xheight: 50px;
+	xborder: 1px solid red;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+#search_text{
+	position: relative;
+	top: -30px;
+	left: 142px;
+	xheight: 20px;
+	width: 130px;
+	xfont-size: 15px;
+	xpadding: 3px 5px;
+	border: 1px solid #adb2b5;
+}
+#search_category{
+	position: relative;
+	xheight: 28px;
+	border: 1px solid #adb2b5;
+}
+#search_button{
+	position: relative;
+	xheight: 28px;
+	width: 80px;
+	background-color: #e0edef;
+	border: 1px solid #adb2b5;
+}
+#search_button:hover{
+	background-color: #95d7e1;
+}
+
+#categories{
+	position: relative;
+	min-height: 50px;
+	margin:5px !important;
+	padding:0 !important;
+	width: 220px;
+	float: right;
+	right: 0px;
+	top: 40px;
+	border-top: 1px solid #adb2b5;
+	border-left: 1px solid #adb2b5;
+	border-right: 1px solid #adb2b5;
+	background-color: white;
+}
+#categories a{
+	line-height: 20px;
+	font-size:21px;
+	font-family: calibri;
+	text-decoration: none;
+	color: #4d9ac6;
+	
+	margin:0 !important;
+	padding:0 0 0 0 !important;
+}
+#categories ul{
+	margin:0 !important;
+	padding:0 !important;
+}
+#categories li{
+	height: 20px;
+	list-style: none;
+	padding: 0 0 0 10px;
+	background-color: white;
+	border-bottom: 1px solid #adb2b5;
+	margin:0 !important;
+	padding:3px 0 3px 10px !important;
+}
+#categories li:hover{
+	background-color: #e1e1e1;
+}
+
+.view{
+	height: 180px;
+}
+
+#result{
+	position: relative;
+	margin: 10px 0  0;
+	padding: 10px 2px 0 0;
+	background-color: white;
+	min-height: 350px;
+	width: 520px;
+	border-right: 1px solid #adb2b5;
+	xborder-bottom: 1px solid #adb2b5;
+}
+.item{
+	position: relative;
+	min-height: 100px;	
+	height: 240px;
+	width: 5120px;
+	margin: 15px 5px;
+	border-bottom: 1px solid #adb2b5;
+}
+
+.item_img{
+	max-width: 130px;
+	max-height: 170px;
+	margin: 5px;
+	float: left;
+	border: 1 px solid black;
+}
+.item_name{
+	position: relative;
+	font-size: 18px;
+	margin: 0;
+}
+
+.item_description{
+	position: relative;
+	float: left;
+	width: 320px;
+	font-size: 12px;
+	line-height:160%;
+	margin: 5px;
+	
+}
+.item_date{
+	position: relative;
+	float: right;
+	text-align: left;
+	margin: 0 10px 0 0;
+	color: #444;
+	font-size: 13px;
+}
+.item_author{
+	position: relative;
+	text-align: left;
+	width: 245px;
+	font-size: 15px;
+	margin: 0 10px 0 0;
+}
+.item_price{
+	position: relative;
+	float: right;
+	font-size: 13px;
+	margin: 0 10px 0 0;
+}
+
+.item a{
+	min-height: 100px;
+	color: #d0424f;
+	text-decoration: none;
+}
+.item a:hover{
+	color: #ac3540;
+}
+.item_category{
+	position: relative;
+	float: right;
+	margin: 0 10px 0 0;
+}
+
+
+#content
+{	
+	xmin-height: 400px;
+    padding: 20px;
+}
+
+#sidebar
+{
+	padding: 20px 20px 20px 0;
+}
+
+#footer
+{	
+	xposition: absolute;
+	xbottom:0;
+	xwidth: 740px;
+	padding: 10px;
+	margin: 10px 20px;
+	
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}
+
+#logo
+{
+	padding: 10px 20px;
+	font-size: 200%;
+}
+
+#mainmenu
+{
+	
+	background:white url(bg.gif) repeat-x left top;
+}
+
+#mainmenu ul
+{
+	padding:6px 20px 5px 20px;
+	margin:0px;
+}
+
+#mainmenu ul li
+{
+	display: inline;
+}
+
+#mainmenu ul li a
+{
+	color:#ffffff;
+	background-color:transparent;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 8px;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a
+{
+	color: #4c99c5;
+	background-color:#e4f1f9;
+	text-decoration:none;
+}
+
+#user_img{
+	float: left;
+	max-width: 150px;
+	max-height: 200px;
+	margin: 0 10px 10px 0;
+}
+#user_name{
+	margin: 10px 0 10px 0;
+	font-size: 24px;
+}
+
+table{
+	margin: 100px 0 0 0;
+}
+th.label{
+	width: 210px;
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
+div.form .rememberMe label
+{
+	display: inline;
+}
+
+div.view
+{
+	padding: 10px;
+	margin: 10px 5px;
+	border: 1px solid #C9E0ED;
+}
+
+div.breadcrumbs
+{
+	font-size: 0.9em;
+	padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+	font-weight: bold;
+}
+
+div.search-form
+{
+	padding: 10px;
+	margin: 10px 0;
+	background: #eee;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+	padding: 3px 8px;
+	background: #B7D6E7;
+	border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: #298dcd;
+}
+
+.portlet-content
+{
+	font-size:0.9em;
+	margin: 0 0 15px 0;
+	padding: 5px 8px;
+	background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+.portlet-content li
+{
+	padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.operations li
+{
+	padding-bottom: 2px;
+}
+
+.operations li a
+{
+	font: bold 12px Arial;
+	color: #0066A4;
+	display: block;
+	padding: 2px 0 2px 8px;
+	line-height: 15px;
+	text-decoration: none;
+}
+
+.operations li a:visited
+{
+	color: #0066A4;
+}
+
+.operations li a:hover
+{
+	background: #80CFFF;
+}
